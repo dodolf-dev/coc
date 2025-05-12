@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+/* Animation de transition de page */
+.page-transition {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.page-transition.loaded {
+    opacity: 1;
+}
+
+/* Background amélioré */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+/* Barre de navigation */
+nav {
+    background: rgba(51,51,51,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    animation: lightMove 6s ease infinite alternate;
+}
+
+/* Effet lumineux doux sur le menu */
+@keyframes lightMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Liens de navigation */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.connexion {
+    position: absolute;
+    right: 20px;
+}
+
+.acceuil {
+    position: absolute;
+    left: 20px;
+}
+
+/* Galerie */
+.destinations .gallerie {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 150px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.destinations .gallerie .image {
+    background: rgba(255,255,255,0.85);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s, box-shadow 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.destinations .gallerie .image:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.6);
+}
+
+.destinations .gallerie .image img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.destinations .gallerie .description {
+    text-align: center;
+    color: #333;
+}
+
+.destinations .gallerie .description h1 {
+    font-size: 18px;
+}
+
+/* Apparition douce des cartes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+        padding: 10px;
+    }
+    .destinations .gallerie {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .destinations .gallerie .image {
+        width: 80vw;
+        height: auto;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}

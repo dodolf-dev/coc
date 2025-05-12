@@ -1,0 +1,20 @@
+//mis a jour le 09.04.2025
+export const hoteldeville = {
+        hoteldeville_nv_1: {pv: 450, prix: 0, tconstru: 0, exp_gagner: 0, capaor: 1000, capaelixir: 1000, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville1.png"},
+        hoteldeville_nv_2: {pv: 1600, prix: 1000, tconstru: 10, exp_gagner: 3, capaor: 2500, capaelixir: 2500, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville2.png"},
+        hoteldeville_nv_3: {pv: 1850, prix: 4000, tconstru: 1800, exp_gagner: 42, capaor: 10000, capaelixir: 10000, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville3.png"},
+        hoteldeville_nv_4: {pv: 2100, prix: 25000, tconstru: 10800, exp_gagner: 103, capaor: 50000, capaelixir: 50000, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville4.png"},
+        hoteldeville_nv_5: {pv: 2400, prix: 150000, tconstru: 21600, exp_gagner: 146, capaor: 100000, capaelixir: 100000, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville5.png"},
+        hoteldeville_nv_6: {pv: 2800, prix: 500000, tconstru: 43200, exp_gagner: 207, capaor: 300000, capaelixir: 300000, capaelixirnoir: 0,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville6.png"},
+        hoteldeville_nv_7: {pv: 3300, prix: 1000000, tconstru: 64800, exp_gagner: 254, capaor: 500000, capaelixir: 500000, capaelixirnoir: 2500,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville7.png"},
+        hoteldeville_nv_8: {pv: 3900, prix: 2000000, tconstru: 86400, exp_gagner: 293, capaor: 750000, capaelixir: 750000, capaelixirnoir: 5000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville8.png"},
+        hoteldeville_nv_9: {pv: 4600, prix: 2500000, tconstru: 172800, exp_gagner: 415, capaor: 1000000, capaelixir: 1000000, capaelixirnoir: 10000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville9.png"},
+        hoteldeville_nv_10: {pv: 5500, prix: 3500000, tconstru: 259200, exp_gagner: 464, capaor: 1500000, capaelixir: 1500000, capaelixirnoir: 20000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville10.png"},
+        hoteldeville_nv_11: {pv: 6800, prix: 4000000, tconstru: 432000, exp_gagner: 487, capaor: 2000000, capaelixir: 2000000, capaelixirnoir: 20000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville11.png"},
+        hoteldeville_nv_12: {pv: 7500, prix: 6000000, tconstru: 518400, exp_gagner: 605, capaor: 2000000, capaelixir: 2000000, capaelixirnoir: 20000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville12.png"},
+        hoteldeville_nv_13: {pv: 8200, prix: 9000000, tconstru: 648000, exp_gagner: 804, capaor: 2000000, capaelixir: 2000000, capaelixirnoir: 20000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville13.png"},
+        hoteldeville_nv_14: {pv: 8900, prix: 12000000, tconstru: 777600, exp_gagner: 881, capaor: 3000000, capaelixir: 3000000, capaelixirnoir: 30000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville14.png"},
+        hoteldeville_nv_15: {pv: 9600, prix: 13000000, tconstru: 864000, exp_gagner: 974, capaor: 3000000, capaelixir: 3000000, capaelixirnoir: 30000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville15.png"},
+        hoteldeville_nv_16: {pv: 10000, prix: 16000000, tconstru: 950400, exp_gagner: 1018, capaor: 4000000, capaelixir: 4000000, capaelixirnoir: 40000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville16.png"},
+        hoteldeville_nv_17: {pv: 10400, prix: 16000000, tconstru: 1036800, exp_gagner: 1138, capaor: 4000000, capaelixir: 4000000, capaelixirnoir: 40000,image : "/coc/image/village principal/batiment/hoteldeville/hoteldeville17.png"},
+} 

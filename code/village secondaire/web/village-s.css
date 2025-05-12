@@ -1,0 +1,33 @@
+/* Liens de navigation */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+.connexion {
+    position: absolute;
+    right: 20px;
+}
+
+.acceuil {
+    position: absolute;
+    left: 20px;
+}
