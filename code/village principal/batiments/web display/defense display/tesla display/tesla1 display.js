@@ -50,11 +50,13 @@ function updateteslaOptions() {
         selecttesla1.style.display = "none";
         imagetesla1.style.display = "none";
         infoContainer.style.display = "none";
+        tesla_block.style.display = "none";
     } else {
         tesla1_box.style.display = "block";
         selecttesla1.style.display = "block";
         imagetesla1.style.display = "block";
         infoContainer.style.display = "block";
+        tesla_block.style.display = "block";
         selecttesla1.value = selectedLevel;
         updatetesla1Info();
     }

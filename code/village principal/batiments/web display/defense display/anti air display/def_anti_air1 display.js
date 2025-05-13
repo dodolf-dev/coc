@@ -46,6 +46,7 @@ function updatedef_anti_airOptions() {
 
     // Si aucun niveau n'est disponible, masquer le def_anti_air 1
     if (def_anti_airLevels.length === 0) {
+        def_anti_air_block.style.display = "none";
         def_anti_air1_box.style.display = "none";
         selectdef_anti_air1.style.display = "none";
         imagedef_anti_air1.style.display = "none";
@@ -55,6 +56,7 @@ function updatedef_anti_airOptions() {
         selectdef_anti_air1.style.display = "block";
         imagedef_anti_air1.style.display = "block";
         infoContainer.style.display = "block";
+        def_anti_air_block.style.display = "block";
         selectdef_anti_air1.value = selectedLevel;
         updatedef_anti_air1Info();
     }

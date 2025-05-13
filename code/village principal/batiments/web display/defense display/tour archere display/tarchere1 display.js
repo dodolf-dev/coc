@@ -50,11 +50,13 @@ function updateCanonOptions() {
         selecttour_archere1.style.display = "none";
         imagetour_archere1.style.display = "none";
         infoContainer.style.display = "none";
+        tour_archere_block.style.display = "none";
     } else {
         tour_archere1_box.style.display = "block";
         selecttour_archere1.style.display = "block";
         imagetour_archere1.style.display = "block";
         infoContainer.style.display = "block";
+        tour_archere_block.style.display = "block";
         selecttour_archere1.value = selectedLevel;
         updatetour_archere1Info();
     }

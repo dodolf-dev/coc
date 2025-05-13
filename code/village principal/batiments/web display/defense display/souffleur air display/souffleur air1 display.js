@@ -50,11 +50,13 @@ function updatesouffleur_airOptions() {
         selectsouffleur_air1.style.display = "none";
         imagesouffleur_air1.style.display = "none";
         infoContainer.style.display = "none";
+        souffleur_air_block.style.display = "none";
     } else {
         souffleur_air1_box.style.display = "block";
         selectsouffleur_air1.style.display = "block";
         imagesouffleur_air1.style.display = "block";
         infoContainer.style.display = "block";
+        souffleur_air_block.style.display = "block";
         selectsouffleur_air1.value = selectedLevel;
         updatesouffleur_air1Info();
     }

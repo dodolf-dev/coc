@@ -50,11 +50,13 @@ function updatemortierOptions() {
         selectmortier1.style.display = "none";
         imagemortier1.style.display = "none";
         infoContainer.style.display = "none";
+        mortier_block.style.display = "none";
     } else {
         mortier1_box.style.display = "block";
         selectmortier1.style.display = "block";
         imagemortier1.style.display = "block";
         infoContainer.style.display = "block";
+        mortier_block.style.display = "block";
         selectmortier1.value = selectedLevel;
         updatemortier1Info();
     }
