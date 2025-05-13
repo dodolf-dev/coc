@@ -137,4 +137,3 @@ export const mine_or7 = {
     mine_or7_nv_15: { capacite: 350000, prh: 6300, pv: 1280, prix: 1200000, tconstru: "1d", exp_gagner: 293, hdvrequis: 12, image: "/coc/image/village principal/batiment/ressource/mine or/mine or15.png" },
     mine_or7_nv_16: { capacite: 385000, prh: 7000, pv: 1350, prix: 2000000, tconstru: "2d", exp_gagner: 415, hdvrequis: 14, image: "/coc/image/village principal/batiment/ressource/mine or/mine or16.png" },
 };
-sessionStorage
