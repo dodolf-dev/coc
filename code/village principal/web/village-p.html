@@ -200,6 +200,7 @@
             <script type="module" src="/coc/code/village principal/laboratoire/web display/armee display/laboratoire display/cavalerie sylvestre display.js"></script>
             <script type="module" src="/coc/code/village principal/laboratoire/web display/armee display/laboratoire display/cyclope display.js"></script>
 </head>
+</head>
 <body>
     <nav>
         <ul class="acceuil">
@@ -7046,7 +7047,46 @@
                     </div>
                 </div>
             </div>
-            <!--ATELIER-->(8)
+            <!--ATELIER-->
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle-atelier">
+                <label for="toggle-atelier" class="checkbox-label">
+                  Atelier:
+                    <div class="progress-container">
+                        <span id="progress-atelier-value">Null</span>
+                        <progress id="progress-atelier" value="0" max="100" class="barredeprogression"></progress>
+                        <span id="progress-atelier-text">null</span>
+                    </div>
+                </label>
+                <div class="toggle-content">
+                    <div class="blocs-row">
+                        <div class="atelier_box" id="atelier_box">
+                            <label for="atelier">Atelier niveau:</label>
+                            <div class="imagedisplay">
+                                <div class="left-block">
+                                    <div class="selectwrapper">
+                                        <select id="atelier">
+                                                <option value="0">Atelier Niveau 0</option>
+                                                <option value="1">Atelier Niveau 1</option>
+                                                <option value="2">Atelier Niveau 2</option>
+                                                <option value="3">Atelier Niveau 3</option>
+                                                <option value="4">Atelier Niveau 4</option>
+                                                <option value="5">Atelier Niveau 5</option>
+                                                <option value="6">Atelier Niveau 6</option>
+                                                <option value="7">Atelier Niveau 7</option>
+                                                <option value="8">Atelier Niveau 8</option>
+                                        </select>
+                                        <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                    </div>
+                                    <p class="typewritter" id="atelier_prix_niveau">null</p>
+                                    <p class="typewritter" id="atelier_temps_niveau">null</p>
+                                </div>
+                            <img class="fade-transition" id="image-atelier" src="" alt="Image du atelier" width="200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--ANIMALERIE-->
             <div class="toggle-container">
                 <input type="checkbox" id="toggle-animalerie">
