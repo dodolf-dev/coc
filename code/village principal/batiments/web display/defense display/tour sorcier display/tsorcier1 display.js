@@ -50,13 +50,13 @@ function updateCanonOptions() {
         selecttour_sorcier1.style.display = "none";
         imagetour_sorcier1.style.display = "none";
         infoContainer.style.display = "none";
-        def_anti_air_block.style.display = "none";
+        tour_sorcier_block.style.display = "none";
     } else {
         tour_sorcier1_box.style.display = "block";
         selecttour_sorcier1.style.display = "block";
         imagetour_sorcier1.style.display = "block";
         infoContainer.style.display = "block";
-        def_anti_air_block.style.display = "block";
+        tour_sorcier_block.style.display = "block";
         selecttour_sorcier1.value = selectedLevel;
         updatetour_sorcier1Info();
     }

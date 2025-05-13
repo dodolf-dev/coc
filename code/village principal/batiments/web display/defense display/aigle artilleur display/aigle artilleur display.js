@@ -50,11 +50,13 @@ function updatearcxOptions() {
         selectaigle_artilleur.style.display = "none";
         imageaigle_artilleur.style.display = "none";
         infoContainer.style.display = "none";
+        aigle_artilleur_block.style.display = "none";
     } else {
         aigle_artilleur_box.style.display = "block";
         selectaigle_artilleur.style.display = "block";
         imageaigle_artilleur.style.display = "block";
         infoContainer.style.display = "block";
+        aigle_artilleur_block.style.display ="block";
         selectaigle_artilleur.value = selectedLevel;
         updateaigle_artilleurInfo();
     }

@@ -50,11 +50,13 @@ function updateCanonOptions() {
         selecttour_enfer1.style.display = "none";
         imagetour_enfer1.style.display = "none";
         infoContainer.style.display = "none";
+        tour_enfer_block.style.display = "none";
     } else {
         tour_enfer1_box.style.display = "block";
         selecttour_enfer1.style.display = "block";
         imagetour_enfer1.style.display = "block";
         infoContainer.style.display = "block";
+        tour_enfer_block.style.display = "block";
         selecttour_enfer1.value = selectedLevel;
         updatetour_enfer1Info();
     }

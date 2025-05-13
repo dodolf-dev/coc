@@ -50,11 +50,13 @@ function updatecatapulte_erratiqueOptions() {
         selectcatapulte_erratique1.style.display = "none";
         imagecatapulte_erratique1.style.display = "none";
         infoContainer.style.display = "none";
+        catapulte_erratique_block.style.display = "none";
     } else {
         catapulte_erratique1_box.style.display = "block";
         selectcatapulte_erratique1.style.display = "block";
         imagecatapulte_erratique1.style.display = "block";
         infoContainer.style.display = "block";
+        catapulte_erratique_block.style.display = "block";
         selectcatapulte_erratique1.value = selectedLevel;
         updatecatapulte_erratique1Info();
     }

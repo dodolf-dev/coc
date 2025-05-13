@@ -50,11 +50,13 @@ function updatearcxOptions() {
         selectarcx1.style.display = "none";
         imagearcx1.style.display = "none";
         infoContainer.style.display = "none";
+        arcx_block.style.display = "none";
     } else {
         arcx1_box.style.display = "block";
         selectarcx1.style.display = "block";
         imagearcx1.style.display = "block";
         infoContainer.style.display = "block";
+        arcx_block.style.display = "block";
         selectarcx1.value = selectedLevel;
         updatearcx1Info();
     }
