@@ -3,6 +3,14 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     overflow-x: hidden;
     background-color: #000;
+    font-family: 'CocFont', sans-serif; /* Utilisation de la police personnalisée */
+}
+
+@font-face {
+  font-family: 'CocFont';
+  src: url('/coc/font/Clash_Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Animation de transition de page */
