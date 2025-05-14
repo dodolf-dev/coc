@@ -1,1 +1,16 @@
-tata
+export const chateau_clan = {
+    chateau_clan_nv_0: { pv: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 2, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan0.png" },
+    chateau_clan_nv_1: { pv: 1000, prix: 100000, tconstru: "0s", exp_gagner: 0, hdvrequis: 2, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan1.png" },
+    chateau_clan_nv_2: { pv: 1400, prix: 50000, tconstru: "2h", exp_gagner: 84, hdvrequis: 4, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan2.png" },
+    chateau_clan_nv_3: { pv: 2000, prix: 600000, tconstru: "12h", exp_gagner: 207, hdvrequis: 6, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan3.png" },
+    chateau_clan_nv_4: { pv: 2600, prix: 1200000, tconstru: "1d", exp_gagner: 293, hdvrequis: 8, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan4.png" },
+    chateau_clan_nv_5: { pv: 3000, prix: 2000000, tconstru: "1d 12h", exp_gagner: 360, hdvrequis: 9, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan5.png" },
+    chateau_clan_nv_6: { pv: 3400, prix: 3000000, tconstru: "2d", exp_gagner: 415, hdvrequis: 10, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan6.png" },
+    chateau_clan_nv_7: { pv: 4000, prix: 5000000, tconstru: "3d", exp_gagner: 509, hdvrequis: 11, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan7.png" },
+    chateau_clan_nv_8: { pv: 4400, prix: 5000000, tconstru: "4d", exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan8.png" },
+    chateau_clan_nv_9: { pv: 4800, prix: 8000000, tconstru: "6d", exp_gagner: 720, hdvrequis: 13, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan9.png" },
+    chateau_clan_nv_10: { pv: 5200, prix: 10000000, tconstru: "7d", exp_gagner: 777, hdvrequis: 14, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan10.png" },
+    chateau_clan_nv_11: { pv: 5400, prix: 12000000, tconstru: "8d", exp_gagner: 831, hdvrequis: 15, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan11.png" },
+    chateau_clan_nv_12: { pv: 5600, prix: 14500000, tconstru: "9d", exp_gagner: 881, hdvrequis: 16, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan12.png" },
+    chateau_clan_nv_13: { pv: 5800, prix: 20500000, tconstru: "16d", exp_gagner: 1175, hdvrequis: 17, image: "/coc/image/village principal/batiment/ressource/chateau de clan/chateaudeclan13.png" },
+};
