@@ -30,7 +30,7 @@ function updatearcxOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `arcx 1 Niveau ${level}`;
+        option.textContent = `Monolithe Niveau ${level}`;
         selectmonolithe.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -73,7 +73,7 @@ function updatemonolitheInfo() {
         imagemonolithe.src = data.image;
         imagemonolithe.alt = `arcx Niveau ${selectmonolithe.value}`;
     }
-    document.getElementById("monolithe_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir-noir.png" alt="elixir-noir" class="icone-ressource">`;
+    document.getElementById("monolithe_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir-noir village-p.png" alt="elixir-noir" class="icone-ressource">`;
     document.getElementById("monolithe_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
 selectHdv.addEventListener("change", updatearcxOptions);

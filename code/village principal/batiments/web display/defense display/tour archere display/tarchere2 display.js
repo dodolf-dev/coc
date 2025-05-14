@@ -30,7 +30,7 @@ function updatetour_archereOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `Tour archere 2 Niveau ${level}`;
+        option.textContent = `Tour d'archère 2 Niveau ${level}`;
         selecttour_archere2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

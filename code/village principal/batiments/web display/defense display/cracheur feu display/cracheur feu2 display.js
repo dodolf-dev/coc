@@ -30,7 +30,7 @@ function updatecracheur_feuOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `cracheur_feu 2 Niveau ${level}`;
+        option.textContent = `Cracheur de feu 2 Niveau ${level}`;
         selectcracheur_feu2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

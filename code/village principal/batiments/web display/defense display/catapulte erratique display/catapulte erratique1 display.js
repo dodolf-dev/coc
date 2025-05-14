@@ -30,7 +30,7 @@ function updatecatapulte_erratiqueOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `catapulte_erratique 1 Niveau ${level}`;
+        option.textContent = `Catapulte erratique 1 Niveau ${level}`;
         selectcatapulte_erratique1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

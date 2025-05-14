@@ -30,7 +30,7 @@ function updateCanonOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `Tour arhcere 7 Niveau ${level}`;
+        option.textContent = `Tour d'archère 7 Niveau ${level}`;
         selecttour_archere7.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

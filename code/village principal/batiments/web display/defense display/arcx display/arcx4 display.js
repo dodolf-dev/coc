@@ -30,7 +30,7 @@ function updatearcxOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `arcx 4 Niveau ${level}`;
+        option.textContent = `Arc-x 4 Niveau ${level}`;
         selectarcx4.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

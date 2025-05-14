@@ -30,7 +30,7 @@ function updatebatisseurOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `batisseur 1 Niveau ${level}`;
+        option.textContent = `Bâtisseur 1 Niveau ${level}`;
         selectbatisseur1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

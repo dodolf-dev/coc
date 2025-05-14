@@ -226,7 +226,7 @@ function updatemonolitheProgress() {
     }
     if (progressPriceText) {
         const prixRestant = globalcalculerPrixRestantmonolithe();
-        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/elixir-noir.png" alt="elixir noir" class="icone-ressource">`;
+        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/elixir-noir village-p.png" alt="elixir noir" class="icone-ressource">`;
     }
 }
 

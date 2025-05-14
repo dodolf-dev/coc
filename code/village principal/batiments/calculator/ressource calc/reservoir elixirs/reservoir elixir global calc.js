@@ -332,7 +332,7 @@ function updatereservoir_elixirProgress() {
     }
     if (progressPriceText) {
         const prixRestant = globalcalculerPrixRestantreservoir_elixir();
-        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="elixir" class="icone-ressource">`;
+        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="elixir" class="icone-ressource">`;
     }
 }
 

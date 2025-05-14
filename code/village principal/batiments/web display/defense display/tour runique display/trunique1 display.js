@@ -30,7 +30,7 @@ function updateCanonOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `Tour de runique 1 Niveau ${level}`;
+        option.textContent = `Tour runique 1 Niveau ${level}`;
         selecttour_runique1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
