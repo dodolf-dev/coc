@@ -1,7 +1,7 @@
 import { reservoir_elixir_noir } from "/coc/code/village principal/batiments/database/data ressource/data reservoir elixir noir.js";
-import { reservoir_elixir_noir_nv_max_hdv } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noirs/reservoir elixir noir.calc.js";
-import { calculerPrixRestantreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noirs/reservoir elixir noir.calc.js";
-import { calculerTempsRestantreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noirs/reservoir elixir noir.calc.js";
+import { reservoir_elixir_noir_nv_max_hdv } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir noir.calc.js";
+import { calculerPrixRestantreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir noir.calc.js";
+import { calculerTempsRestantreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir noir.calc.js";
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
 
@@ -50,11 +50,13 @@ function updatereservoir_elixirOptions() {
         selectreservoir_elixir_noir.style.display = "none";
         imagereservoir_elixir_noir.style.display = "none";
         infoContainer.style.display = "none";
+        reservoir_elixir_noir_block.style.display = "none";
     } else {
         reservoir_elixir_noir_box.style.display = "block";
         selectreservoir_elixir_noir.style.display = "block";
         imagereservoir_elixir_noir.style.display = "block";
         infoContainer.style.display = "block";
+        reservoir_elixir_noir_block.style.display = "block";
         selectreservoir_elixir_noir.value = selectedLevel;
         updatereservoir_elixir_noirInfo();
     }
@@ -71,7 +73,7 @@ function updatereservoir_elixir_noirInfo() {
         imagereservoir_elixir_noir.src = data.image;
         imagereservoir_elixir_noir.alt = `reservoir_elixir Niveau ${selectreservoir_elixir_noir.value}`;
     }
-    document.getElementById("reservoir_elixir_noir_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    document.getElementById("reservoir_elixir_noir_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("reservoir_elixir_noir_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
 selectHdv.addEventListener("change", updatereservoir_elixirOptions);

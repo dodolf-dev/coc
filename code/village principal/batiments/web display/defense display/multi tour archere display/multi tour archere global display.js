@@ -1,10 +1,10 @@
-import { calculerPourcentageNiveauxreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir global.calc.js";
+import { calculerPourcentageNiveauxmulti_tour_archeres } from "/coc/code/village principal/batiments/calculator/defense calc/multi tour archeres/multi tour archere global calc.js";
 
 // Fonction pour mettre à jour le pourcentage de progression
 function updateProgressPercentage() {
-    const progression = calculerPourcentageNiveauxreservoir_elixir_noir();
-    const progressBar = document.getElementById('progress-reservoir_elixir_noir');
-    const progressText = document.getElementById('progress-reservoir_elixir_noir-value');
+    const progression = calculerPourcentageNiveauxmulti_tour_archeres();
+    const progressBar = document.getElementById('progress-multi_tour_archeres');
+    const progressText = document.getElementById('progress-multi_tour_archeres-value');
 
     if (progressBar && progressText) {
         progressBar.value = progression;
@@ -27,10 +27,10 @@ function updateHighlight(selectElement) {
   
 // Quand la page est chargée
 window.addEventListener('DOMContentLoaded', () => {
-    // Applique le surlignage à tous les selects de reservoir_elixir_noir
-    const reservoir_elixir_noirSelects = document.querySelectorAll('select[id^="reservoir_elixir_noir"]');
+    // Applique le surlignage à tous les selects de canon
+    const multi_tour_archereelects = document.querySelectorAll('select[id^="multi_tour_archere"]');
   
-    reservoir_elixir_noirSelects.forEach(select => {
+    multi_tour_archereelects.forEach(select => {
         updateHighlight(select);
 
         select.addEventListener('change', () => {
@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (selectHdv) {
         selectHdv.addEventListener('change', () => {
             setTimeout(() => {
-                reservoir_elixir_noirSelects.forEach(select => {
+                multi_tour_archereelects.forEach(select => {
                     updateHighlight(select);
                 });
                 
