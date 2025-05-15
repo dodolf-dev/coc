@@ -71,7 +71,7 @@ function updatereserve_or4Info() {
         imagereserve_or4.src = data.image;
         imagereserve_or4.alt = `reserve_or Niveau ${selectreserve_or4.value}`;
     }
-    document.getElementById("reserve_or4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    document.getElementById("reserve_or4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("reserve_or4_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
 selectHdv.addEventListener("change", updatereserve_orOptions);

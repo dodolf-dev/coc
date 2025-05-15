@@ -71,7 +71,7 @@ function updateextracteur_elixir_noir3Info() {
         imageextracteur_elixir_noir3.src = data.image;
         imageextracteur_elixir_noir3.alt = `extracteur_elixir_noir Niveau ${selectextracteur_elixir_noir3.value}`;
     }
-    document.getElementById("extracteur_elixir_noir3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    document.getElementById("extracteur_elixir_noir3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("extracteur_elixir_noir3_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
 selectHdv.addEventListener("change", updateextracteur_elixir_noirOptions);

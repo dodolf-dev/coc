@@ -433,11 +433,22 @@ function updateCanonProgress() {
     }
     if (progressTimeText) {
         const tempsRestant = globalcalculertempsRestantcanons();
-        progressTimeText.innerHTML = `${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+        if (tempsRestant === 0) {
+            progressTimeText.style.display = "none";
+        } else {
+            progressTimeText.style.display = "";
+            progressTimeText.innerHTML = `${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+        }
     }
     if (progressPriceText) {
         const prixRestant = globalcalculerPrixRestantcanon();
-        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+        if (prixRestant === 0) {
+            progressPriceText.style.display = "none";
+        }
+        else {
+            progressPriceText.style.display = "";
+            progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+        }
     }
 }
 

@@ -71,7 +71,7 @@ function updatemine_or3Info() {
         imagemine_or3.src = data.image;
         imagemine_or3.alt = `mine_or Niveau ${selectmine_or3.value}`;
     }
-    document.getElementById("mine_or3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    document.getElementById("mine_or3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("mine_or3_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
 selectHdv.addEventListener("change", updatemine_orOptions);
