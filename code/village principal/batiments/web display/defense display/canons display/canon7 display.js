@@ -65,8 +65,21 @@ function updateCanon7Info() {
         imageCanon7.src = data.image;
         imageCanon7.alt = `Canon Niveau ${selectCanon7.value}`;
     }
-    document.getElementById("canon7_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("canon7_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    if (prixrestant === 0) {
+        canon7_prix_niveau.style.display = "none";
+    }
+    else {
+        canon7_prix_niveau.style.display = "";
+        document.getElementById("canon7_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+
+    if (tempsRestant === 0) {
+        canon7_temps_niveau.style.display = "none";
+    }
+    else{
+        canon7_temps_niveau.style.display = "";
+        document.getElementById("canon7_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
 }
 
 selectHdv.addEventListener("change", updateCanonOptions);
