@@ -50,11 +50,13 @@ function updatemulti_tour_archereOptions() {
         selectmulti_tour_archere1.style.display = "none";
         imagemulti_tour_archere1.style.display = "none";
         infoContainer.style.display = "none";
+        multi_tour_archere_block.style.display = "none";
     } else {
         multi_tour_archere1_box.style.display = "block";
         selectmulti_tour_archere1.style.display = "block";
         imagemulti_tour_archere1.style.display = "block";
         infoContainer.style.display = "block";
+        multi_tour_archere_block.style.display = "block";
         selectmulti_tour_archere1.value = selectedLevel;
         updatemulti_tour_archere1Info();
     }
