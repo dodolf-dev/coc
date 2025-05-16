@@ -1,4 +1,4 @@
-import { calculerPourcentageNiveauxreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir global.calc.js";
+import { calculerPourcentageNiveauxreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir noir global.calc.js";
 
 // Fonction pour mettre à jour le pourcentage de progression
 function updateProgressPercentage() {

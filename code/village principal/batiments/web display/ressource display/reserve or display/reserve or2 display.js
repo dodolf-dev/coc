@@ -30,7 +30,7 @@ function updatereserve_orOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `reserve_or 1 Niveau ${level}`;
+        option.textContent = `Reserve d'or 2 Niveau ${level}`;
         selectreserve_or2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

@@ -30,7 +30,7 @@ function updatemine_orOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `mine_or 1 Niveau ${level}`;
+        option.textContent = `Mine d'or 2 Niveau ${level}`;
         selectmine_or2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

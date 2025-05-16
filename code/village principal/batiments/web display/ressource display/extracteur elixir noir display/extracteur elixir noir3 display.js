@@ -30,7 +30,7 @@ function updateextracteur_elixir_noirOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `extracteur_elixir_noir 1 Niveau ${level}`;
+        option.textContent = `Extracteur d'elixir noir 3 Niveau ${level}`;
         selectextracteur_elixir_noir3.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

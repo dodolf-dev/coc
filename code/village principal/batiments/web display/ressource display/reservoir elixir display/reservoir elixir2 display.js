@@ -30,7 +30,7 @@ function updatereservoir_elixirOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `reservoir_elixir 1 Niveau ${level}`;
+        option.textContent = `Reservoir d'elixir 2 Niveau ${level}`;
         selectreservoir_elixir2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

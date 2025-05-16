@@ -1,0 +1,15 @@
+export const caserne_noir = {
+    caserne_noir_nv_0: { pv: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir0.png" },
+    caserne_noir_nv_1: { pv: 500, prix: 200000, tconstru: 28800, exp_gagner: 169, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir1.png" },
+    caserne_noir_nv_2: { pv: 550, prix: 600000, tconstru: 86400, exp_gagner: 293, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir2.png" },
+    caserne_noir_nv_3: { pv: 600, prix: 1000000, tconstru: 129600, exp_gagner: 360, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir3.png" },
+    caserne_noir_nv_4: { pv: 650, prix: 1600000, tconstru: 172800, exp_gagner: 415, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir4.png" },
+    caserne_noir_nv_5: { pv: 700, prix: 2200000, tconstru: 216000, exp_gagner: 464, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir5.png" },
+    caserne_noir_nv_6: { pv: 750, prix: 2900000, tconstru: 259200, exp_gagner: 509, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir6.png" },
+    caserne_noir_nv_7: { pv: 800, prix: 4000000, tconstru: 432000, exp_gagner: 657, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir7.png" },
+    caserne_noir_nv_8: { pv: 850, prix: 7000000, tconstru: 518400, exp_gagner: 720, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir8.png" },
+    caserne_noir_nv_9: { pv: 900, prix: 7200000, tconstru: 604800, exp_gagner: 777, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir9.png" },
+    caserne_noir_nv_10: { pv: 950, prix: 10000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir10.png" },
+    caserne_noir_nv_11: { pv: 1000, prix: 12000000, tconstru: 777600, exp_gagner: 881, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir11.png" },
+    caserne_noir_nv_12: { pv: 1050, prix: 20000000, tconstru: 1036800, exp_gagner: 1018, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir12.png" },
+};

@@ -1,0 +1,12 @@
+export const forgeron = {
+    forgeron_nv_0: { pv: 0, capacite_gb: 0, capacite_gv: 0, capacite_gj: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron0.png" },
+    forgeron_nv_1: { pv: 700, capacite_gb: 10000, capacite_gv: 1000, capacite_gj: 200, prix: 600000, tconstru: 43200, exp_gagner: 207, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron1.png" },
+    forgeron_nv_2: { pv: 800, capacite_gb: 15000, capacite_gv: 1500, capacite_gj: 300, prix: 1200000, tconstru: 86400, exp_gagner: 293, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron2.png" },
+    forgeron_nv_3: { pv: 900, capacite_gb: 20000, capacite_gv: 2000, capacite_gj: 400, prix: 2300000, tconstru: 172800, exp_gagner: 415, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron3.png" },
+    forgeron_nv_4: { pv: 1000, capacite_gb: 25000, capacite_gv: 2500, capacite_gj: 500, prix: 3000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron4.png" },
+    forgeron_nv_5: { pv: 1100, capacite_gb: 30000, capacite_gv: 3000, capacite_gj: 600, prix: 5000000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron5.png" },
+    forgeron_nv_6: { pv: 1200, capacite_gb: 35000, capacite_gv: 3500, capacite_gj: 700, prix: 6200000, tconstru: 432000, exp_gagner: 657, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron6.png" },
+    forgeron_nv_7: { pv: 1300, capacite_gb: 40000, capacite_gv: 4000, capacite_gj: 800, prix: 9200000, tconstru: 604800, exp_gagner: 777, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron7.png" },
+    forgeron_nv_8: { pv: 1400, capacite_gb: 45000, capacite_gv: 4500, capacite_gj: 900, prix: 10000000, tconstru: 626400, exp_gagner: 791, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron8.png" },
+    forgeron_nv_9: { pv: 1500, capacite_gb: 50000, capacite_gv: 5000, capacite_gj: 1000, prix: 11000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron9.png" },
+};
