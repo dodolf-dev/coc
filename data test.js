@@ -56,25 +56,25 @@ export const laboratoire = {
 };
 
 export const usine_sorts = {
-    usine_sorts_nv_0: { pv: 0, capacité: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts0.png" },
-    usine_sorts_nv_1: { pv: 425, capacité: 2, prix: 150000, tconstru: 21600, exp_gagner: 146, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts1.png" },
-    usine_sorts_nv_2: { pv: 470, capacité: 4, prix: 300000, tconstru: 43200, exp_gagner: 207, hdvrequis: 6, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts2.png" },
-    usine_sorts_nv_3: { pv: 520, capacité: 6, prix: 600000, tconstru: 86400, exp_gagner: 293, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts3.png" },
-    usine_sorts_nv_4: { pv: 600, capacité: 8, prix: 1200000, tconstru: 172800, exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts4.png" },
-    usine_sorts_nv_5: { pv: 720, capacité: 10, prix: 2000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts5.png" },
-    usine_sorts_nv_6: { pv: 840, capacité: 10, prix: 3500000, tconstru: 432000, exp_gagner: 657, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts6.png" },
-    usine_sorts_nv_7: { pv: 960, capacité: 10, prix: 9000000, tconstru: 604800, exp_gagner: 777, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts7.png" },
-    usine_sorts_nv_8: { pv: 1080, capacité: 10, prix: 14000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts8.png" },
+    usine_sorts_nv_0: { pv: 0, capacite: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts0.png" },
+    usine_sorts_nv_1: { pv: 425, capacite: 2, prix: 150000, tconstru: 21600, exp_gagner: 146, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts1.png" },
+    usine_sorts_nv_2: { pv: 470, capacite: 4, prix: 300000, tconstru: 43200, exp_gagner: 207, hdvrequis: 6, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts2.png" },
+    usine_sorts_nv_3: { pv: 520, capacite: 6, prix: 600000, tconstru: 86400, exp_gagner: 293, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts3.png" },
+    usine_sorts_nv_4: { pv: 600, capacite: 8, prix: 1200000, tconstru: 172800, exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts4.png" },
+    usine_sorts_nv_5: { pv: 720, capacite: 10, prix: 2000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts5.png" },
+    usine_sorts_nv_6: { pv: 840, capacite: 10, prix: 3500000, tconstru: 432000, exp_gagner: 657, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts6.png" },
+    usine_sorts_nv_7: { pv: 960, capacite: 10, prix: 9000000, tconstru: 604800, exp_gagner: 777, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts7.png" },
+    usine_sorts_nv_8: { pv: 1080, capacite: 10, prix: 14000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts8.png" },
 };
 
 export const usine_sorts_noir = {
-    usine_sorts_noir_nv_0: { pv: 0, capacité: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir0.png" },
-    usine_sorts_noir_nv_1: { pv: 600, capacité: 1, prix: 130000, tconstru: 21600, exp_gagner: 146, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir1.png" },
-    usine_sorts_noir_nv_2: { pv: 660, capacité: 1, prix: 260000, tconstru: 43200, exp_gagner: 207, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir2.png" },
-    usine_sorts_noir_nv_3: { pv: 720, capacité: 1, prix: 600000, tconstru: 172800, exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir3.png" },
-    usine_sorts_noir_nv_4: { pv: 780, capacité: 1, prix: 1200000, tconstru: 345600, exp_gagner: 587, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir4.png" },
-    usine_sorts_noir_nv_5: { pv: 840, capacité: 1, prix: 2500000, tconstru: 432000, exp_gagner: 657, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir5.png" },
-    usine_sorts_noir_nv_6: { pv: 950, capacité: 1, prix: 4000000, tconstru: 518400, exp_gagner: 720, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir6.png" },
+    usine_sorts_noir_nv_0: { pv: 0, capacite: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir0.png" },
+    usine_sorts_noir_nv_1: { pv: 600, capacite: 1, prix: 130000, tconstru: 21600, exp_gagner: 146, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir1.png" },
+    usine_sorts_noir_nv_2: { pv: 660, capacite: 1, prix: 260000, tconstru: 43200, exp_gagner: 207, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir2.png" },
+    usine_sorts_noir_nv_3: { pv: 720, capacite: 1, prix: 600000, tconstru: 172800, exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir3.png" },
+    usine_sorts_noir_nv_4: { pv: 780, capacite: 1, prix: 1200000, tconstru: 345600, exp_gagner: 587, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir4.png" },
+    usine_sorts_noir_nv_5: { pv: 840, capacite: 1, prix: 2500000, tconstru: 432000, exp_gagner: 657, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir5.png" },
+    usine_sorts_noir_nv_6: { pv: 950, capacite: 1, prix: 4000000, tconstru: 518400, exp_gagner: 720, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/usine sorts noir/usinesortsnoir6.png" },
 };
 
 export const hall_heros = {
@@ -93,26 +93,26 @@ export const hall_heros = {
 };
 
 export const atelier = {
-    atelier_nv_0: { pv: 0, capacité: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier0.png" },
-    atelier_nv_1: { pv: 1000, capacité: 1, prix: 2400000, tconstru: 172800, exp_gagner: 415, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier1.png" },
-    atelier_nv_2: { pv: 1100, capacité: 2, prix: 3700000, tconstru: 259200, exp_gagner: 509, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier2.png" },
-    atelier_nv_3: { pv: 1200, capacité: 3, prix: 5000000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier3.png" },
-    atelier_nv_4: { pv: 1300, capacité: 3, prix: 8700000, tconstru: 604800, exp_gagner: 777, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/atelier/atelier4.png" },
-    atelier_nv_5: { pv: 1400, capacité: 3, prix: 9000000, tconstru: 626400, exp_gagner: 791, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/atelier/atelier5.png" },
-    atelier_nv_6: { pv: 1500, capacité: 3, prix: 10000000, tconstru: 648000, exp_gagner: 804, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/atelier/atelier6.png" },
-    atelier_nv_7: { pv: 1600, capacité: 3, prix: 11000000, tconstru: 676800, exp_gagner: 818, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/atelier/atelier7.png" },
-    atelier_nv_8: { pv: 1700, capacité: 3, prix: 13000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/atelier/atelier8.png" },
+    atelier_nv_0: { pv: 0, capacite: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier0.png" },
+    atelier_nv_1: { pv: 1000, capacite: 1, prix: 2400000, tconstru: 172800, exp_gagner: 415, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier1.png" },
+    atelier_nv_2: { pv: 1100, capacite: 2, prix: 3700000, tconstru: 259200, exp_gagner: 509, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier2.png" },
+    atelier_nv_3: { pv: 1200, capacite: 3, prix: 5000000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/atelier/atelier3.png" },
+    atelier_nv_4: { pv: 1300, capacite: 3, prix: 8700000, tconstru: 604800, exp_gagner: 777, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/atelier/atelier4.png" },
+    atelier_nv_5: { pv: 1400, capacite: 3, prix: 9000000, tconstru: 626400, exp_gagner: 791, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/atelier/atelier5.png" },
+    atelier_nv_6: { pv: 1500, capacite: 3, prix: 10000000, tconstru: 648000, exp_gagner: 804, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/atelier/atelier6.png" },
+    atelier_nv_7: { pv: 1600, capacite: 3, prix: 11000000, tconstru: 676800, exp_gagner: 818, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/atelier/atelier7.png" },
+    atelier_nv_8: { pv: 1700, capacite: 3, prix: 13000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/atelier/atelier8.png" },
 };
 
 export const forgeron = {
-    forgeron_nv_0: { pv: 0, "capacite-gb": 0, "capacite-gv": 0, "capacite-gj": 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron0.png" },
-    forgeron_nv_1: { pv: 700, "capacite-gb": 10000, "capacite-gv": 1000, "capacite-gj": 200, prix: 600000, tconstru: 43200, exp_gagner: 207, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron1.png" },
-    forgeron_nv_2: { pv: 800, "capacite-gb": 15000, "capacite-gv": 1500, "capacite-gj": 300, prix: 1200000, tconstru: 86400, exp_gagner: 293, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron2.png" },
-    forgeron_nv_3: { pv: 900, "capacite-gb": 20000, "capacite-gv": 2000, "capacite-gj": 400, prix: 2300000, tconstru: 172800, exp_gagner: 415, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron3.png" },
-    forgeron_nv_4: { pv: 1000, "capacite-gb": 25000, "capacite-gv": 2500, "capacite-gj": 500, prix: 3000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron4.png" },
-    forgeron_nv_5: { pv: 1100, "capacite-gb": 30000, "capacite-gv": 3000, "capacite-gj": 600, prix: 5000000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron5.png" },
-    forgeron_nv_6: { pv: 1200, "capacite-gb": 35000, "capacite-gv": 3500, "capacite-gj": 700, prix: 6200000, tconstru: 432000, exp_gagner: 657, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron6.png" },
-    forgeron_nv_7: { pv: 1300, "capacite-gb": 40000, "capacite-gv": 4000, "capacite-gj": 800, prix: 9200000, tconstru: 604800, exp_gagner: 777, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron7.png" },
-    forgeron_nv_8: { pv: 1400, "capacite-gb": 45000, "capacite-gv": 4500, "capacite-gj": 900, prix: 10000000, tconstru: 626400, exp_gagner: 791, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron8.png" },
-    forgeron_nv_9: { pv: 1500, "capacite-gb": 50000, "capacite-gv": 5000, "capacite-gj": 1000, prix: 11000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron9.png" },
+    forgeron_nv_0: { pv: 0, capacite_gb: 0, capacite_gv: 0, capacite_gj: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron0.png" },
+    forgeron_nv_1: { pv: 700, capacite_gb: 10000, capacite_gv: 1000, capacite_gj: 200, prix: 600000, tconstru: 43200, exp_gagner: 207, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron1.png" },
+    forgeron_nv_2: { pv: 800, capacite_gb: 15000, capacite_gv: 1500, capacite_gj: 300, prix: 1200000, tconstru: 86400, exp_gagner: 293, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron2.png" },
+    forgeron_nv_3: { pv: 900, capacite_gb: 20000, capacite_gv: 2000, capacite_gj: 400, prix: 2300000, tconstru: 172800, exp_gagner: 415, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron3.png" },
+    forgeron_nv_4: { pv: 1000, capacite_gb: 25000, capacite_gv: 2500, capacite_gj: 500, prix: 3000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron4.png" },
+    forgeron_nv_5: { pv: 1100, capacite_gb: 30000, capacite_gv: 3000, capacite_gj: 600, prix: 5000000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron5.png" },
+    forgeron_nv_6: { pv: 1200, capacite_gb: 35000, capacite_gv: 3500, capacite_gj: 700, prix: 6200000, tconstru: 432000, exp_gagner: 657, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron6.png" },
+    forgeron_nv_7: { pv: 1300, capacite_gb: 40000, capacite_gv: 4000, capacite_gj: 800, prix: 9200000, tconstru: 604800, exp_gagner: 777, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron7.png" },
+    forgeron_nv_8: { pv: 1400, capacite_gb: 45000, capacite_gv: 4500, capacite_gj: 900, prix: 10000000, tconstru: 626400, exp_gagner: 791, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron8.png" },
+    forgeron_nv_9: { pv: 1500, capacite_gb: 50000, capacite_gv: 5000, capacite_gj: 1000, prix: 11000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/forgeron/forgeron9.png" },
 };
