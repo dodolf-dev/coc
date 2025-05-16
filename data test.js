@@ -54,3 +54,16 @@ export const laboratoire = {
     laboratoire_nv_14: { pv: 1400, prix: 13000000, tconstru: 777600, exp_gagner: 881, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire14.png" },
     laboratoire_nv_15: { pv: 1450, prix: 20000000, tconstru: 1382400, exp_gagner: 1175, hdvrequis: 17, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire15.png" },
 };
+
+export const usine_sorts = {
+    usine_sorts_nv_0: { pv: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 3, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts0.png" },
+    usine_sorts_nv_1: { pv: 500, prix: 5000, tconstru: 60, exp_gagner: 7, hdvrequis: 3, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts1.png" },
+    usine_sorts_nv_2: { pv: 425, prix: 150000, tconstru: 21600, exp_gagner: 146, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts2.png" },
+    usine_sorts_nv_3: { pv: 470, prix: 300000, tconstru: 43200, exp_gagner: 207, hdvrequis: 6, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts3.png" },
+    usine_sorts_nv_4: { pv: 520, prix: 600000, tconstru: 86400, exp_gagner: 293, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts4.png" },
+    usine_sorts_nv_5: { pv: 600, prix: 1200000, tconstru: 172800, exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts5.png" },
+    usine_sorts_nv_6: { pv: 720, prix: 2000000, tconstru: 259200, exp_gagner: 509, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts6.png" },
+    usine_sorts_nv_7: { pv: 840, prix: 3500000, tconstru: 432000, exp_gagner: 657, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts7.png" },
+    usine_sorts_nv_8: { pv: 960, prix: 9000000, tconstru: 604800, exp_gagner: 777, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts8.png" },
+    usine_sorts_nv_9: { pv: 1080, prix: 14000000, tconstru: 691200, exp_gagner: 831, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/usine sorts/usinesorts9.png" },
+};
