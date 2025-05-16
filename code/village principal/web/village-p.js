@@ -1,23 +1,26 @@
-import { globalcalculerPrixRestantcanon } from "/coc/code/village principal/batiments/calculator/defense calc/canons/canon_global_calc.js";
-import { globalcalculerPrixRestanttour_archere } from "/coc/code/village principal/batiments/calculator/defense calc/tour archeres/tour archere global calc.js";
-import { globalcalculerPrixRestantmortiers } from "/coc/code/village principal/batiments/calculator/defense calc/mortiers/mortier_global_calc.js";
-import { globalcalculerPrixRestantanti_aeriens } from "/coc/code/village principal/batiments/calculator/defense calc/anti aeriens/def_anti_air_global_calc.js";
-import { globalcalculerPrixRestanttours_sorcier } from "/coc/code/village principal/batiments/calculator/defense calc/tours sorcier/tour_sorcier_global_calc.js";
-import { globalcalculerPrixRestantsouffleurs } from "/coc/code/village principal/batiments/calculator/defense calc/souffleurs/souffleur_air_global_calc.js";
-import { globalcalculerPrixRestanttours_tesla } from "/coc/code/village principal/batiments/calculator/defense calc/tours tesla/tour_tesla_global_calc.js";
-import { globalcalculerPrixRestanttours_bombe } from "/coc/code/village principal/batiments/calculator/defense calc/tours bombes/tour_bombe_global_calc.js";
-import { globalcalculerPrixRestanttours_arc_x } from "/coc/code/village principal/batiments/calculator/defense calc/tours arc-x/tour_arcx_global_calc.js";
-import { globalcalculerPrixRestanttours_enfer } from "/coc/code/village principal/batiments/calculator/defense calc/tours enfer/tour_enfer_global_calc.js";
-import { globalcalculerPrixRestantaigle_artilleur } from "/coc/code/village principal/batiments/calculator/defense calc/aigle artilleur/aigle_artilleur_global_calc.js";
-import { globalcalculerPrixRestantcatapulte_erratique } from "/coc/code/village principal/batiments/calculator/defense calc/catapulte erratique/catapulte_erratique_global_calc.js";
-import { globalcalculerPrixRestantbatisseurs } from "/coc/code/village principal/batiments/calculator/defense calc/batisseurs/batisseur_global_calc.js";
-import { globalcalculerPrixRestanttours_runique } from "/coc/code/village principal/batiments/calculator/defense calc/tours runiques/tour_runique_global_calc.js";
-import { globalcalculerPrixRestantmonolithe } from "/coc/code/village principal/batiments/calculator/defense calc/monolithe/monolithe_global_calc.js";
-import { globalcalculerPrixRestantmulti_tour_archere } from "/coc/code/village principal/batiments/calculator/defense calc/multi tours archere/multi_tour_archere_global_calc.js";
-import { globalcalculerPrixRestantcanon_ricochet } from "/coc/code/village principal/batiments/calculator/defense calc/canon ricochet/canon_ricochet_global_calc.js";
-import { globalcalculerPrixRestanttours_multi_equipee } from "/coc/code/village principal/batiments/calculator/defense calc/tours multi equipees/tour_multi_equipee_global_calc.js";
-import { globalcalculerPrixRestantcracheur_de_feu } from "/coc/code/village principal/batiments/calculator/defense calc/cracheurs de feu/cracheur_de_feu_global_calc.js";
+//DEFENSE
+import { globalcalculerPrixRestantcanon, globalcalculertempsRestantcanons } from "/coc/code/village principal/batiments/calculator/defense calc/canons/canon_global_calc.js";
+import { globalcalculerPrixRestanttour_archere, globalcalculertempsRestanttour_archeres } from "/coc/code/village principal/batiments/calculator/defense calc/tour archeres/tour archere global calc.js";
+import { globalcalculerPrixRestantmortier, globalcalculertempsRestantmortiers } from "/coc/code/village principal/batiments/calculator/defense calc/mortiers/mortier global calc.js";
+import { globalcalculerPrixRestantdef_anti_air, globalcalculertempsRestantdef_anti_airs } from "/coc/code/village principal/batiments/calculator/defense calc/anti aeriens/def anti air global.calc.js";
+import { globalcalculerPrixRestanttour_sorcier, globalcalculertempsRestanttour_sorciers } from "/coc/code/village principal/batiments/calculator/defense calc/tour sorciers/tour sorcier global calc.js";
+import { globalcalculerPrixRestantsouffleur_air, globalcalculertempsRestantsouffleur_airs } from "/coc/code/village principal/batiments/calculator/defense calc/souffleur airs/souffleur air global calc.js";
+import { globalcalculerPrixRestanttesla, globalcalculertempsRestantteslas } from "/coc/code/village principal/batiments/calculator/defense calc/teslas/tesla global calc.js";
+import { globalcalculerPrixRestanttour_bombe, globalcalculertempsRestanttour_bombes } from "/coc/code/village principal/batiments/calculator/defense calc/tour bombes/tour bombe global calc.js";
+import { globalcalculerPrixRestantarcx, globalcalculertempsRestantarcxs } from "/coc/code/village principal/batiments/calculator/defense calc/arcxs/arcx global calc.js";
+import { globalcalculerPrixRestanttour_enfer, globalcalculertempsRestanttour_enfers } from "/coc/code/village principal/batiments/calculator/defense calc/tour enfers/tour enfer global calc.js";
+import { globalcalculerPrixRestantaigle_artilleur, globalcalculertempsRestantaigle_artilleur } from "/coc/code/village principal/batiments/calculator/defense calc/aigle artilleur/aigle artilleur global calc.Js";
+import { globalcalculerPrixRestantcatapulte_erratique, globalcalculertempsRestantcatapulte_erratiques } from "/coc/code/village principal/batiments/calculator/defense calc/catapulte erratiques/catapulte erratique global calc.js";
+import { globalcalculerPrixRestantbatisseur, globalcalculertempsRestantbatisseurs } from "/coc/code/village principal/batiments/calculator/defense calc/batisseurs/batisseur global calc.js";
+import { globalcalculerPrixRestanttour_runique, globalcalculertempsRestanttour_runiques } from "/coc/code/village principal/batiments/calculator/defense calc/tour runiques/tour runique global calc.js";
+import { globalcalculerPrixRestantmonolithe, globalcalculertempsRestantmonolithe } from "/coc/code/village principal/batiments/calculator/defense calc/monolithe/monolithe global calc.js";
+import { globalcalculerPrixRestantmulti_tour_archere, globalcalculertempsRestantmulti_tour_archeres } from "/coc/code/village principal/batiments/calculator/defense calc/multi tour archeres/multi tour archere global calc.js";
+import { globalcalculerPrixRestantcanon_ricochet, globalcalculertempsRestantcanon_ricochets } from "/coc/code/village principal/batiments/calculator/defense calc/canon ricochets/canon ricochet global calc.js";
+import { globalcalculerPrixRestanttour_multi_equipee, globalcalculertempsRestanttour_multi_equipee } from "/coc/code/village principal/batiments/calculator/defense calc/tour multi equipee/tour multi equipee global calc.js";
+import { globalcalculerPrixRestantcracheur_feu, globalcalculertempsRestantcracheur_feus } from "/coc/code/village principal/batiments/calculator/defense calc/cracheur feus/cracheur feu global calc.js";
+
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
+import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img.fade-transition');
@@ -192,35 +195,89 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function updateDefensePrixOr() {
+    const progressdefenseprixelixir = document.getElementById('progress-defense-prix-elixir-noir');
     const progressDefensePrixOr = document.getElementById('progress-defense-prix-or');
-    if (!progressDefensePrixOr) return;
+    const progressDefensetemps = document.getElementById('progress-defense-temps');
+    if (!progressDefensePrixOr || !progressDefensetemps) return;
 
-    // Additionne le coût restant des canons et des tours d'archères
+    // Additionne le coût restant et le temps restant de chaque défense
     const prixRestantCanons = globalcalculerPrixRestantcanon();
+    const tempsRestantCanons = globalcalculertempsRestantcanons();
     const prixRestantTourArchere = globalcalculerPrixRestanttour_archere();
-    const prixrestantMortiers = globalcalculerPrixRestantmortiers();
-    const prixrestantAntiAeriens = globalcalculerPrixRestantanti_aeriens();
-    const prixrestantToursSorcier = globalcalculerPrixRestanttours_sorcier();
-    const prixrestantSouffleurs = globalcalculerPrixRestantsouffleurs();
-    const prixrestantTesla = globalcalculerPrixRestanttours_tesla();
-    const prixrestantToursBombe = globalcalculerPrixRestanttours_bombe();
-    const prixrestantArcX = globalcalculerPrixRestanttours_arc_x();
-    const prixrestantToursEnfer = globalcalculerPrixRestanttours_enfer();
+    const tempsRestantTourArchere = globalcalculertempsRestanttour_archeres();
+    const prixrestantMortiers = globalcalculerPrixRestantmortier();
+    const tempsrestantMortiers = globalcalculertempsRestantmortiers();
+    const prixrestantAntiAeriens = globalcalculerPrixRestantdef_anti_air();
+    const tempsrestantAntiAeriens = globalcalculertempsRestantdef_anti_airs();
+    const prixrestantToursSorcier = globalcalculerPrixRestanttour_sorcier();
+    const tempsrestantToursSorcier = globalcalculertempsRestanttour_sorciers();
+    const prixrestantSouffleurs = globalcalculerPrixRestantsouffleur_air();
+    const tempsrestantSouffleurs = globalcalculertempsRestantsouffleur_airs();
+    const prixrestantTesla = globalcalculerPrixRestanttesla();
+    const tempsrestantTesla = globalcalculertempsRestantteslas();
+    const prixrestantToursBombe = globalcalculerPrixRestanttour_bombe();
+    const tempsrestantToursBombe = globalcalculertempsRestanttour_bombes();
+    const prixrestantArcX = globalcalculerPrixRestantarcx();
+    const tempsrestantArcX = globalcalculertempsRestantarcxs();
+    const prixrestantToursEnfer = globalcalculerPrixRestanttour_enfer();
+    const tempsrestantToursEnfer = globalcalculertempsRestanttour_enfers();
     const prixrestantAigleArtilleur = globalcalculerPrixRestantaigle_artilleur();
+    const tempsrestantAigleArtilleur = globalcalculertempsRestantaigle_artilleur();
     const prixrestantCatapultesErratiques = globalcalculerPrixRestantcatapulte_erratique();
-    const prixrestantBatisseurs = globalcalculerPrixRestantbatisseurs();
-    const prixrestantToursRunique = globalcalculerPrixRestanttours_runique();
+    const tempsrestantCatapultesErratiques = globalcalculertempsRestantcatapulte_erratiques();
+    const prixrestantBatisseurs = globalcalculerPrixRestantbatisseur();
+    const tempsrestantBatisseurs = globalcalculertempsRestantbatisseurs();
+    const prixrestantToursRunique = globalcalculerPrixRestanttour_runique();
+    const tempsrestantToursRunique = globalcalculertempsRestanttour_runiques();
     const prixrestantMultiToursArchere = globalcalculerPrixRestantmulti_tour_archere();
+    const tempsrestantMultiToursArchere = globalcalculertempsRestantmulti_tour_archeres();
     const prixrestantCanonRicochet = globalcalculerPrixRestantcanon_ricochet();
-    const prixrestantToursMultiEquipee = globalcalculerPrixRestanttours_multi_equipee();
-    const prixrestantCracheursDeFeu = globalcalculerPrixRestantcracheur_de_feu();
-    const totalPrixRestant = prixRestantCanons + prixRestantTourArchere + prixrestantMortiers + prixrestantAntiAeriens + prixrestantToursSorcier + prixrestantSouffleurs + prixrestantTesla + prixrestantToursBombe + prixrestantArcX + prixrestantToursEnfer + prixrestantAigleArtilleur + prixrestantCatapultesErratiques + prixrestantBatisseurs + prixrestantToursRunique + prixrestantMultiToursArchere + prixrestantCanonRicochet + prixrestantToursMultiEquipee + prixrestantCracheursDeFeu;
+    const tempsrestantCanonRicochet = globalcalculertempsRestantcanon_ricochets();
+    const prixrestantToursMultiEquipee = globalcalculerPrixRestanttour_multi_equipee();
+    const tempsrestantToursMultiEquipee = globalcalculertempsRestanttour_multi_equipee();
+    const prixrestantCracheursDeFeu = globalcalculerPrixRestantcracheur_feu();
+    const tempsrestantCracheursDeFeu = globalcalculertempsRestantcracheur_feus();
+    const prixrestantmonolithe = globalcalculerPrixRestantmonolithe();
+    const tempsrestantmonolithe = globalcalculertempsRestantmonolithe();
+
+    const totalPrixRestant =
+        prixRestantCanons + prixRestantTourArchere + prixrestantMortiers + prixrestantAntiAeriens +
+        prixrestantToursSorcier + prixrestantSouffleurs + prixrestantTesla + prixrestantToursBombe +
+        prixrestantArcX + prixrestantToursEnfer + prixrestantAigleArtilleur + prixrestantCatapultesErratiques +
+        prixrestantBatisseurs + prixrestantToursRunique + prixrestantMultiToursArchere +
+        prixrestantCanonRicochet + prixrestantToursMultiEquipee + prixrestantCracheursDeFeu;
+
+    const totalprixelixirnoirrestant = 
+        prixrestantmonolithe;
+
+    const totaltempsRestant =
+        tempsRestantCanons + tempsRestantTourArchere + tempsrestantMortiers + tempsrestantAntiAeriens +
+        tempsrestantToursSorcier + tempsrestantSouffleurs + tempsrestantTesla + tempsrestantToursBombe +
+        tempsrestantArcX + tempsrestantToursEnfer + tempsrestantAigleArtilleur + tempsrestantCatapultesErratiques +
+        tempsrestantBatisseurs + tempsrestantToursRunique + tempsrestantMultiToursArchere +
+        tempsrestantCanonRicochet + tempsrestantToursMultiEquipee + tempsrestantCracheursDeFeu + tempsrestantmonolithe;
+
+    if (totalprixelixirnoirrestant == 0){
+        progressdefenseprixelixir.style.display = "none";
+    }
+    else {
+      progressdefenseprixelixir.style.display = "";
+      progressdefenseprixelixir.innerHTML = `${formatPrix(totalprixelixirnoirrestant)} <img src="/coc/image/village principal/ressource/elixir-noir village-p.png" alt="or" class="icone-ressource">`
+
+    }
 
     if (totalPrixRestant === 0) {
         progressDefensePrixOr.style.display = "none";
     } else {
         progressDefensePrixOr.style.display = "";
         progressDefensePrixOr.innerHTML = `${formatPrix(totalPrixRestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+
+    if (totaltempsRestant === 0) {
+        progressDefensetemps.style.display = "none";
+    } else {
+        progressDefensetemps.style.display = "";
+        progressDefensetemps.innerHTML = `${convertirSecondescompact(totaltempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
     }
 }
 updateDefensePrixOr();
