@@ -35,3 +35,22 @@ export const caserne_noir = {
     caserne_noir_nv_11: { pv: 1000, prix: 12000000, tconstru: 777600, exp_gagner: 881, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir11.png" },
     caserne_noir_nv_12: { pv: 1050, prix: 20000000, tconstru: 1036800, exp_gagner: 1018, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/caserne noir/casernenoir12.png" },
 };
+
+export const laboratoire = {
+    laboratoire_nv_0: { pv: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 3, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire0.png" },
+    laboratoire_nv_1: { pv: 500, prix: 5000, tconstru: 60, exp_gagner: 7, hdvrequis: 3, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire1.png" },
+    laboratoire_nv_2: { pv: 550, prix: 25000, tconstru: 1800, exp_gagner: 42, hdvrequis: 4, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire2.png" },
+    laboratoire_nv_3: { pv: 600, prix: 50000, tconstru: 7200, exp_gagner: 84, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire3.png" },
+    laboratoire_nv_4: { pv: 650, prix: 100000, tconstru: 14400, exp_gagner: 120, hdvrequis: 6, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire4.png" },
+    laboratoire_nv_5: { pv: 700, prix: 200000, tconstru: 28800, exp_gagner: 169, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire5.png" },
+    laboratoire_nv_6: { pv: 750, prix: 400000, tconstru: 57600, exp_gagner: 240, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire6.png" },
+    laboratoire_nv_7: { pv: 830, prix: 800000, tconstru: 86400, exp_gagner: 293, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire7.png" },
+    laboratoire_nv_8: { pv: 950, prix: 1300000, tconstru: 151200, exp_gagner: 388, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire8.png" },
+    laboratoire_nv_9: { pv: 1070, prix: 2100000, tconstru: 237600, exp_gagner: 487, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire9.png" },
+    laboratoire_nv_10: { pv: 1140, prix: 3800000, tconstru: 345600, exp_gagner: 587, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire10.png" },
+    laboratoire_nv_11: { pv: 1210, prix: 5500000, tconstru: 518400, exp_gagner: 720, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire11.png" },
+    laboratoire_nv_12: { pv: 1280, prix: 8100000, tconstru: 604800, exp_gagner: 777, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire12.png" },
+    laboratoire_nv_13: { pv: 1350, prix: 10800000, tconstru: 691200, exp_gagner: 831, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire13.png" },
+    laboratoire_nv_14: { pv: 1400, prix: 13000000, tconstru: 777600, exp_gagner: 881, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire14.png" },
+    laboratoire_nv_15: { pv: 1450, prix: 20000000, tconstru: 1382400, exp_gagner: 1175, hdvrequis: 17, image: "/coc/image/village principal/batiment/armee/laboratoire/laboratoire15.png" },
+};
