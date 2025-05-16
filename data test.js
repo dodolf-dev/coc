@@ -1,1 +1,21 @@
-ttt
+export const caserne = {
+    caserne_nv_0: { pv: 0, prix: 0, tconstru: 0, exp_gagner: 0, hdvrequis: 1, image: "/coc/image/village principal/batiment/armee/caserne/caserne0.png" },
+    caserne_nv_1: { pv: 250, prix: 100, tconstru: "10s", exp_gagner: 3, hdvrequis: 1, image: "/coc/image/village principal/batiment/armee/caserne/caserne1.png" },
+    caserne_nv_2: { pv: 290, prix: 500, tconstru: "15s", exp_gagner: 3, hdvrequis: 2, image: "/coc/image/village principal/batiment/armee/caserne/caserne2.png" },
+    caserne_nv_3: { pv: 330, prix: 2500, tconstru: "2m", exp_gagner: 10, hdvrequis: 2, image: "/coc/image/village principal/batiment/armee/caserne/caserne3.png" },
+    caserne_nv_4: { pv: 370, prix: 5000, tconstru: "30m", exp_gagner: 42, hdvrequis: 2, image: "/coc/image/village principal/batiment/armee/caserne/caserne4.png" },
+    caserne_nv_5: { pv: 420, prix: 20000, tconstru: "2h", exp_gagner: 84, hdvrequis: 3, image: "/coc/image/village principal/batiment/armee/caserne/caserne5.png" },
+    caserne_nv_6: { pv: 470, prix: 120000, tconstru: "4h", exp_gagner: 120, hdvrequis: 4, image: "/coc/image/village principal/batiment/armee/caserne/caserne6.png" },
+    caserne_nv_7: { pv: 520, prix: 270000, tconstru: "6h", exp_gagner: 146, hdvrequis: 5, image: "/coc/image/village principal/batiment/armee/caserne/caserne7.png" },
+    caserne_nv_8: { pv: 580, prix: 600000, tconstru: "12h", exp_gagner: 207, hdvrequis: 6, image: "/coc/image/village principal/batiment/armee/caserne/caserne8.png" },
+    caserne_nv_9: { pv: 650, prix: 1000000, tconstru: "1d", exp_gagner: 293, hdvrequis: 7, image: "/coc/image/village principal/batiment/armee/caserne/caserne9.png" },
+    caserne_nv_10: { pv: 730, prix: 1400000, tconstru: "1d 12h", exp_gagner: 360, hdvrequis: 8, image: "/coc/image/village principal/batiment/armee/caserne/caserne10.png" },
+    caserne_nv_11: { pv: 810, prix: 2600000, tconstru: "2d", exp_gagner: 415, hdvrequis: 9, image: "/coc/image/village principal/batiment/armee/caserne/caserne11.png" },
+    caserne_nv_12: { pv: 900, prix: 3700000, tconstru: "4d", exp_gagner: 587, hdvrequis: 10, image: "/coc/image/village principal/batiment/armee/caserne/caserne12.png" },
+    caserne_nv_13: { pv: 980, prix: 6000000, tconstru: "5d", exp_gagner: 657, hdvrequis: 11, image: "/coc/image/village principal/batiment/armee/caserne/caserne13.png" },
+    caserne_nv_14: { pv: 1050, prix: 7000000, tconstru: "7d", exp_gagner: 777, hdvrequis: 12, image: "/coc/image/village principal/batiment/armee/caserne/caserne14.png" },
+    caserne_nv_15: { pv: 1150, prix: 9000000, tconstru: "7d 4h", exp_gagner: 786, hdvrequis: 13, image: "/coc/image/village principal/batiment/armee/caserne/caserne15.png" },
+    caserne_nv_16: { pv: 1250, prix: 11000000, tconstru: "8d", exp_gagner: 831, hdvrequis: 14, image: "/coc/image/village principal/batiment/armee/caserne/caserne16.png" },
+    caserne_nv_17: { pv: 1350, prix: 12600000, tconstru: "9d", exp_gagner: 881, hdvrequis: 15, image: "/coc/image/village principal/batiment/armee/caserne/caserne17.png" },
+    caserne_nv_18: { pv: 1450, prix: 15000000, tconstru: "11d", exp_gagner: 974, hdvrequis: 16, image: "/coc/image/village principal/batiment/armee/caserne/caserne18.png" },
+};
