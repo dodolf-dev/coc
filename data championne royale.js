@@ -1,5 +1,5 @@
 export const championneroyale = {
-    championneroyale_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 2, image: "/coc/image/village principal/heros/championneroyale.png" },
+    championneroyale_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 7, image: "/coc/image/village principal/heros/championneroyale.png" },
     championneroyale_nv_1: { dps: 340, dph: 408, pv: 2508, hrecov: 400, prix: 0, tconstru: 0, hdhrequis: 7, image: "/coc/image/village principal/heros/championneroyale.png" },
     championneroyale_nv_2: { dps: 350, dph: 420, pv: 2550, hrecov: 400, prix: 10000, tconstru: 28800, hdhrequis: 7, image: "/coc/image/village principal/heros/championneroyale.png" },
     championneroyale_nv_3: { dps: 360, dph: 432, pv: 2593, hrecov: 400, prix: 15000, tconstru: 43200, hdhrequis: 7, image: "/coc/image/village principal/heros/championneroyale.png" },

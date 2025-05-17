@@ -30,7 +30,7 @@ function updateCanonOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `Canon 1 Niveau ${level}`;
+        option.textContent = `Canon ricochet 3 Niveau ${level}`;
         selectCanon_ricochet3.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -61,10 +61,36 @@ function updateCanonOptions() {
 }
 
 function updateCanon_ricochet3Info() {
+    // Si canon ricochet3 >= 1, forcer canon2 et canon3 à 21 et masquer les blocs
+    if (parseInt(selectCanon_ricochet3.value) >= 1) {
+        // Canon 2
+        const selectCanon2 = document.getElementById("canon2");
+        const canon2_box = document.getElementById("canon2_box");
+        if (selectCanon2) {
+            selectCanon2.value = 21;
+            selectCanon2.dispatchEvent(new Event('change'));
+            if (canon2_box) canon2_box.style.display = "none";
+        }
+        // Canon 3
+        const selectCanon3 = document.getElementById("canon3");
+        const canon3_box = document.getElementById("canon3_box");
+        if (selectCanon3) {
+            selectCanon3.value = 21;
+            selectCanon3.dispatchEvent(new Event('change'));
+            if (canon3_box) canon3_box.style.display = "none";
+        }
+    } else {
+        // Afficher canon2 et canon3 si besoin
+        const canon2_box = document.getElementById("canon2_box");
+        const canon3_box = document.getElementById("canon3_box");
+        if (canon2_box) canon2_box.style.display = "block";
+        if (canon3_box) canon3_box.style.display = "block";
+    }
+
     const niveau = `canon_ricochet3_nv_${selectCanon_ricochet3.value}`;
     const data = canon_ricochet3[niveau];
     const hdvNiveau = parseInt(document.getElementById("hdv").value, 10);
-    const prixrestant = calculerPrixRestantcanon_ricochet3(parseInt(selectCanon_ricochet3.value, 10),canon_ricochet3_nv_max_hdv(hdvNiveau));
+    const prixrestant = calculerPrixRestantcanon_ricochet3(parseInt(selectCanon_ricochet3.value, 10), canon_ricochet3_nv_max_hdv(hdvNiveau));
     const tempsRestant = calculerTempsRestantcanon_ricochet3(parseInt(selectCanon_ricochet3.value, 10), canon_ricochet3_nv_max_hdv(hdvNiveau));
 
     if (data) {
@@ -74,7 +100,10 @@ function updateCanon_ricochet3Info() {
     document.getElementById("canon_ricochet3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("canon_ricochet3_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
+
+// Mets à jour les listeners :
 selectHdv.addEventListener("change", updateCanonOptions);
 selectCanon_ricochet3.addEventListener("change", updateCanon_ricochet3Info);
 
+// Appel initial
 updateCanonOptions();

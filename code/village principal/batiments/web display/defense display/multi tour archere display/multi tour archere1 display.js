@@ -30,7 +30,7 @@ function updatemulti_tour_archereOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `multi_Tour d'archère 2 Niveau ${level}`;
+        option.textContent = `Multi tour d'archère 1 Niveau ${level}`;
         selectmulti_tour_archere1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -63,6 +63,32 @@ function updatemulti_tour_archereOptions() {
 }
 
 function updatemulti_tour_archere1Info() {
+    // Si multi_tour_archere1 >= 1, forcer tour_archere8 et tour_archere9 à 21 et masquer leurs blocs
+    if (parseInt(selectmulti_tour_archere1.value) >= 1) {
+        // Tour_archere 8
+        const selectTour_archere8 = document.getElementById("tour_archere8");
+        const tour_archere8_box = document.getElementById("tour_archere8_box");
+        if (selectTour_archere8) {
+            selectTour_archere8.value = 21;
+            selectTour_archere8.dispatchEvent(new Event('change'));
+            if (tour_archere8_box) tour_archere8_box.style.display = "none";
+        }
+        // Tour_archere 9
+        const selectTour_archere9 = document.getElementById("tour_archere9");
+        const tour_archere9_box = document.getElementById("tour_archere9_box");
+        if (selectTour_archere9) {
+            selectTour_archere9.value = 21;
+            selectTour_archere9.dispatchEvent(new Event('change'));
+            if (tour_archere9_box) tour_archere9_box.style.display = "none";
+        }
+    } else {
+        // Afficher tour_archere8 et tour_archere9 si besoin
+        const tour_archere8_box = document.getElementById("tour_archere8_box");
+        const tour_archere9_box = document.getElementById("tour_archere9_box");
+        if (tour_archere8_box) tour_archere8_box.style.display = "block";
+        if (tour_archere9_box) tour_archere9_box.style.display = "block";
+    }
+
     const niveau = `multi_tour_archere1_nv_${selectmulti_tour_archere1.value}`;
     const data = multi_tour_archere1[niveau];
     const hdvNiveau = parseInt(document.getElementById("hdv").value, 10);
@@ -76,6 +102,7 @@ function updatemulti_tour_archere1Info() {
     document.getElementById("multi_tour_archere1_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("multi_tour_archere1_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
+
 selectHdv.addEventListener("change", updatemulti_tour_archereOptions);
 selectmulti_tour_archere1.addEventListener("change", updatemulti_tour_archere1Info);
 

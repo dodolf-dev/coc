@@ -1,5 +1,5 @@
 export const grandgardien = {
-    grandgardien_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 2, image: "/coc/image/village principal/heros/grandgardien.png" },
+    grandgardien_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 5, image: "/coc/image/village principal/heros/grandgardien.png" },
     grandgardien_nv_1: { dps: 43, dph: 77.4, pv: 850, hrecov: 90, prix: 1000000, tconstru: 0, hdhrequis: 5, image: "/coc/image/village principal/heros/grandgardien.png" },
     grandgardien_nv_2: { dps: 44, dph: 79.2, pv: 868, hrecov: 90, prix: 1000000, tconstru: 7200, hdhrequis: 5, image: "/coc/image/village principal/heros/grandgardien.png" },
     grandgardien_nv_3: { dps: 46, dph: 82.8, pv: 886, hrecov: 90, prix: 1100000, tconstru: 14400, hdhrequis: 5, image: "/coc/image/village principal/heros/grandgardien.png" },

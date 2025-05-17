@@ -1,5 +1,5 @@
 export const princegargouille = {
-    princegargouille_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 2, image:"/coc/image/village principal/heros/princegargouilles.png" },
+    princegargouille_nv_0: { dps: 0, dph: 0, pv: 0, hrecov: 0, prix: 0, tconstru: 0, hdhrequis: 3, image:"/coc/image/village principal/heros/princegargouilles.png" },
     princegargouille_nv_1: { dps: 173, dph: 147.05, pv: 1200, hrecov: 200, prix: 0, tconstru: 0, hdhrequis: 3, image:"/coc/image/village principal/heros/princegargouilles.png" },
     princegargouille_nv_2: { dps: 177, dph: 150.45, pv: 1242, hrecov: 200, prix: 5000, tconstru: 7200, hdhrequis: 3, image:"/coc/image/village principal/heros/princegargouilles.png" },
     princegargouille_nv_3: { dps: 181, dph: 153.85, pv: 1284, hrecov: 200, prix: 5500, tconstru: 14400, hdhrequis: 3, image:"/coc/image/village principal/heros/princegargouilles.png" },

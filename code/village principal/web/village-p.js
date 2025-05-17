@@ -19,6 +19,14 @@ import { globalcalculerPrixRestantcanon_ricochet, globalcalculertempsRestantcano
 import { globalcalculerPrixRestanttour_multi_equipee, globalcalculertempsRestanttour_multi_equipee } from "/coc/code/village principal/batiments/calculator/defense calc/tour multi equipee/tour multi equipee global calc.js";
 import { globalcalculerPrixRestantcracheur_feu, globalcalculertempsRestantcracheur_feus } from "/coc/code/village principal/batiments/calculator/defense calc/cracheur feus/cracheur feu global calc.js";
 
+//RESSOURCES
+import { globalcalculerPrixRestantreserve_or, globalcalculertempsRestantreserve_ors } from "/coc/code/village principal/batiments/calculator/ressource calc/reserve ors/reserve or global calc.js";
+import { globalcalculerPrixRestantreservoir_elixir, globalcalculertempsRestantreservoir_elixirs } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixirs/reservoir elixir global calc.js";
+import { globalcalculerPrixRestantreservoir_elixir_noir, globalcalculertempsRestantreservoir_elixir_noir } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixir noir/reservoir elixir noir global.calc.js";
+import { globalcalculerPrixRestantmine_or, globalcalculertempsRestantmine_ors } from "/coc/code/village principal/batiments/calculator/ressource calc/mine ors/mine or global calc.js";
+import {globalcalculerPrixRestantextracteur_elixir, globalcalculertempsRestantextracteur_elixirs } from "/coc/code/village principal/batiments/calculator/ressource calc/extracteur elixirs/extracteur elixir global calc.js";
+import {globalcalculerPrixRestantextracteur_elixir_noir, globalcalculertempsRestantextracteur_elixir_noirs } from "/coc/code/village principal/batiments/calculator/ressource calc/extracteur elixir noirs/extracteur elixir noir global.calc.js";
+
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 
@@ -191,7 +199,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // réserves d'or
+  for (let i = 1; i <= 4; i++) {
+    const reserveOrSelect = document.getElementById(`reserve_or${i}`);
+    if (reserveOrSelect) {
+      reserveOrSelect.addEventListener('change', updateRessourcePrixOr);
+    }
+    const reservoirElixirSelect = document.getElementById(`reservoir_elixir${i}`);
+    if (reservoirElixirSelect) {
+      reservoirElixirSelect.addEventListener('change', updateRessourcePrixOr);
+    }
+  }
+
+  // réservoir élixir noir
+  const reservoirElixirNoirSelect = document.getElementById('reservoir_elixir_noir');
+  if (reservoirElixirNoirSelect) {
+    reservoirElixirNoirSelect.addEventListener('change', updateRessourcePrixOr);
+  }
+
+  // Ajout listeners mines d'or
+  for (let i = 1; i <= 7; i++) {
+    const mineOrSelect = document.getElementById(`mine_or${i}`);
+    if (mineOrSelect) {
+      mineOrSelect.addEventListener('change', updateRessourcePrixOr);
+    }
+  }
+
+  // Ajout listeners extracteurs d'élixir
+  for (let i = 1; i <= 7; i++) {
+    const extracteurElixirSelect = document.getElementById(`extracteur_elixir${i}`);
+    if (extracteurElixirSelect) {
+      extracteurElixirSelect.addEventListener('change', updateRessourcePrixOr);
+    }
+  }
+
+  // Ajout listeners extracteurs d'élixir noir
+  for (let i = 1; i <= 3; i++) {
+    const extracteurElixirNoirSelect = document.getElementById(`extracteur_elixir_noir${i}`);
+    if (extracteurElixirNoirSelect) {
+      extracteurElixirNoirSelect.addEventListener('change', updateRessourcePrixOr);
+    }
+  }
+
   updateDefensePrixOr();
+  updateRessourcePrixOr();
 });
 
 function updateDefensePrixOr() {
@@ -280,4 +331,37 @@ function updateDefensePrixOr() {
         progressDefensetemps.innerHTML = `${convertirSecondescompact(totaltempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
     }
 }
-updateDefensePrixOr();
+
+function updateRessourcePrixOr() {
+  const progressRessourcePrixOr = document.getElementById('progress-ressource-prix-or');
+  const progressRessourcePrixElixir = document.getElementById('progress-ressource-prix-elixir');
+  const progressRessourcePrixElixirNoir = document.getElementById('progress-ressource-prix-elixir-noir');
+  const progressRessourcetemps = document.getElementById('progress-ressource-temps');
+  if (!progressRessourcePrixOr || !progressRessourcePrixElixir || !progressRessourcePrixElixirNoir || !progressRessourcetemps) return;
+
+  // Additionne le coût restant et le temps restant de chaque bâtiment de ressource
+  const prixRestantOr = globalcalculerPrixRestantreserve_or();
+  const prixRestantElixir = globalcalculerPrixRestantreservoir_elixir();
+  const prixRestantElixirNoir = globalcalculerPrixRestantreservoir_elixir_noir();
+  const tempsRestantOr = globalcalculertempsRestantreserve_ors();
+  const tempsRestantElixir = globalcalculertempsRestantreservoir_elixirs();
+  const tempsRestantElixirNoir = globalcalculertempsRestantreservoir_elixir_noir();
+
+  const prixRestantMineOr = globalcalculerPrixRestantmine_or();
+  const tempsRestantMineOr = globalcalculertempsRestantmine_ors();
+  const prixRestantExtracteurElixir =globalcalculerPrixRestantextracteur_elixir();
+  const tempsRestantExtracteurElixir = globalcalculertempsRestantextracteur_elixirs();
+  const prixRestantExtracteurElixirNoir =globalcalculerPrixRestantextracteur_elixir_noir();
+  const tempsRestantExtracteurElixirNoir = globalcalculertempsRestantextracteur_elixir_noirs();
+
+  const totalPrixRestantOr = prixRestantOr + prixRestantMineOr;
+  const totalPrixRestantElixir = prixRestantElixir + prixRestantExtracteurElixir;
+  const totalPrixRestantElixirNoir = prixRestantElixirNoir + prixRestantExtracteurElixirNoir;
+  const totalTempsRestant = tempsRestantOr + tempsRestantElixir + tempsRestantElixirNoir + tempsRestantMineOr + tempsRestantExtracteurElixir + tempsRestantExtracteurElixirNoir;
+
+  // Affichage
+  progressRessourcePrixOr.innerHTML = `${formatPrix(totalPrixRestantOr)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+  progressRessourcePrixElixir.innerHTML = `${formatPrix(totalPrixRestantElixir)} <img src="/coc/image/village principal/ressource/elixir village-p.png" alt="elixir" class="icone-ressource">`;
+  progressRessourcePrixElixirNoir.innerHTML = `${formatPrix(totalPrixRestantElixirNoir)} <img src="/coc/image/village principal/ressource/elixir-noir village-p.png" alt="elixir noir" class="icone-ressource">`;
+  progressRessourcetemps.innerHTML = `${convertirSecondescompact(totalTempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+}

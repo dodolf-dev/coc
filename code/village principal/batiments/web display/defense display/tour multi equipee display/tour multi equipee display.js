@@ -5,7 +5,6 @@ import { calculerTempsRestanttour_multi_equipee } from "/coc/code/village princi
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
 
-
 const tour_multi_equipee_box = document.getElementById("tour_multi_equipee_box");
 const selecttour_multi_equipee = document.getElementById("tour_multi_equipee");
 const imagetour_multi_equipee = document.getElementById("image-tour_multi_equipee");
@@ -56,26 +55,64 @@ function updatearcxOptions() {
         selecttour_multi_equipee.style.display = "block";
         imagetour_multi_equipee.style.display = "block";
         infoContainer.style.display = "block";
-        tour_multi_equipee_block.style.display ="block";
+        tour_multi_equipee_block.style.display = "block";
         selecttour_multi_equipee.value = selectedLevel;
         updatetour_multi_equipeeInfo();
     }
 }
 
 function updatetour_multi_equipeeInfo() {
+    /*
+    if (parseInt(selecttour_multi_equipee.value) >= 1) {
+        // Tour_archere 1
+        const selectTour_archere1 = document.getElementById("tour_archere1");
+        const tour_archere1_box = document.getElementById("tour_archere1_box");
+        if (selectTour_archere1) {
+            selectTour_archere1.value = 21;
+            selectTour_archere1.dispatchEvent(new Event('change'));
+            if (tour_archere1_box) tour_archere1_box.style.display = "none";
+        }
+        // Canon 1
+        const selectCanon1 = document.getElementById("canon1");
+        const canon1_box = document.getElementById("canon1_box");
+        if (selectCanon1) {
+            selectCanon1.value = 21;
+            selectCanon1.dispatchEvent(new Event('change'));
+            if (canon1_box) canon1_box.style.display = "none";
+        }
+        // Mortier 1
+        const selectMortier1 = document.getElementById("mortier1");
+        const mortier1_box = document.getElementById("mortier1_box");
+        if (selectMortier1) {
+            selectMortier1.value = 21;
+            selectMortier1.dispatchEvent(new Event('change'));
+            if (mortier1_box) mortier1_box.style.display = "none";
+        }
+    } else {
+        // Afficher tour_archere1, canon1 et mortier1 si besoin
+        const tour_archere1_box = document.getElementById("tour_archere1_box");
+        const canon1_box = document.getElementById("canon1_box");
+        const mortier1_box = document.getElementById("mortier1_box");
+        if (tour_archere1_box) tour_archere1_box.style.display = "block";
+        if (canon1_box) canon1_box.style.display = "block";
+        if (mortier1_box) mortier1_box.style.display = "block";
+    }
+        */
+
     const niveau = `tour_multi_equipee_nv_${selecttour_multi_equipee.value}`;
     const data = tour_multi_equipee[niveau];
     const hdvNiveau = parseInt(document.getElementById("hdv").value, 10);
-    const prixrestant = calculerPrixRestanttour_multi_equipee(parseInt(selecttour_multi_equipee.value, 10),tour_multi_equipee_nv_max_hdv(hdvNiveau));
+    const prixrestant = calculerPrixRestanttour_multi_equipee(parseInt(selecttour_multi_equipee.value, 10), tour_multi_equipee_nv_max_hdv(hdvNiveau));
     const tempsRestant = calculerTempsRestanttour_multi_equipee(parseInt(selecttour_multi_equipee.value, 10), tour_multi_equipee_nv_max_hdv(hdvNiveau));
 
     if (data) {
         imagetour_multi_equipee.src = data.image;
-        imagetour_multi_equipee.alt = `arcx Niveau ${selecttour_multi_equipee.value}`;
+        imagetour_multi_equipee.alt = `tour multi equipee Niveau ${selecttour_multi_equipee.value}`;
     }
     document.getElementById("tour_multi_equipee_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("tour_multi_equipee_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
+
 selectHdv.addEventListener("change", updatearcxOptions);
 selecttour_multi_equipee.addEventListener("change", updatetour_multi_equipeeInfo);
 

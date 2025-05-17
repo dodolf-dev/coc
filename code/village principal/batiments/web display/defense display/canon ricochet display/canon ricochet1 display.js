@@ -5,6 +5,8 @@ import { calculerTempsRestantcanon_ricochet1 } from "/coc/code/village principal
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
 
+const canon7_box = document.getElementById("canon7_box");
+const selectCanon7 = document.getElementById("canon7");
 
 const canon_ricochet1_box = document.getElementById("canon_ricochet1_box");
 const selectCanon_ricochet1 = document.getElementById("canon_ricochet1");
@@ -30,7 +32,7 @@ function updateCanon_ricochetOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `Canon_ricochet 1 Niveau ${level}`;
+        option.textContent = `Canon ricochet 1 Niveau ${level}`;
         selectCanon_ricochet1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -63,10 +65,31 @@ function updateCanon_ricochetOptions() {
 }
 
 function updateCanon_ricochet1Info() {
+    // Si canon ricochet1 >= 1, forcer canon6 et canon7 à 21 et déclencher l'événement
+    if (parseInt(selectCanon_ricochet1.value) >= 1) {
+        // Canon 6
+        const selectCanon6 = document.getElementById("canon6");
+        const canon6_box = document.getElementById("canon6_box");
+        if (selectCanon6) {
+            selectCanon6.value = 21;
+            selectCanon6.dispatchEvent(new Event('change'));
+            if (canon6_box) canon6_box.style.display = "none";
+        }
+        // Canon 7
+        selectCanon7.value = 21;
+        selectCanon7.dispatchEvent(new Event('change'));
+        canon7_box.style.display = "none";
+    } else {
+        // Afficher canon6 et canon7 si besoin
+        const canon6_box = document.getElementById("canon6_box");
+        if (canon6_box) canon6_box.style.display = "block";
+        canon7_box.style.display = "block";
+    }
+
     const niveau = `canon_ricochet1_nv_${selectCanon_ricochet1.value}`;
     const data = canon_ricochet1[niveau];
     const hdvNiveau = parseInt(document.getElementById("hdv").value, 10);
-    const prixrestant = calculerPrixRestantcanon_ricochet1(parseInt(selectCanon_ricochet1.value, 10),canon_ricochet1_nv_max_hdv(hdvNiveau));
+    const prixrestant = calculerPrixRestantcanon_ricochet1(parseInt(selectCanon_ricochet1.value, 10), canon_ricochet1_nv_max_hdv(hdvNiveau));
     const tempsRestant = calculerTempsRestantcanon_ricochet1(parseInt(selectCanon_ricochet1.value, 10), canon_ricochet1_nv_max_hdv(hdvNiveau));
 
     if (data) {
@@ -76,6 +99,7 @@ function updateCanon_ricochet1Info() {
     document.getElementById("canon_ricochet1_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     document.getElementById("canon_ricochet1_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }
+
 selectHdv.addEventListener("change", updateCanon_ricochetOptions);
 selectCanon_ricochet1.addEventListener("change", updateCanon_ricochet1Info);
 

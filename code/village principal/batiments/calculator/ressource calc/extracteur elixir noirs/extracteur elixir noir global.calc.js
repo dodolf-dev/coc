@@ -297,7 +297,7 @@ function updateextracteur_elixir_noirProgress() {
     }
     if (progressPriceText) {
         const prixRestant = globalcalculerPrixRestantextracteur_elixir_noir();
-        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+        progressPriceText.innerHTML = `${formatPrix(prixRestant)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="or" class="icone-ressource">`;
     }
 }
 

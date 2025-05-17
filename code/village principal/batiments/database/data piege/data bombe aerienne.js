@@ -1,0 +1,104 @@
+export const bombe_aerienne1 = {
+    bombe_aerienne1_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne1_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne1_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne1_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne1_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne1_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne1_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne1_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne1_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne1_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne1_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne1_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne2 = {
+    bombe_aerienne2_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne2_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne2_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne2_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne2_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne2_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne2_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne2_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne2_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne2_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne2_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne2_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne3 = {
+    bombe_aerienne3_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne3_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne3_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne3_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne3_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne3_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne3_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne3_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne3_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne3_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne3_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne3_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne4 = {
+    bombe_aerienne4_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne4_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne4_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne4_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne4_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne4_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne4_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne4_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne4_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne4_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne4_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne4_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne5 = {
+    bombe_aerienne5_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne5_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne5_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne5_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne5_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne5_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne5_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne5_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne5_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne5_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne5_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne5_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne6 = {
+    bombe_aerienne6_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne6_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne6_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne6_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne6_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne6_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne6_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne6_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne6_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne6_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne6_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne6_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
+
+export const bombe_aerienne7 = {
+    bombe_aerienne7_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
+    bombe_aerienne7_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
+    bombe_aerienne7_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
+    bombe_aerienne7_nv_4:  { dgt: 173, prix: 300000,      tconstru: 14400,  exp_gagner: 120, hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne4.png" },
+    bombe_aerienne7_nv_5:  { dgt: 208, prix: 550000,      tconstru: 28800,  exp_gagner: 169, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne5.png" },
+    bombe_aerienne7_nv_6:  { dgt: 232, prix: 800000,      tconstru: 43200,  exp_gagner: 207, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne6.png" },
+    bombe_aerienne7_nv_7:  { dgt: 252, prix: 1000000,     tconstru: 64800,  exp_gagner: 254, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne7.png" },
+    bombe_aerienne7_nv_8:  { dgt: 280, prix: 1200000,     tconstru: 86400,  exp_gagner: 293, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne8.png" },
+    bombe_aerienne7_nv_9:  { dgt: 325, prix: 2000000,     tconstru: 129600, exp_gagner: 360, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne9.png" },
+    bombe_aerienne7_nv_10: { dgt: 350, prix: 3000000,     tconstru: 172800, exp_gagner: 415, hdvrequis: 15, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne10.png" },
+    bombe_aerienne7_nv_11: { dgt: 375, prix: 5000000,     tconstru: 259200, exp_gagner: 509, hdvrequis: 16, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne11.png" },
+    bombe_aerienne7_nv_12: { dgt: 400, prix: 11000000,    tconstru: 734400, exp_gagner: 856, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne12.png" },
+};
