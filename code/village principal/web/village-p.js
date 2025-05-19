@@ -32,7 +32,6 @@ import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img.fade-transition');
-  
   images.forEach(img => {
     const observer = new MutationObserver((mutationsList) => {
       for (const mutation of mutationsList) {
@@ -50,14 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // hdv
   const hdvSelect = document.getElementById('hdv');
   if (hdvSelect) {
-    hdvSelect.addEventListener('change', updateDefensePrixOr);
+    hdvSelect.addEventListener('change', () => {
+      updateDefensePrix();
+      updateRessourcePrix();
+    });
   }
 
   // canons
   for (let i = 1; i <= 7; i++) {
     const canonSelect = document.getElementById(`canon${i}`);
     if (canonSelect) {
-      canonSelect.addEventListener('change', updateDefensePrixOr);
+      canonSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 9; i++) {
     const tourArchereSelect = document.getElementById(`tour_archere${i}`);
     if (tourArchereSelect) {
-      tourArchereSelect.addEventListener('change', updateDefensePrixOr);
+      tourArchereSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -73,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 4; i++) {
     const mortierSelect = document.getElementById(`mortier${i}`);
     if (mortierSelect) {
-      mortierSelect.addEventListener('change', updateDefensePrixOr);
+      mortierSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 4; i++) {
     const antiAirSelect = document.getElementById(`def_anti_air${i}`);
     if (antiAirSelect) {
-      antiAirSelect.addEventListener('change', updateDefensePrixOr);
+      antiAirSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -89,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 5; i++) {
     const tourSorcierSelect = document.getElementById(`tour_sorcier${i}`);
     if (tourSorcierSelect) {
-      tourSorcierSelect.addEventListener('change', updateDefensePrixOr);
+      tourSorcierSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -97,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 2; i++) {
     const souffleurSelect = document.getElementById(`souffleur_air${i}`);
     if (souffleurSelect) {
-      souffleurSelect.addEventListener('change', updateDefensePrixOr);
+      souffleurSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -105,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 5; i++) {
     const teslaSelect = document.getElementById(`tesla${i}`);
     if (teslaSelect) {
-      teslaSelect.addEventListener('change', updateDefensePrixOr);
+      teslaSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 2; i++) {
     const tourBombeSelect = document.getElementById(`tour_bombe${i}`);
     if (tourBombeSelect) {
-      tourBombeSelect.addEventListener('change', updateDefensePrixOr);
+      tourBombeSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -121,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 4; i++) {
     const arcxSelect = document.getElementById(`arcx${i}`);
     if (arcxSelect) {
-      arcxSelect.addEventListener('change', updateDefensePrixOr);
+      arcxSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -129,21 +131,21 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 3; i++) {
     const tourEnferSelect = document.getElementById(`tour_enfer${i}`);
     if (tourEnferSelect) {
-      tourEnferSelect.addEventListener('change', updateDefensePrixOr);
+      tourEnferSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
   // aigle artilleur
   const aigleArtilleurSelect = document.getElementById('aigle_artilleur');
   if (aigleArtilleurSelect) {
-    aigleArtilleurSelect.addEventListener('change', updateDefensePrixOr);
+    aigleArtilleurSelect.addEventListener('change', updateDefensePrix);
   }
 
   // catapultes erratiques
   for (let i = 1; i <= 2; i++) {
     const catapulteSelect = document.getElementById(`catapulte_erratique${i}`);
     if (catapulteSelect) {
-      catapulteSelect.addEventListener('change', updateDefensePrixOr);
+      catapulteSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -151,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 5; i++) {
     const batisseurSelect = document.getElementById(`batisseur${i}`);
     if (batisseurSelect) {
-      batisseurSelect.addEventListener('change', updateDefensePrixOr);
+      batisseurSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -159,21 +161,21 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 2; i++) {
     const tourRuniqueSelect = document.getElementById(`tour_runique${i}`);
     if (tourRuniqueSelect) {
-      tourRuniqueSelect.addEventListener('change', updateDefensePrixOr);
+      tourRuniqueSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
   // monolithe
   const monolitheSelect = document.getElementById('monolithe');
   if (monolitheSelect) {
-    monolitheSelect.addEventListener('change', updateDefensePrixOr);
+    monolitheSelect.addEventListener('change', updateDefensePrix);
   }
 
   // multi tours d'archere
   for (let i = 1; i <= 3; i++) {
     const multiTourArchereSelect = document.getElementById(`multi_tour_archere${i}`);
     if (multiTourArchereSelect) {
-      multiTourArchereSelect.addEventListener('change', updateDefensePrixOr);
+      multiTourArchereSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -181,21 +183,21 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 3; i++) {
     const canonRicochetSelect = document.getElementById(`canon_ricochet${i}`);
     if (canonRicochetSelect) {
-      canonRicochetSelect.addEventListener('change', updateDefensePrixOr);
+      canonRicochetSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
   // tours multi équipée
   const tourMultiEquipeeSelect = document.getElementById('tour_multi_equipee');
   if (tourMultiEquipeeSelect) {
-    tourMultiEquipeeSelect.addEventListener('change', updateDefensePrixOr);
+    tourMultiEquipeeSelect.addEventListener('change', updateDefensePrix);
   }
 
   // cracheurs de feu
   for (let i = 1; i <= 2; i++) {
     const cracheurFeuSelect = document.getElementById(`cracheur_feu${i}`);
     if (cracheurFeuSelect) {
-      cracheurFeuSelect.addEventListener('change', updateDefensePrixOr);
+      cracheurFeuSelect.addEventListener('change', updateDefensePrix);
     }
   }
 
@@ -203,25 +205,25 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 4; i++) {
     const reserveOrSelect = document.getElementById(`reserve_or${i}`);
     if (reserveOrSelect) {
-      reserveOrSelect.addEventListener('change', updateRessourcePrixOr);
+      reserveOrSelect.addEventListener('change', updateRessourcePrix);
     }
     const reservoirElixirSelect = document.getElementById(`reservoir_elixir${i}`);
     if (reservoirElixirSelect) {
-      reservoirElixirSelect.addEventListener('change', updateRessourcePrixOr);
+      reservoirElixirSelect.addEventListener('change', updateRessourcePrix);
     }
   }
 
   // réservoir élixir noir
   const reservoirElixirNoirSelect = document.getElementById('reservoir_elixir_noir');
   if (reservoirElixirNoirSelect) {
-    reservoirElixirNoirSelect.addEventListener('change', updateRessourcePrixOr);
+    reservoirElixirNoirSelect.addEventListener('change', updateRessourcePrix);
   }
 
   // Ajout listeners mines d'or
   for (let i = 1; i <= 7; i++) {
     const mineOrSelect = document.getElementById(`mine_or${i}`);
     if (mineOrSelect) {
-      mineOrSelect.addEventListener('change', updateRessourcePrixOr);
+      mineOrSelect.addEventListener('change', updateRessourcePrix);
     }
   }
 
@@ -229,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 7; i++) {
     const extracteurElixirSelect = document.getElementById(`extracteur_elixir${i}`);
     if (extracteurElixirSelect) {
-      extracteurElixirSelect.addEventListener('change', updateRessourcePrixOr);
+      extracteurElixirSelect.addEventListener('change', updateRessourcePrix);
     }
   }
 
@@ -237,15 +239,15 @@ document.addEventListener('DOMContentLoaded', () => {
   for (let i = 1; i <= 3; i++) {
     const extracteurElixirNoirSelect = document.getElementById(`extracteur_elixir_noir${i}`);
     if (extracteurElixirNoirSelect) {
-      extracteurElixirNoirSelect.addEventListener('change', updateRessourcePrixOr);
+      extracteurElixirNoirSelect.addEventListener('change', updateRessourcePrix);
     }
   }
 
-  updateDefensePrixOr();
-  updateRessourcePrixOr();
+  updateDefensePrix();
+  updateRessourcePrix();
 });
 
-function updateDefensePrixOr() {
+function updateDefensePrix() {
     const progressdefenseprixelixir = document.getElementById('progress-defense-prix-elixir-noir');
     const progressDefensePrixOr = document.getElementById('progress-defense-prix-or');
     const progressDefensetemps = document.getElementById('progress-defense-temps');
@@ -332,12 +334,11 @@ function updateDefensePrixOr() {
     }
 }
 
-function updateRessourcePrixOr() {
+function updateRessourcePrix() {
   const progressRessourcePrixOr = document.getElementById('progress-ressource-prix-or');
   const progressRessourcePrixElixir = document.getElementById('progress-ressource-prix-elixir');
-  const progressRessourcePrixElixirNoir = document.getElementById('progress-ressource-prix-elixir-noir');
   const progressRessourcetemps = document.getElementById('progress-ressource-temps');
-  if (!progressRessourcePrixOr || !progressRessourcePrixElixir || !progressRessourcePrixElixirNoir || !progressRessourcetemps) return;
+  if (!progressRessourcePrixOr || !progressRessourcePrixElixir || !progressRessourcetemps) return;
 
   // Additionne le coût restant et le temps restant de chaque bâtiment de ressource
   const prixRestantOr = globalcalculerPrixRestantreserve_or();
@@ -354,14 +355,12 @@ function updateRessourcePrixOr() {
   const prixRestantExtracteurElixirNoir =globalcalculerPrixRestantextracteur_elixir_noir();
   const tempsRestantExtracteurElixirNoir = globalcalculertempsRestantextracteur_elixir_noirs();
 
-  const totalPrixRestantOr = prixRestantOr + prixRestantMineOr;
-  const totalPrixRestantElixir = prixRestantElixir + prixRestantExtracteurElixir;
-  const totalPrixRestantElixirNoir = prixRestantElixirNoir + prixRestantExtracteurElixirNoir;
+  const totalPrixRestantOr = prixRestantElixir + prixRestantExtracteurElixir;
+  const totalPrixRestantElixir = prixRestantOr + prixRestantMineOr + prixRestantElixirNoir + prixRestantExtracteurElixirNoir;
   const totalTempsRestant = tempsRestantOr + tempsRestantElixir + tempsRestantElixirNoir + tempsRestantMineOr + tempsRestantExtracteurElixir + tempsRestantExtracteurElixirNoir;
 
   // Affichage
   progressRessourcePrixOr.innerHTML = `${formatPrix(totalPrixRestantOr)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-  progressRessourcePrixElixir.innerHTML = `${formatPrix(totalPrixRestantElixir)} <img src="/coc/image/village principal/ressource/elixir village-p.png" alt="elixir" class="icone-ressource">`;
-  progressRessourcePrixElixirNoir.innerHTML = `${formatPrix(totalPrixRestantElixirNoir)} <img src="/coc/image/village principal/ressource/elixir-noir village-p.png" alt="elixir noir" class="icone-ressource">`;
+  progressRessourcePrixElixir.innerHTML = `${formatPrix(totalPrixRestantElixir)} <img src="/coc/image/village principal/ressource/elixir village-p.jpg" alt="elixir" class="icone-ressource">`;
   progressRessourcetemps.innerHTML = `${convertirSecondescompact(totalTempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
 }

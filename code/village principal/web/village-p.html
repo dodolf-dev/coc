@@ -2463,6 +2463,1265 @@
                 </div>
             </div>
             <!--PIEGE-->
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle-piege">
+                <label for="toggle-piege" class="checkbox-label">
+                  Pièges:
+                    <div class="progress-container">
+                        <span id="progress-piege-value">Null</span>
+                        <progress id="progress-piege" value="0" max="100" class="barredeprogression"></progress>
+                        <span id="progress-piege-temps">null</span>
+                        <span id="progress-piege-prix-or">null</span>
+                    </div>
+                </label>
+                <div class="toggle-content">
+                    <!--BOMBE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-bombe">
+                        <label for="toggle-bombe" class="checkbox-label">
+                          Bombe :
+                            <div class="progress-container">
+                                <span id="progress-bombe-value">Null</span>
+                                <progress id="progress-bombe" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombe-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="bombe1_box" id="bombe1_box">
+                                    <label for="bombe1">bombe1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe1">
+                                                    <option value="0">bombe1 Niveau 0</option>
+                                                    <option value="1">bombe1 Niveau 1</option>
+                                                    <option value="2">bombe1 Niveau 2</option>
+                                                    <option value="3">bombe1 Niveau 3</option>
+                                                    <option value="4">bombe1 Niveau 4</option>
+                                                    <option value="5">bombe1 Niveau 5</option>
+                                                    <option value="6">bombe1 Niveau 6</option>
+                                                    <option value="7">bombe1 Niveau 7</option>
+                                                    <option value="8">bombe1 Niveau 8</option>
+                                                    <option value="9">bombe1 Niveau 9</option>
+                                                    <option value="10">bombe1 Niveau 10</option>
+                                                    <option value="11">bombe1 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe1_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe1" src="" alt="Image du bombe1" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe2_box" id="bombe2_box">
+                                    <label for="bombe2">bombe2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe2">
+                                                    <option value="0">bombe2 Niveau 0</option>
+                                                    <option value="1">bombe2 Niveau 1</option>
+                                                    <option value="2">bombe2 Niveau 2</option>
+                                                    <option value="3">bombe2 Niveau 3</option>
+                                                    <option value="4">bombe2 Niveau 4</option>
+                                                    <option value="5">bombe2 Niveau 5</option>
+                                                    <option value="6">bombe2 Niveau 6</option>
+                                                    <option value="7">bombe2 Niveau 7</option>
+                                                    <option value="8">bombe2 Niveau 8</option>
+                                                    <option value="9">bombe2 Niveau 9</option>
+                                                    <option value="10">bombe2 Niveau 10</option>
+                                                    <option value="11">bombe2 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe2_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe2" src="" alt="Image du bombe2" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe3_box" id="bombe3_box">
+                                    <label for="bombe3">bombe3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe3">
+                                                    <option value="0">bombe3 Niveau 0</option>
+                                                    <option value="1">bombe3 Niveau 1</option>
+                                                    <option value="2">bombe3 Niveau 2</option>
+                                                    <option value="3">bombe3 Niveau 3</option>
+                                                    <option value="4">bombe3 Niveau 4</option>
+                                                    <option value="5">bombe3 Niveau 5</option>
+                                                    <option value="6">bombe3 Niveau 6</option>
+                                                    <option value="7">bombe3 Niveau 7</option>
+                                                    <option value="8">bombe3 Niveau 8</option>
+                                                    <option value="9">bombe3 Niveau 9</option>
+                                                    <option value="10">bombe3 Niveau 10</option>
+                                                    <option value="11">bombe3 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe3_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe3" src="" alt="Image du bombe3" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe4_box" id="bombe4_box">
+                                    <label for="bombe4">bombe4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe4">
+                                                    <option value="0">bombe4 Niveau 0</option>
+                                                    <option value="1">bombe4 Niveau 1</option>
+                                                    <option value="2">bombe4 Niveau 2</option>
+                                                    <option value="3">bombe4 Niveau 3</option>
+                                                    <option value="4">bombe4 Niveau 4</option>
+                                                    <option value="5">bombe4 Niveau 5</option>
+                                                    <option value="6">bombe4 Niveau 6</option>
+                                                    <option value="7">bombe4 Niveau 7</option>
+                                                    <option value="8">bombe4 Niveau 8</option>
+                                                    <option value="9">bombe4 Niveau 9</option>
+                                                    <option value="10">bombe4 Niveau 10</option>
+                                                    <option value="11">bombe4 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe4_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe4" src="" alt="Image du bombe4" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe5_box" id="bombe5_box">
+                                    <label for="bombe5">bombe5 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe5">
+                                                    <option value="0">bombe5 Niveau 0</option>
+                                                    <option value="1">bombe5 Niveau 1</option>
+                                                    <option value="2">bombe5 Niveau 2</option>
+                                                    <option value="3">bombe5 Niveau 3</option>
+                                                    <option value="4">bombe5 Niveau 4</option>
+                                                    <option value="5">bombe5 Niveau 5</option>
+                                                    <option value="6">bombe5 Niveau 6</option>
+                                                    <option value="7">bombe5 Niveau 7</option>
+                                                    <option value="8">bombe5 Niveau 8</option>
+                                                    <option value="9">bombe5 Niveau 9</option>
+                                                    <option value="10">bombe5 Niveau 10</option>
+                                                    <option value="11">bombe5 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe5_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe5_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe5" src="" alt="Image du bombe5" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe6_box" id="bombe6_box">
+                                    <label for="bombe6">bombe6 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe6">
+                                                    <option value="0">bombe6 Niveau 0</option>
+                                                    <option value="1">bombe6 Niveau 1</option>
+                                                    <option value="2">bombe6 Niveau 2</option>
+                                                    <option value="3">bombe6 Niveau 3</option>
+                                                    <option value="4">bombe6 Niveau 4</option>
+                                                    <option value="5">bombe6 Niveau 5</option>
+                                                    <option value="6">bombe6 Niveau 6</option>
+                                                    <option value="7">bombe6 Niveau 7</option>
+                                                    <option value="8">bombe6 Niveau 8</option>
+                                                    <option value="9">bombe6 Niveau 9</option>
+                                                    <option value="10">bombe6 Niveau 10</option>
+                                                    <option value="11">bombe6 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe6_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe6_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe6" src="" alt="Image du bombe6" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe7_box" id="bombe7_box">
+                                    <label for="bombe7">bombe7 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe7">
+                                                    <option value="0">bombe7 Niveau 0</option>
+                                                    <option value="1">bombe7 Niveau 1</option>
+                                                    <option value="2">bombe7 Niveau 2</option>
+                                                    <option value="3">bombe7 Niveau 3</option>
+                                                    <option value="4">bombe7 Niveau 4</option>
+                                                    <option value="5">bombe7 Niveau 5</option>
+                                                    <option value="6">bombe7 Niveau 6</option>
+                                                    <option value="7">bombe7 Niveau 7</option>
+                                                    <option value="8">bombe7 Niveau 8</option>
+                                                    <option value="9">bombe7 Niveau 9</option>
+                                                    <option value="10">bombe7 Niveau 10</option>
+                                                    <option value="11">bombe7 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe7_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe7_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe7" src="" alt="Image du bombe7" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe8_box" id="bombe8_box">
+                                    <label for="bombe8">bombe8 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe8">
+                                                    <option value="0">bombe8 Niveau 0</option>
+                                                    <option value="1">bombe8 Niveau 1</option>
+                                                    <option value="2">bombe8 Niveau 2</option>
+                                                    <option value="3">bombe8 Niveau 3</option>
+                                                    <option value="4">bombe8 Niveau 4</option>
+                                                    <option value="5">bombe8 Niveau 5</option>
+                                                    <option value="6">bombe8 Niveau 6</option>
+                                                    <option value="7">bombe8 Niveau 7</option>
+                                                    <option value="8">bombe8 Niveau 8</option>
+                                                    <option value="9">bombe8 Niveau 9</option>
+                                                    <option value="10">bombe8 Niveau 10</option>
+                                                    <option value="11">bombe8 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe8_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe8_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe8" src="" alt="Image du bombe8" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--PIEGE RESSORT-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-piege_ressort">
+                        <label for="toggle-piege_ressort" class="checkbox-label">
+                          piege_ressort :
+                            <div class="progress-container">
+                                <span id="progress-piege_ressort-value">Null</span>
+                                <progress id="progress-piege_ressort" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-piege_ressort-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="piege_ressort1_box" id="piege_ressort1_box">
+                                    <label for="piege_ressort1">piege_ressort1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort1">
+                                                    <option value="0">piege_ressort1 Niveau 0</option>
+                                                    <option value="1">piege_ressort1 Niveau 1</option>
+                                                    <option value="2">piege_ressort1 Niveau 2</option>
+                                                    <option value="3">piege_ressort1 Niveau 3</option>
+                                                    <option value="4">piege_ressort1 Niveau 4</option>
+                                                    <option value="5">piege_ressort1 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort1_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort1" src="" alt="Image du piege_ressort1" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort2_box" id="piege_ressort2_box">
+                                    <label for="piege_ressort2">piege_ressort2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort2">
+                                                    <option value="0">piege_ressort2 Niveau 0</option>
+                                                    <option value="1">piege_ressort2 Niveau 1</option>
+                                                    <option value="2">piege_ressort2 Niveau 2</option>
+                                                    <option value="3">piege_ressort2 Niveau 3</option>
+                                                    <option value="4">piege_ressort2 Niveau 4</option>
+                                                    <option value="5">piege_ressort2 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort2_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort2" src="" alt="Image du piege_ressort2" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort3_box" id="piege_ressort3_box">
+                                    <label for="piege_ressort3">piege_ressort3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort3">
+                                                    <option value="0">piege_ressort3 Niveau 0</option>
+                                                    <option value="1">piege_ressort3 Niveau 1</option>
+                                                    <option value="2">piege_ressort3 Niveau 2</option>
+                                                    <option value="3">piege_ressort3 Niveau 3</option>
+                                                    <option value="4">piege_ressort3 Niveau 4</option>
+                                                    <option value="5">piege_ressort3 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort3_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort3" src="" alt="Image du piege_ressort3" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort4_box" id="piege_ressort4_box">
+                                    <label for="piege_ressort4">piege_ressort4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort4">
+                                                    <option value="0">piege_ressort4 Niveau 0</option>
+                                                    <option value="1">piege_ressort4 Niveau 1</option>
+                                                    <option value="2">piege_ressort4 Niveau 2</option>
+                                                    <option value="3">piege_ressort4 Niveau 3</option>
+                                                    <option value="4">piege_ressort4 Niveau 4</option>
+                                                    <option value="5">piege_ressort4 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort4_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort4" src="" alt="Image du piege_ressort4" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort5_box" id="piege_ressort5_box">
+                                    <label for="piege_ressort5">piege_ressort5 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort5">
+                                                    <option value="0">piege_ressort5 Niveau 0</option>
+                                                    <option value="1">piege_ressort5 Niveau 1</option>
+                                                    <option value="2">piege_ressort5 Niveau 2</option>
+                                                    <option value="3">piege_ressort5 Niveau 3</option>
+                                                    <option value="4">piege_ressort5 Niveau 4</option>
+                                                    <option value="5">piege_ressort5 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort5_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort5_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort5" src="" alt="Image du piege_ressort5" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort6_box" id="piege_ressort6_box">
+                                    <label for="piege_ressort6">piege_ressort6 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort6">
+                                                    <option value="0">piege_ressort6 Niveau 0</option>
+                                                    <option value="1">piege_ressort6 Niveau 1</option>
+                                                    <option value="2">piege_ressort6 Niveau 2</option>
+                                                    <option value="3">piege_ressort6 Niveau 3</option>
+                                                    <option value="4">piege_ressort6 Niveau 4</option>
+                                                    <option value="5">piege_ressort6 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort6_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort6_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort6" src="" alt="Image du piege_ressort6" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort7_box" id="piege_ressort7_box">
+                                    <label for="piege_ressort7">piege_ressort7 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort7">
+                                                    <option value="0">piege_ressort7 Niveau 0</option>
+                                                    <option value="1">piege_ressort7 Niveau 1</option>
+                                                    <option value="2">piege_ressort7 Niveau 2</option>
+                                                    <option value="3">piege_ressort7 Niveau 3</option>
+                                                    <option value="4">piege_ressort7 Niveau 4</option>
+                                                    <option value="5">piege_ressort7 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort7_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort7_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort7" src="" alt="Image du piege_ressort7" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort8_box" id="piege_ressort8_box">
+                                    <label for="piege_ressort8">piege_ressort8 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort8">
+                                                    <option value="0">piege_ressort8 Niveau 0</option>
+                                                    <option value="1">piege_ressort8 Niveau 1</option>
+                                                    <option value="2">piege_ressort8 Niveau 2</option>
+                                                    <option value="3">piege_ressort8 Niveau 3</option>
+                                                    <option value="4">piege_ressort8 Niveau 4</option>
+                                                    <option value="5">piege_ressort8 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort8_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort8_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort8" src="" alt="Image du piege_ressort8" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_ressort9_box" id="piege_ressort9_box">
+                                    <label for="piege_ressort9">piege_ressort9 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_ressort9">
+                                                    <option value="0">piege_ressort9 Niveau 0</option>
+                                                    <option value="1">piege_ressort9 Niveau 1</option>
+                                                    <option value="2">piege_ressort9 Niveau 2</option>
+                                                    <option value="3">piege_ressort9 Niveau 3</option>
+                                                    <option value="4">piege_ressort9 Niveau 4</option>
+                                                    <option value="5">piege_ressort9 Niveau 5</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_ressort9_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_ressort9_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_ressort9" src="" alt="Image du piege_ressort9" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--BOBME GEANTE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-bombe_geante">
+                        <label for="toggle-bombe_geante" class="checkbox-label">
+                          Bombe géante:
+                            <div class="progress-container">
+                                <span id="progress-bombe_geante-value">Null</span>
+                                <progress id="progress-bombe_geante" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombe_geante-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="bombe_geante1_box" id="bombe_geante1_box">
+                                    <label for="bombe_geante1">bombe_geante1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante1">
+                                                    <option value="0">bombe_geante1 Niveau 0</option>
+                                                    <option value="1">bombe_geante1 Niveau 1</option>
+                                                    <option value="2">bombe_geante1 Niveau 2</option>
+                                                    <option value="3">bombe_geante1 Niveau 3</option>
+                                                    <option value="4">bombe_geante1 Niveau 4</option>
+                                                    <option value="5">bombe_geante1 Niveau 5</option>
+                                                    <option value="6">bombe_geante1 Niveau 6</option>
+                                                    <option value="7">bombe_geante1 Niveau 7</option>
+                                                    <option value="8">bombe_geante1 Niveau 8</option>
+                                                    <option value="9">bombe_geante1 Niveau 9</option>
+                                                    <option value="10">bombe_geante1 Niveau 10</option>
+                                                    <option value="11">bombe_geante1 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante1_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante1" src="" alt="Image du bombe_geante1" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante2_box" id="bombe_geante2_box">
+                                    <label for="bombe_geante2">bombe_geante2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante2">
+                                                    <option value="0">bombe_geante2 Niveau 0</option>
+                                                    <option value="1">bombe_geante2 Niveau 1</option>
+                                                    <option value="2">bombe_geante2 Niveau 2</option>
+                                                    <option value="3">bombe_geante2 Niveau 3</option>
+                                                    <option value="4">bombe_geante2 Niveau 4</option>
+                                                    <option value="5">bombe_geante2 Niveau 5</option>
+                                                    <option value="6">bombe_geante2 Niveau 6</option>
+                                                    <option value="7">bombe_geante2 Niveau 7</option>
+                                                    <option value="8">bombe_geante2 Niveau 8</option>
+                                                    <option value="9">bombe_geante2 Niveau 9</option>
+                                                    <option value="10">bombe_geante2 Niveau 10</option>
+                                                    <option value="11">bombe_geante2 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante2_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante2" src="" alt="Image du bombe_geante2" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante3_box" id="bombe_geante3_box">
+                                    <label for="bombe_geante3">bombe_geante3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante3">
+                                                    <option value="0">bombe_geante3 Niveau 0</option>
+                                                    <option value="1">bombe_geante3 Niveau 1</option>
+                                                    <option value="2">bombe_geante3 Niveau 2</option>
+                                                    <option value="3">bombe_geante3 Niveau 3</option>
+                                                    <option value="4">bombe_geante3 Niveau 4</option>
+                                                    <option value="5">bombe_geante3 Niveau 5</option>
+                                                    <option value="6">bombe_geante3 Niveau 6</option>
+                                                    <option value="7">bombe_geante3 Niveau 7</option>
+                                                    <option value="8">bombe_geante3 Niveau 8</option>
+                                                    <option value="9">bombe_geante3 Niveau 9</option>
+                                                    <option value="10">bombe_geante3 Niveau 10</option>
+                                                    <option value="11">bombe_geante3 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante3_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante3" src="" alt="Image du bombe_geante3" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante4_box" id="bombe_geante4_box">
+                                    <label for="bombe_geante4">bombe_geante4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante4">
+                                                    <option value="0">bombe_geante4 Niveau 0</option>
+                                                    <option value="1">bombe_geante4 Niveau 1</option>
+                                                    <option value="2">bombe_geante4 Niveau 2</option>
+                                                    <option value="3">bombe_geante4 Niveau 3</option>
+                                                    <option value="4">bombe_geante4 Niveau 4</option>
+                                                    <option value="5">bombe_geante4 Niveau 5</option>
+                                                    <option value="6">bombe_geante4 Niveau 6</option>
+                                                    <option value="7">bombe_geante4 Niveau 7</option>
+                                                    <option value="8">bombe_geante4 Niveau 8</option>
+                                                    <option value="9">bombe_geante4 Niveau 9</option>
+                                                    <option value="10">bombe_geante4 Niveau 10</option>
+                                                    <option value="11">bombe_geante4 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante4_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante4" src="" alt="Image du bombe_geante4" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante5_box" id="bombe_geante5_box">
+                                    <label for="bombe_geante5">bombe_geante5 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante5">
+                                                    <option value="0">bombe_geante5 Niveau 0</option>
+                                                    <option value="1">bombe_geante5 Niveau 1</option>
+                                                    <option value="2">bombe_geante5 Niveau 2</option>
+                                                    <option value="3">bombe_geante5 Niveau 3</option>
+                                                    <option value="4">bombe_geante5 Niveau 4</option>
+                                                    <option value="5">bombe_geante5 Niveau 5</option>
+                                                    <option value="6">bombe_geante5 Niveau 6</option>
+                                                    <option value="7">bombe_geante5 Niveau 7</option>
+                                                    <option value="8">bombe_geante5 Niveau 8</option>
+                                                    <option value="9">bombe_geante5 Niveau 9</option>
+                                                    <option value="10">bombe_geante5 Niveau 10</option>
+                                                    <option value="11">bombe_geante5 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante5_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante5_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante5" src="" alt="Image du bombe_geante5" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante6_box" id="bombe_geante6_box">
+                                    <label for="bombe_geante6">bombe_geante6 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante6">
+                                                    <option value="0">bombe_geante6 Niveau 0</option>
+                                                    <option value="1">bombe_geante6 Niveau 1</option>
+                                                    <option value="2">bombe_geante6 Niveau 2</option>
+                                                    <option value="3">bombe_geante6 Niveau 3</option>
+                                                    <option value="4">bombe_geante6 Niveau 4</option>
+                                                    <option value="5">bombe_geante6 Niveau 5</option>
+                                                    <option value="6">bombe_geante6 Niveau 6</option>
+                                                    <option value="7">bombe_geante6 Niveau 7</option>
+                                                    <option value="8">bombe_geante6 Niveau 8</option>
+                                                    <option value="9">bombe_geante6 Niveau 9</option>
+                                                    <option value="10">bombe_geante6 Niveau 10</option>
+                                                    <option value="11">bombe_geante6 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante6_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante6_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante6" src="" alt="Image du bombe_geante6" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante7_box" id="bombe_geante7_box">
+                                    <label for="bombe_geante7">bombe_geante7 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante7">
+                                                    <option value="0">bombe_geante7 Niveau 0</option>
+                                                    <option value="1">bombe_geante7 Niveau 1</option>
+                                                    <option value="2">bombe_geante7 Niveau 2</option>
+                                                    <option value="3">bombe_geante7 Niveau 3</option>
+                                                    <option value="4">bombe_geante7 Niveau 4</option>
+                                                    <option value="5">bombe_geante7 Niveau 5</option>
+                                                    <option value="6">bombe_geante7 Niveau 6</option>
+                                                    <option value="7">bombe_geante7 Niveau 7</option>
+                                                    <option value="8">bombe_geante7 Niveau 8</option>
+                                                    <option value="9">bombe_geante7 Niveau 9</option>
+                                                    <option value="10">bombe_geante7 Niveau 10</option>
+                                                    <option value="11">bombe_geante7 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante7_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante7_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante7" src="" alt="Image du bombe_geante7" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_geante8_box" id="bombe_geante8_box">
+                                    <label for="bombe_geante8">bombe_geante8 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_geante8">
+                                                    <option value="0">bombe_geante8 Niveau 0</option>
+                                                    <option value="1">bombe_geante8 Niveau 1</option>
+                                                    <option value="2">bombe_geante8 Niveau 2</option>
+                                                    <option value="3">bombe_geante8 Niveau 3</option>
+                                                    <option value="4">bombe_geante8 Niveau 4</option>
+                                                    <option value="5">bombe_geante8 Niveau 5</option>
+                                                    <option value="6">bombe_geante8 Niveau 6</option>
+                                                    <option value="7">bombe_geante8 Niveau 7</option>
+                                                    <option value="8">bombe_geante8 Niveau 8</option>
+                                                    <option value="9">bombe_geante8 Niveau 9</option>
+                                                    <option value="10">bombe_geante8 Niveau 10</option>
+                                                    <option value="11">bombe_geante8 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_geante8_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_geante8_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_geante8" src="" alt="Image du bombe_geante8" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--BOMBE AERIENNE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-bombe_aerienne">
+                        <label for="toggle-bombe_aerienne" class="checkbox-label">
+                          Bombe aerienne :
+                            <div class="progress-container">
+                                <span id="progress-bombe_aerienne-value">Null</span>
+                                <progress id="progress-bombe_aerienne" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombe_aerienne-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="bombe_aerienne1_box" id="bombe_aerienne1_box">
+                                    <label for="bombe_aerienne1">bombe_aerienne1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne1">
+                                                    <option value="0">bombe_aerienne1 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne1 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne1 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne1 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne1 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne1 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne1 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne1 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne1 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne1 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne1 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne1 Niveau 11</option>
+                                                    <option value="12">bombe_aerienne1 Niveau 12</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne1_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne1" src="" alt="Image du bombe_aerienne1" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne2_box" id="bombe_aerienne2_box">
+                                    <label for="bombe_aerienne2">bombe_aerienne2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne2">
+                                                    <option value="0">bombe_aerienne2 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne2 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne2 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne2 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne2 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne2 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne2 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne2 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne2 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne2 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne2 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne2 Niveau 11</option>
+                                                    <option value="12">bombe_aerienne2 Niveau 12</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne2_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne2" src="" alt="Image du bombe_aerienne2" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne3_box" id="bombe_aerienne3_box">
+                                    <label for="bombe_aerienne3">bombe_aerienne3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne3">
+                                                    <option value="0">bombe_aerienne3 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne3 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne3 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne3 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne3 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne3 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne3 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne3 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne3 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne3 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne3 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne3 Niveau 11</option>
+                                                    <option value="12">bombe_aerienne3 Niveau 12</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne3_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne3" src="" alt="Image du bombe_aerienne3" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne4_box" id="bombe_aerienne4_box">
+                                    <label for="bombe_aerienne4">bombe_aerienne4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne4">
+                                                    <option value="0">bombe_aerienne4 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne4 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne4 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne4 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne4 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne4 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne4 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne4 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne4 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne4 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne4 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne4 Niveau 11</option>
+                                                    <option value="12">bombe_aerienne1 Niveau 12</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne4_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne4" src="" alt="Image du bombe_aerienne4" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne5_box" id="bombe_aerienne5_box">
+                                    <label for="bombe_aerienne5">bombe_aerienne5 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne5">
+                                                    <option value="0">bombe_aerienne5 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne5 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne5 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne5 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne5 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne5 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne5 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne5 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne5 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne5 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne5 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne5 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne5_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne5_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne5" src="" alt="Image du bombe_aerienne5" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne6_box" id="bombe_aerienne6_box">
+                                    <label for="bombe_aerienne6">bombe_aerienne6 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne6">
+                                                    <option value="0">bombe_aerienne6 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne6 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne6 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne6 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne6 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne6 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne6 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne6 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne6 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne6 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne6 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne6 Niveau 11</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne6_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne6_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne6" src="" alt="Image du bombe_aerienne6" width="200">
+                                    </div>
+                                </div>
+                                <div class="bombe_aerienne7_box" id="bombe_aerienne7_box">
+                                    <label for="bombe_aerienne7">bombe_aerienne7 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="bombe_aerienne7">
+                                                    <option value="0">bombe_aerienne7 Niveau 0</option>
+                                                    <option value="1">bombe_aerienne7 Niveau 1</option>
+                                                    <option value="2">bombe_aerienne7 Niveau 2</option>
+                                                    <option value="3">bombe_aerienne7 Niveau 3</option>
+                                                    <option value="4">bombe_aerienne7 Niveau 4</option>
+                                                    <option value="5">bombe_aerienne7 Niveau 5</option>
+                                                    <option value="6">bombe_aerienne7 Niveau 6</option>
+                                                    <option value="7">bombe_aerienne7 Niveau 7</option>
+                                                    <option value="8">bombe_aerienne7 Niveau 8</option>
+                                                    <option value="9">bombe_aerienne7 Niveau 9</option>
+                                                    <option value="10">bombe_aerienne7 Niveau 10</option>
+                                                    <option value="11">bombe_aerienne7 Niveau 11</option>
+                                                    <option value="12">bombe_aerienne1 Niveau 12</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="bombe_aerienne7_prix_niveau">null</p>
+                                            <p class="typewritter" id="bombe_aerienne7_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-bombe_aerienne7" src="" alt="Image du bombe_aerienne7" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--MINE CHERCHEUSE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-mine_chercheuse">
+                        <label for="toggle-mine_chercheuse" class="checkbox-label">
+                          mine_chercheuse :
+                            <div class="progress-container">
+                                <span id="progress-mine_chercheuse-value">Null</span>
+                                <progress id="progress-mine_chercheuse" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-mine_chercheuse-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="mine_chercheuse1_box" id="mine_chercheuse1_box">
+                                    <label for="mine_chercheuse1">mine_chercheuse1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse1">
+                                                    <option value="0">mine_chercheuse1 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse1 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse1 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse1 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse1 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse1 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse1 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse1 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse1_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse1" src="" alt="Image du mine_chercheuse1" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse2_box" id="mine_chercheuse2_box">
+                                    <label for="mine_chercheuse2">mine_chercheuse2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse2">
+                                                    <option value="0">mine_chercheuse2 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse2 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse2 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse2 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse2 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse2 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse2 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse2 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse2_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse2" src="" alt="Image du mine_chercheuse2" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse3_box" id="mine_chercheuse3_box">
+                                    <label for="mine_chercheuse3">mine_chercheuse3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse3">
+                                                    <option value="0">mine_chercheuse3 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse3 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse3 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse3 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse3 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse3 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse3 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse3 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse3_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse3" src="" alt="Image du mine_chercheuse3" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse4_box" id="mine_chercheuse4_box">
+                                    <label for="mine_chercheuse4">mine_chercheuse4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse4">
+                                                    <option value="0">mine_chercheuse4 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse4 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse4 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse4 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse4 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse4 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse4 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse4 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse4_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse4" src="" alt="Image du mine_chercheuse4" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse5_box" id="mine_chercheuse5_box">
+                                    <label for="mine_chercheuse5">mine_chercheuse5 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse5">
+                                                    <option value="0">mine_chercheuse5 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse5 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse5 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse5 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse5 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse5 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse5 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse5 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse5_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse5_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse5" src="" alt="Image du mine_chercheuse5" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse6_box" id="mine_chercheuse6_box">
+                                    <label for="mine_chercheuse6">mine_chercheuse6 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse6">
+                                                    <option value="0">mine_chercheuse6 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse6 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse6 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse6 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse6 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse6 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse6 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse6 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse6_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse6_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse6" src="" alt="Image du mine_chercheuse6" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse7_box" id="mine_chercheuse7_box">
+                                    <label for="mine_chercheuse7">mine_chercheuse7 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse7">
+                                                    <option value="0">mine_chercheuse7 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse7 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse7 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse7 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse7 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse7 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse7 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse7 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse7_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse7_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse7" src="" alt="Image du mine_chercheuse7" width="200">
+                                    </div>
+                                </div>
+                                <div class="mine_chercheuse8_box" id="mine_chercheuse8_box">
+                                    <label for="mine_chercheuse8">mine_chercheuse8 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="mine_chercheuse8">
+                                                    <option value="0">mine_chercheuse8 Niveau 0</option>
+                                                    <option value="1">mine_chercheuse8 Niveau 1</option>
+                                                    <option value="2">mine_chercheuse8 Niveau 2</option>
+                                                    <option value="3">mine_chercheuse8 Niveau 3</option>
+                                                    <option value="4">mine_chercheuse8 Niveau 4</option>
+                                                    <option value="5">mine_chercheuse8 Niveau 5</option>
+                                                    <option value="6">mine_chercheuse8 Niveau 6</option>
+                                                    <option value="7">mine_chercheuse8 Niveau 7</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="mine_chercheuse8_prix_niveau">null</p>
+                                            <p class="typewritter" id="mine_chercheuse8_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-mine_chercheuse8" src="" alt="Image du mine_chercheuse8" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--PIEGE SQUELETTIQUE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-piege_squelettique">
+                        <label for="toggle-piege_squelettique" class="checkbox-label">
+                          piege_squelettique :
+                            <div class="progress-container">
+                                <span id="progress-piege_squelettique-value">Null</span>
+                                <progress id="progress-piege_squelettique" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-piege_squelettique-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="piege_squelettique1_box" id="piege_squelettique1_box">
+                                    <label for="piege_squelettique1">piege_squelettique1 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_squelettique1">
+                                                    <option value="0">piege_squelettique1 Niveau 0</option>
+                                                    <option value="1">piege_squelettique1 Niveau 1</option>
+                                                    <option value="2">piege_squelettique1 Niveau 2</option>
+                                                    <option value="3">piege_squelettique1 Niveau 3</option>
+                                                    <option value="4">piege_squelettique1 Niveau 4</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_squelettique1_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_squelettique1_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_squelettique1" src="" alt="Image du piege_squelettique1" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_squelettique2_box" id="piege_squelettique2_box">
+                                    <label for="piege_squelettique2">piege_squelettique2 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_squelettique2">
+                                                    <option value="0">piege_squelettique2 Niveau 0</option>
+                                                    <option value="1">piege_squelettique2 Niveau 1</option>
+                                                    <option value="2">piege_squelettique2 Niveau 2</option>
+                                                    <option value="3">piege_squelettique2 Niveau 3</option>
+                                                    <option value="4">piege_squelettique2 Niveau 4</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_squelettique2_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_squelettique2_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_squelettique2" src="" alt="Image du piege_squelettique2" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_squelettique3_box" id="piege_squelettique3_box">
+                                    <label for="piege_squelettique3">piege_squelettique3 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_squelettique3">
+                                                    <option value="0">piege_squelettique3 Niveau 0</option>
+                                                    <option value="1">piege_squelettique3 Niveau 1</option>
+                                                    <option value="2">piege_squelettique3 Niveau 2</option>
+                                                    <option value="3">piege_squelettique3 Niveau 3</option>
+                                                    <option value="4">piege_squelettique3 Niveau 4</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_squelettique3_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_squelettique3_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_squelettique3" src="" alt="Image du piege_squelettique3" width="200">
+                                    </div>
+                                </div>
+                                <div class="piege_squelettique4_box" id="piege_squelettique4_box">
+                                    <label for="piege_squelettique4">piege_squelettique4 niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_squelettique4">
+                                                    <option value="0">piege_squelettique4 Niveau 0</option>
+                                                    <option value="1">piege_squelettique4 Niveau 1</option>
+                                                    <option value="2">piege_squelettique4 Niveau 2</option>
+                                                    <option value="3">piege_squelettique4 Niveau 3</option>
+                                                    <option value="4">piege_squelettique4 Niveau 4</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_squelettique4_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_squelettique4_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_squelettique4" src="" alt="Image du piege_squelettique4" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--PIEGE TORNADE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-piege_tornade">
+                        <label for="toggle-piege_tornade" class="checkbox-label">
+                          piege_tornade :
+                            <div class="progress-container">
+                                <span id="progress-piege_tornade-value">Null</span>
+                                <progress id="progress-piege_tornade" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-piege_tornade-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="piege_tornade_box" id="piege_tornade_box">
+                                    <label for="piege_tornade">piege_tornade niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="piege_tornade">
+                                                    <option value="0">piege_tornade Niveau 0</option>
+                                                    <option value="1">piege_tornade Niveau 1</option>
+                                                    <option value="2">piege_tornade Niveau 2</option>
+                                                    <option value="3">piege_tornade Niveau 3</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="piege_tornade_prix_niveau">null</p>
+                                            <p class="typewritter" id="piege_tornade_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-piege_tornade" src="" alt="Image du piege_tornade" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!--GIGA BOMBE-->
+                    <div class="toggle-container">
+                        <input type="checkbox" id="toggle-giga_bombe">
+                        <label for="toggle-giga_bombe" class="checkbox-label">
+                          giga_bombe :
+                            <div class="progress-container">
+                                <span id="progress-giga_bombe-value">Null</span>
+                                <progress id="progress-giga_bombe" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-giga_bombe-text">null</span>
+                            </div>
+                        </label>
+                        <div class="toggle-content">
+                            <div class="blocs-row">
+                                <div class="giga_bombe_box" id="giga_bombe_box">
+                                    <label for="giga_bombe">giga_bombe niveau:</label>
+                                    <div class="imagedisplay">
+                                        <div class="left-block">
+                                            <div class="selectwrapper">
+                                                <select id="giga_bombe">
+                                                    <option value="0">giga_bombe Niveau 0</option>
+                                                    <option value="1">giga_bombe Niveau 1</option>
+                                                    <option value="2">giga_bombe Niveau 2</option>
+                                                    <option value="3">giga_bombe Niveau 3</option>
+                                                </select>
+                                                <i class="fa-solid fa-angle-right  custom-arrow"></i>
+                                            </div>
+                                            <p class="typewritter" id="giga_bombe_prix_niveau">null</p>
+                                            <p class="typewritter" id="giga_bombe_temps_niveau">null</p>
+                                        </div>
+                                        <img class="fade-transition" id="image-giga_bombe" src="" alt="Image du giga_bombe" width="200">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--RESSOURCE-->
