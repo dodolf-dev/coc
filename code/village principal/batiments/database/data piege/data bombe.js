@@ -1,4 +1,5 @@
 export const bombe1 = {
+    bombe1_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe1_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe1_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe1_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -15,6 +16,7 @@ export const bombe1 = {
 };
 
 export const bombe2 = {
+    bombe2_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe2_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe2_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 3,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe2_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -31,6 +33,7 @@ export const bombe2 = {
 };
 
 export const bombe3 = {
+    bombe3_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe3_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe3_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe3_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -47,6 +50,7 @@ export const bombe3 = {
 };
 
 export const bombe4 = {
+    bombe4_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe4_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe4_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe4_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -63,6 +67,7 @@ export const bombe4 = {
 };
 
 export const bombe5 = {
+    bombe5_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe5_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe5_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe5_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -79,6 +84,7 @@ export const bombe5 = {
 };
 
 export const bombe6 = {
+    bombe6_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe6_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe6_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe6_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -95,6 +101,7 @@ export const bombe6 = {
 };
 
 export const bombe7 = {
+    bombe7_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe7_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe7_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe7_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },
@@ -111,6 +118,7 @@ export const bombe7 = {
 };
 
 export const bombe8 = {
+    bombe8_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe/bombe0.png" },
     bombe8_nv_1:  { dgt: 20,  prix: 400,      tconstru: 0,    exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe/bombe1.png" },
     bombe8_nv_2:  { dgt: 24,  prix: 1000,     tconstru: 360,  exp_gagner: 18,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe/bombe2.png" },
     bombe8_nv_3:  { dgt: 29,  prix: 10000,    tconstru: 1200, exp_gagner: 34,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe/bombe3.png" },

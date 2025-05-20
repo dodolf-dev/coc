@@ -1,4 +1,5 @@
 export const mine_chercheuse1 = {
+    mine_chercheuse1_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse1_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse1_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse1_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -9,6 +10,7 @@ export const mine_chercheuse1 = {
 };
 
 export const mine_chercheuse2 = {
+    mine_chercheuse2_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse2_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse2_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse2_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -19,6 +21,7 @@ export const mine_chercheuse2 = {
 };
 
 export const mine_chercheuse3 = {
+    mine_chercheuse3_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse3_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse3_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse3_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -29,6 +32,7 @@ export const mine_chercheuse3 = {
 };
 
 export const mine_chercheuse4 = {
+    mine_chercheuse4_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse4_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse4_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse4_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -39,6 +43,7 @@ export const mine_chercheuse4 = {
 };
 
 export const mine_chercheuse5 = {
+    mine_chercheuse5_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse5_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse5_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse5_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -49,6 +54,7 @@ export const mine_chercheuse5 = {
 };
 
 export const mine_chercheuse6 = {
+    mine_chercheuse6_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse6_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse6_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse6_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -59,6 +65,7 @@ export const mine_chercheuse6 = {
 };
 
 export const mine_chercheuse7 = {
+    mine_chercheuse7_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse7_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse7_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 13,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse7_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },
@@ -69,6 +76,7 @@ export const mine_chercheuse7 = {
 };
 
 export const mine_chercheuse8 = {
+    mine_chercheuse8_nv_0:  { dgt: 0,   prix: 0,       tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse0.png" },
     mine_chercheuse8_nv_1:  { dgt: 1500, prix: 12000,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse1.png" },
     mine_chercheuse8_nv_2:  { dgt: 1800, prix: 600000,     tconstru: 43200,  exp_gagner: 207, hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse2.png" },
     mine_chercheuse8_nv_3:  { dgt: 2100, prix: 1200000,    tconstru: 86400,  exp_gagner: 293, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/mine chercheuse/mine chercheuse3.png" },

@@ -550,3 +550,91 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 }
+
+/* Responsive pour mobile */
+@media (max-width: 900px) {
+  .blocs-row {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .blocs-row > div {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  [class*="_box"] img,
+  .imagedisplay img {
+    width: 100px;
+    max-width: 100%;
+  }
+  .imagedisplay {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .selectwrapper,
+  .selectwrapper select {
+    width: 100%;
+    min-width: 0;
+    font-size: 14px;
+  }
+  .progress-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav ul li a {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .acceuil, .connexion {
+    position: static;
+    right: auto;
+    left: auto;
+  }
+  .toggle-container label,
+  .checkbox-label {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    font-size: 15px;
+  }
+  .barredeprogression {
+    width: 100%;
+    min-width: 80px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 13px;
+  }
+  .blocs-row {
+    padding: 5px;
+  }
+  [class*="_box"] {
+    padding: 8px;
+  }
+  .selectwrapper select {
+    font-size: 13px;
+    padding: 8px 30px 8px 8px;
+  }
+  .custom-arrow {
+    font-size: 13px;
+    right: 6px;
+  }
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+}

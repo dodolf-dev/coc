@@ -1,4 +1,5 @@
 export const bombe_aerienne1 = {
+    bombe_aerienne1_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne1_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne1_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne1_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -14,6 +15,7 @@ export const bombe_aerienne1 = {
 };
 
 export const bombe_aerienne2 = {
+    bombe_aerienne2_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne2_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne2_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 5,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne2_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -29,6 +31,7 @@ export const bombe_aerienne2 = {
 };
 
 export const bombe_aerienne3 = {
+    bombe_aerienne3_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne3_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne3_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne3_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -44,6 +47,7 @@ export const bombe_aerienne3 = {
 };
 
 export const bombe_aerienne4 = {
+    bombe_aerienne4_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne4_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne4_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne4_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -59,6 +63,7 @@ export const bombe_aerienne4 = {
 };
 
 export const bombe_aerienne5 = {
+    bombe_aerienne5_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne5_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne5_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne5_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -74,6 +79,7 @@ export const bombe_aerienne5 = {
 };
 
 export const bombe_aerienne6 = {
+    bombe_aerienne6_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne6_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne6_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne6_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },
@@ -89,6 +95,7 @@ export const bombe_aerienne6 = {
 };
 
 export const bombe_aerienne7 = {
+    bombe_aerienne7_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne0.png" },
     bombe_aerienne7_nv_1:  { dgt: 100, prix: 4000,        tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne1.png" },
     bombe_aerienne7_nv_2:  { dgt: 120, prix: 20000,       tconstru: 1800,   exp_gagner: 42,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne2.png" },
     bombe_aerienne7_nv_3:  { dgt: 144, prix: 75000,       tconstru: 3600,   exp_gagner: 60,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe aerienne/bombe aerienne3.png" },

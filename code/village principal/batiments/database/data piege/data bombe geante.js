@@ -1,4 +1,5 @@
 export const bombe_geante1 = {
+    bombe_geante1_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 6,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
     bombe_geante1_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 6,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
     bombe_geante1_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 6,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
     bombe_geante1_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
@@ -13,6 +14,7 @@ export const bombe_geante1 = {
 };
 
 export const bombe_geante2 = {
+    bombe_geante2_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
     bombe_geante2_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
     bombe_geante2_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 7,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
     bombe_geante2_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
@@ -27,6 +29,7 @@ export const bombe_geante2 = {
 };
 
 export const bombe_geante3 = {
+    bombe_geante3_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
     bombe_geante3_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
     bombe_geante3_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
     bombe_geante3_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 8,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
@@ -41,6 +44,7 @@ export const bombe_geante3 = {
 };
 
 export const bombe_geante4 = {
+    bombe_geante4_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
     bombe_geante4_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
     bombe_geante4_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
     bombe_geante4_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 9,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
@@ -55,9 +59,10 @@ export const bombe_geante4 = {
 };
 
 export const bombe_geante5 = {
-    bombe_geante5_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
-    bombe_geante5_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
-    bombe_geante5_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 10,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
+    bombe_geante5_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
+    bombe_geante5_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
+    bombe_geante5_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
+    bombe_geante5_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
     bombe_geante5_nv_4:  { dgt: 250, prix: 750000,     tconstru: 28800,  exp_gagner: 169, hdvrequis: 10, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante4.png" },
     bombe_geante5_nv_5:  { dgt: 275, prix: 900000,     tconstru: 36000,  exp_gagner: 189, hdvrequis: 11, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante5.png" },
     bombe_geante5_nv_6:  { dgt: 325, prix: 1300000,    tconstru: 39600,  exp_gagner: 198, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante6.png" },
@@ -69,9 +74,10 @@ export const bombe_geante5 = {
 };
 
 export const bombe_geante6 = {
-    bombe_geante6_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
-    bombe_geante6_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
-    bombe_geante6_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 12,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
+    bombe_geante6_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
+    bombe_geante6_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
+    bombe_geante6_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
+    bombe_geante6_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
     bombe_geante6_nv_4:  { dgt: 250, prix: 750000,     tconstru: 28800,  exp_gagner: 169, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante4.png" },
     bombe_geante6_nv_5:  { dgt: 275, prix: 900000,     tconstru: 36000,  exp_gagner: 189, hdvrequis: 12, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante5.png" },
     bombe_geante6_nv_6:  { dgt: 325, prix: 1300000,    tconstru: 39600,  exp_gagner: 198, hdvrequis: 13, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante6.png" },
@@ -83,9 +89,10 @@ export const bombe_geante6 = {
 };
 
 export const bombe_geante7 = {
-    bombe_geante7_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
-    bombe_geante7_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
-    bombe_geante7_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 14,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
+    bombe_geante7_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
+    bombe_geante7_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
+    bombe_geante7_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
+    bombe_geante7_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
     bombe_geante7_nv_4:  { dgt: 250, prix: 750000,     tconstru: 28800,  exp_gagner: 169, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante4.png" },
     bombe_geante7_nv_5:  { dgt: 275, prix: 900000,     tconstru: 36000,  exp_gagner: 189, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante5.png" },
     bombe_geante7_nv_6:  { dgt: 325, prix: 1300000,    tconstru: 39600,  exp_gagner: 198, hdvrequis: 14, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante6.png" },
@@ -97,9 +104,10 @@ export const bombe_geante7 = {
 };
 
 export const bombe_geante8 = {
-    bombe_geante8_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 17,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
-    bombe_geante8_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 17,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
-    bombe_geante8_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 17,  image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
+    bombe_geante8_nv_0:  { dgt: 0,   prix: 0,          tconstru: 0,      exp_gagner: 0,   hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante0.png" },
+    bombe_geante8_nv_1:  { dgt: 175, prix: 12500,      tconstru: 0,      exp_gagner: 0,   hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante1.png" },
+    bombe_geante8_nv_2:  { dgt: 200, prix: 75000,      tconstru: 3600,   exp_gagner: 60,  hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante2.png" },
+    bombe_geante8_nv_3:  { dgt: 225, prix: 220000,     tconstru: 10800,  exp_gagner: 103, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante3.png" },
     bombe_geante8_nv_4:  { dgt: 250, prix: 750000,     tconstru: 28800,  exp_gagner: 169, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante4.png" },
     bombe_geante8_nv_5:  { dgt: 275, prix: 900000,     tconstru: 36000,  exp_gagner: 189, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante5.png" },
     bombe_geante8_nv_6:  { dgt: 325, prix: 1300000,    tconstru: 39600,  exp_gagner: 198, hdvrequis: 17, image: "/coc/image/village principal/batiment/piege/bombe geante/bombe geante6.png" },
