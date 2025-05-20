@@ -624,6 +624,18 @@ nav ul li a:hover {
     padding: 5px;
   }
   [class*="_box"] {
+    font-size: 14px;
+    text-align: center;
+    padding: 6px;
+  }
+  [class*="_box"] img {
+    width: 80px;
+  }
+  .imagedisplay {
+    flex-direction: column;
+    align-items: center;
+  }
+  [class*="_box"] {
     padding: 8px;
   }
   .selectwrapper select {
