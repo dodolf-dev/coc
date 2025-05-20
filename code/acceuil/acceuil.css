@@ -184,3 +184,26 @@ nav ul li a:hover {
         padding: 10px 15px;
     }
 }
+
+
+/* Responsive pour mobile */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  nav ul li a {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+  .acceuil, .connexion {
+    position: static;
+    right: auto;
+    left: auto;
+  }
+}
