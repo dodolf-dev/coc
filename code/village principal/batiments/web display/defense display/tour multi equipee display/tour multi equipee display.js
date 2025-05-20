@@ -108,10 +108,18 @@ function updatetour_multi_equipeeInfo() {
     if (data) {
         imagetour_multi_equipee.src = data.image;
         imagetour_multi_equipee.alt = `tour multi equipee Niveau ${selecttour_multi_equipee.value}`;
+    }if (prixrestant === 0) {
+        document.getElementById("tour_multi_equipee_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("tour_multi_equipee_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("tour_multi_equipee_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-}
+    else {
+        document.getElementById("tour_multi_equipee_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("tour_multi_equipee_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("tour_multi_equipee_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }}
 
 selectHdv.addEventListener("change", updatearcxOptions);
 selecttour_multi_equipee.addEventListener("change", updatetour_multi_equipeeInfo);

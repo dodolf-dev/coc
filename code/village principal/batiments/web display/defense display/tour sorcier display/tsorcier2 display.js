@@ -70,10 +70,18 @@ function updatetour_sorcier2Info() {
     if (data) {
         imagetour_sorcier2.src = data.image;
         imagetour_sorcier2.alt = `Tour arhcere Niveau ${selecttour_sorcier2.value}`;
+    }if (prixrestant === 0) {
+        document.getElementById("tour_sorcier2_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("tour_sorcier2_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("tour_sorcier2_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-}
+    else {
+        document.getElementById("tour_sorcier2_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("tour_sorcier2_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("tour_sorcier2_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }}
 selectHdv.addEventListener("change", updateCanonOptions);
 selecttour_sorcier2.addEventListener("change", updatetour_sorcier2Info);
 

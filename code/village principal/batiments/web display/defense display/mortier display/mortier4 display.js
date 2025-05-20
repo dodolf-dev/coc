@@ -70,10 +70,18 @@ function updatemortier4Info() {
     if (data) {
         imagemortier4.src = data.image;
         imagemortier4.alt = `mortier Niveau ${selectmortier4.value}`;
+    }if (prixrestant === 0) {
+        document.getElementById("mortier4_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("mortier4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("mortier4_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-}
+    else {
+        document.getElementById("mortier4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("mortier4_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("mortier4_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }}
 selectHdv.addEventListener("change", updatemortierOptions);
 selectmortier4.addEventListener("change", updatemortier4Info);
 

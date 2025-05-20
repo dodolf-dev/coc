@@ -70,10 +70,18 @@ function updatetour_enfer3Info() {
     if (data) {
         imagetour_enfer3.src = data.image;
         imagetour_enfer3.alt = `Tour arhcere Niveau ${selecttour_enfer3.value}`;
+    }if (prixrestant === 0) {
+        document.getElementById("tour_enfer3_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("tour_enfer3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("tour_enfer3_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-}
+    else {
+        document.getElementById("tour_enfer3_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("tour_enfer3_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("tour_enfer3_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }}
 selectHdv.addEventListener("change", updateCanonOptions);
 selecttour_enfer3.addEventListener("change", updatetour_enfer3Info);
 

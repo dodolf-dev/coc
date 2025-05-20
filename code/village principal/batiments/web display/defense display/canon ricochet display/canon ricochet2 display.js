@@ -95,10 +95,18 @@ function updateCanon_ricochet2Info() {
     if (data) {
         imageCanon_ricochet2.src = data.image;
         imageCanon_ricochet2.alt = `Canon_ricochet2 Niveau ${selectCanon_ricochet2.value}`;
+    }    if (prixrestant === 0) {
+        document.getElementById("canon_ricochet2_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("canon_ricochet2_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("canon_ricochet2_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-}
+    else {
+        document.getElementById("canon_ricochet2_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("canon_ricochet2_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("canon_ricochet2_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }}
 
 selectHdv.addEventListener("change", updateCanon_ricochet2ptions);
 selectCanon_ricochet2.addEventListener("change", updateCanon_ricochet2Info);
