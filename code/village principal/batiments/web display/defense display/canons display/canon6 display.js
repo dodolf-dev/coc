@@ -65,8 +65,8 @@ function updateCanon6Info() {
         imageCanon6.src = data.image;
         imageCanon6.alt = `Canon Niveau ${selectCanon6.value}`;
     }
-    if (prixrestant === 0) {
-        canon6_prix_niveau.style.display = "none";
+if (prixrestant === 0) {
+        document.getElementById("canon6_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     }
     else {
         canon6_prix_niveau.style.display = "";
@@ -74,7 +74,7 @@ function updateCanon6Info() {
     }
 
     if (tempsRestant === 0) {
-        canon6_temps_niveau.style.display = "none";
+        document.getElementById("canon6_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
     }
     else{
         canon6_temps_niveau.style.display = "";

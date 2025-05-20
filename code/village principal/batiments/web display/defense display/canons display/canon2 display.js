@@ -73,7 +73,7 @@ function updateCanon2Info() {
     }
 
         if (prixrestant === 0) {
-        canon2_prix_niveau.style.display = "none";
+        document.getElementById("canon2_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
     }
     else {
         canon2_prix_niveau.style.display = "";
@@ -81,7 +81,7 @@ function updateCanon2Info() {
     }
 
     if (tempsRestant === 0) {
-        canon2_temps_niveau.style.display = "none";
+        document.getElementById("canon2_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
     }
     else{
         canon2_temps_niveau.style.display = "";
