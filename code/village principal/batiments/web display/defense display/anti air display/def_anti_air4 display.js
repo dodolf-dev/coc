@@ -71,8 +71,18 @@ function updatedef_anti_air4Info() {
         imagedef_anti_air4.src = data.image;
         imagedef_anti_air4.alt = `def_anti_air Niveau ${selectdef_anti_air4.value}`;
     }
-    document.getElementById("def_anti_air4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("def_anti_air4_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    if (prixrestant === 0) {
+        document.getElementById("def_anti_air4_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
+    }
+    else {
+        document.getElementById("def_anti_air4_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("def_anti_air4_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("def_anti_air4_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
 }
 selectHdv.addEventListener("change", updatedef_anti_airOptions);
 selectdef_anti_air4.addEventListener("change", updatedef_anti_air4Info);

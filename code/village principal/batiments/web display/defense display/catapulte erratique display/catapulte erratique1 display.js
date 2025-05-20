@@ -72,9 +72,18 @@ function updatecatapulte_erratique1Info() {
     if (data) {
         imagecatapulte_erratique1.src = data.image;
         imagecatapulte_erratique1.alt = `catapulte_erratique Niveau ${selectcatapulte_erratique1.value}`;
+    }    if (prixrestant === 0) {
+        document.getElementById("catapulte_erratique1_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;    
     }
-    document.getElementById("catapulte_erratique1_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    document.getElementById("catapulte_erratique1_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    else {
+        document.getElementById("catapulte_erratique1_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
+    }
+    if (tempsRestant === 0) {
+        document.getElementById("catapulte_erratique1_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
+    else {
+        document.getElementById("catapulte_erratique1_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
+    }
 }
 selectHdv.addEventListener("change", updatecatapulte_erratiqueOptions);
 selectcatapulte_erratique1.addEventListener("change", updatecatapulte_erratique1Info);

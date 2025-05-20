@@ -434,7 +434,7 @@ function updateCanonProgress() {
     if (progressTimeText) {
         const tempsRestant = globalcalculertempsRestantcanons();
         if (tempsRestant === 0) {
-            progressTimeText.style.display = "none";
+            progressTimeText.innerHTML = `max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
         } else {
             progressTimeText.style.display = "";
             progressTimeText.innerHTML = `${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
@@ -443,7 +443,7 @@ function updateCanonProgress() {
     if (progressPriceText) {
         const prixRestant = globalcalculerPrixRestantcanon();
         if (prixRestant === 0) {
-            progressPriceText.style.display = "none";
+            progressPriceText.innerHTML = `max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
         }
         else {
             progressPriceText.style.display = "";
