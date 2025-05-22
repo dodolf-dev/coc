@@ -18,7 +18,7 @@ export function animalerie_nv_max_hdv(hdvNiveau) {
 
 //calcul de temps
 
-//temps passer a construire le camp_militaire
+//temps passer a construire le animalerie
 export function calculerTempsTotalanimalerie(niveauMax) {
     let tempsTotal = 0;
     for (let i = 1; i <= niveauMax; i++) {
@@ -27,7 +27,7 @@ export function calculerTempsTotalanimalerie(niveauMax) {
     return tempsTotal;
 }
 
-//calcul le temps de construction restant pour le camp_militaire
+//calcul le temps de construction restant pour le animalerie
 export function calculerTempsRestantanimalerie(niveauActuel, niveauMax) {
     let tempsRestant = 0;
     for (let i = niveauActuel + 1; i <= niveauMax; i++) {
@@ -41,7 +41,7 @@ export function calculerTempsRestantanimalerie(niveauActuel, niveauMax) {
     return tempsRestant;
 }
 
-//calcul le temps de construction par rapport a l'hdv hdv pour le camp_militaire
+//calcul le temps de construction par rapport a l'hdv hdv pour le animalerie
 export function calculerTempsdepuisHDVanimalerie(hdvNiveau) {
     let tempsTotal = 0;
     const niveauMax = Math.max(...Object.keys(animalerie)
@@ -49,23 +49,23 @@ export function calculerTempsdepuisHDVanimalerie(hdvNiveau) {
         .filter(n => !isNaN(n))
     );
     for (let i = 0; i <= niveauMax; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
-        if (camp_militaire.hdvrequis <= hdvNiveau) {
-            tempsTotal += camp_militaire.tconstru;
+        const animalerie = animalerie[`animalerie_nv_${i}`];
+        if (animalerie.hdvrequis <= hdvNiveau) {
+            tempsTotal += animalerie.tconstru;
         }
     }
     return tempsTotal;
 }
 
-//calcul le temps de construction pour l'hdv séléctionner pour le camp_militaire
+//calcul le temps de construction pour l'hdv séléctionner pour le animalerie
 export function calculerTempsConstructionParHDVanimalerie(hdvNiveau) {
     let tempsTotal = 0;
 
     for (let i = 1; i <= 21; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
+        const animalerie = animalerie[`animalerie_nv_${i}`];
 
-        if (camp_militaire.hdvrequis === hdvNiveau) {
-            tempsTotal += camp_militaire.tconstru;
+        if (animalerie.hdvrequis === hdvNiveau) {
+            tempsTotal += animalerie.tconstru;
         }
     }
     return tempsTotal;
@@ -73,7 +73,7 @@ export function calculerTempsConstructionParHDVanimalerie(hdvNiveau) {
 
 //calcul de prix
 
-//prix déjà payer pour le camp_militaire
+//prix déjà payer pour le animalerie
 export function calculerPrixTotalanimalerie(niveauMax) {
     let prixTotal = 0;
     for (let i = 1; i <= niveauMax; i++) {
@@ -82,7 +82,7 @@ export function calculerPrixTotalanimalerie(niveauMax) {
     return prixTotal;
 }
 
-//calcul le prix restant pour le camp_militaire
+//calcul le prix restant pour le animalerie
 export function calculerPrixRestantanimalerie(niveauActuel, niveauMax) {
     let prixRestant = 0;
     for (let i = niveauActuel + 1; i <= niveauMax; i++) {
@@ -91,7 +91,7 @@ export function calculerPrixRestantanimalerie(niveauActuel, niveauMax) {
     return prixRestant;
 }
 
-//calcul le prix de construction par rapport a l'hdv pour le camp_militaire
+//calcul le prix de construction par rapport a l'hdv pour le animalerie
 export function calculerPrixdepuisHDVanimalerie(hdvNiveau) {
     let prixTotal = 0;
     const niveauMax = Math.max(...Object.keys(animalerie)
@@ -99,23 +99,23 @@ export function calculerPrixdepuisHDVanimalerie(hdvNiveau) {
         .filter(n => !isNaN(n))
     );
     for (let i = 0; i <= niveauMax; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
-        if (camp_militaire.hdvrequis <= hdvNiveau) {
-            prixTotal += camp_militaire.prix;
+        const animalerie = animalerie[`animalerie_nv_${i}`];
+        if (animalerie.hdvrequis <= hdvNiveau) {
+            prixTotal += animalerie.prix;
         }
     }
     return prixTotal;
 }
 
-//calcul le prix de construction pour l'hdv séléctionner pour le camp_militaire
+//calcul le prix de construction pour l'hdv séléctionner pour le animalerie
 export function calculerPrixConstructionParHDVanimalerie(hdvNiveau) {
     let prixTotal = 0;
 
     for (let i = 1; i <= 21; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
+        const animalerie = animalerie[`animalerie_nv_${i}`];
 
-        if (camp_militaire.hdvrequis === hdvNiveau) {
-            prixTotal += camp_militaire.prix;
+        if (animalerie.hdvrequis === hdvNiveau) {
+            prixTotal += animalerie.prix;
         }
     }
     return prixTotal;
@@ -124,7 +124,7 @@ export function calculerPrixConstructionParHDVanimalerie(hdvNiveau) {
 
 //calcul d'expérience
 
-//éxpérience déjà gagner pour le camp_militaire
+//éxpérience déjà gagner pour le animalerie
 export function calculerExperienceTotalanimalerie(niveauMax) {
     let experienceTotal = 0;
     for (let i = 1; i <= niveauMax; i++) {
@@ -133,7 +133,7 @@ export function calculerExperienceTotalanimalerie(niveauMax) {
     return experienceTotal;
 }
 
-//calcul l'éxpérience restant pour le camp_militaire
+//calcul l'éxpérience restant pour le animalerie
 export function calculerExperienceRestantanimalerie(niveauActuel, niveauMax) {
     let experienceRestant = 0;
     for (let i = niveauActuel + 1; i <= niveauMax; i++) {
@@ -142,7 +142,7 @@ export function calculerExperienceRestantanimalerie(niveauActuel, niveauMax) {
     return experienceRestant;
 }
 
-//calcul l'éxpérience de construction par rapport a l'hdv pour le camp_militaire
+//calcul l'éxpérience de construction par rapport a l'hdv pour le animalerie
 export function calculerExperiencedepuisHDVanimalerie(hdvNiveau) {
     let experienceTotal = 0;
     const niveauMax = Math.max(...Object.keys(animalerie)
@@ -150,23 +150,23 @@ export function calculerExperiencedepuisHDVanimalerie(hdvNiveau) {
         .filter(n => !isNaN(n))
     );
     for (let i = 0; i <= niveauMax; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
-        if (camp_militaire.hdvrequis <= hdvNiveau) {
-            experienceTotal += camp_militaire.experience;
+        const animalerie = animalerie[`animalerie_nv_${i}`];
+        if (animalerie.hdvrequis <= hdvNiveau) {
+            experienceTotal += animalerie.experience;
         }
     }
     return experienceTotal;
 }
 
-//calcul l'éxpérience de construction pour l'hdv séléctionner pour le camp_militaire
+//calcul l'éxpérience de construction pour l'hdv séléctionner pour le animalerie
 export function calculerExperienceConstructionParHDVanimalerie(hdvNiveau) {
     let experienceTotal = 0;
 
     for (let i = 1; i <= 21; i++) {
-        const camp_militaire = animalerie[`animalerie_nv_${i}`];
+        const animalerie = animalerie[`animalerie_nv_${i}`];
 
-        if (camp_militaire.hdvrequis === hdvNiveau) {
-            experienceTotal += camp_militaire.experience;
+        if (animalerie.hdvrequis === hdvNiveau) {
+            experienceTotal += animalerie.experience;
         }
     }
     return experienceTotal;
