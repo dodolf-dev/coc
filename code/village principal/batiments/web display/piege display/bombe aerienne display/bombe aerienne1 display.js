@@ -50,11 +50,13 @@ function updatebombe_aerienneOptions() {
         selectbombe_aerienne1.style.display = "none";
         imagebombe_aerienne1.style.display = "none";
         infoContainer.style.display = "none";
+        bombe_aerienne_block.style.display = "none";
     } else {
         bombe_aerienne1_box.style.display = "block";
         selectbombe_aerienne1.style.display = "block";
         imagebombe_aerienne1.style.display = "block";
         infoContainer.style.display = "block";
+        bombe_aerienne_block.style.display = "block";
         selectbombe_aerienne1.value = selectedLevel;
         updatebombe_aerienne1Info();
     }

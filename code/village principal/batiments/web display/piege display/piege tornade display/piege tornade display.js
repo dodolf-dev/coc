@@ -30,7 +30,7 @@ function updatebombeOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `bombe 1 Niveau ${level}`;
+        option.textContent = `Piège tornade Niveau ${level}`;
         selectpiege_tornade.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatebombeOptions() {
         selectpiege_tornade.style.display = "none";
         imagepiege_tornade.style.display = "none";
         infoContainer.style.display = "none";
+        piege_tornade_block.style.display = "none";
     } else {
         piege_tornade_box.style.display = "block";
         selectpiege_tornade.style.display = "block";
         imagepiege_tornade.style.display = "block";
         infoContainer.style.display = "block";
+        piege_tornade_block.style.display = "block";
         selectpiege_tornade.value = selectedLevel;
         updatepiege_tornadeInfo();
     }

@@ -30,7 +30,7 @@ function updatebombe_geanteOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `bombe_geante 1 Niveau ${level}`;
+        option.textContent = `Bombe géante 1 Niveau ${level}`;
         selectbombe_geante1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatebombe_geanteOptions() {
         selectbombe_geante1.style.display = "none";
         imagebombe_geante1.style.display = "none";
         infoContainer.style.display = "none";
+        bombe_geante_block.style.display = "none";
     } else {
         bombe_geante1_box.style.display = "block";
         selectbombe_geante1.style.display = "block";
         imagebombe_geante1.style.display = "block";
         infoContainer.style.display = "block";
+        bombe_geante_block.style.display = "block";
         selectbombe_geante1.value = selectedLevel;
         updatebombe_geante1Info();
     }

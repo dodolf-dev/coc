@@ -30,7 +30,7 @@ function updatebombeOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `bombe 1 Niveau ${level}`;
+        option.textContent = `Giga bombe Niveau ${level}`;
         selectgiga_bombe.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatebombeOptions() {
         selectgiga_bombe.style.display = "none";
         imagegiga_bombe.style.display = "none";
         infoContainer.style.display = "none";
+        giga_bombe_block.style.display = "none";
     } else {
         giga_bombe_box.style.display = "block";
         selectgiga_bombe.style.display = "block";
         imagegiga_bombe.style.display = "block";
         infoContainer.style.display = "block";
+        giga_bombe_block.style.display = "block";
         selectgiga_bombe.value = selectedLevel;
         updategiga_bombeInfo();
     }

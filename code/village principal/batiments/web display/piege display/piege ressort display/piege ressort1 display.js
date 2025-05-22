@@ -30,7 +30,7 @@ function updatepiege_ressortOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `piege_ressort 1 Niveau ${level}`;
+        option.textContent = `Piège ressort 1 Niveau ${level}`;
         selectpiege_ressort1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatepiege_ressortOptions() {
         selectpiege_ressort1.style.display = "none";
         imagepiege_ressort1.style.display = "none";
         infoContainer.style.display = "none";
+        piege_ressort_block.style.display = "none";
     } else {
         piege_ressort1_box.style.display = "block";
         selectpiege_ressort1.style.display = "block";
         imagepiege_ressort1.style.display = "block";
         infoContainer.style.display = "block";
+        piege_ressort_block.style.display = "block";
         selectpiege_ressort1.value = selectedLevel;
         updatepiege_ressort1Info();
     }

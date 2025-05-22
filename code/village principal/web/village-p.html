@@ -1133,7 +1133,7 @@
                 </div>
             </div>
             <!--PIEGE-->
-            <div class="toggle-container">
+            <div class="toggle-container" id="piege_block">
                 <input type="checkbox" id="toggle-piege">
                 <label for="toggle-piege" class="checkbox-label">
                   Pièges:
@@ -1146,14 +1146,15 @@
                 </label>
                 <div class="toggle-content">
                     <!--BOMBE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="bombe_block">
                         <input type="checkbox" id="toggle-bombe">
                         <label for="toggle-bombe" class="checkbox-label">
-                          Bombe :
+                          Bombes :
                             <div class="progress-container">
-                                <span id="progress-bombe-value">Null</span>
-                                <progress id="progress-bombe" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-bombe-text">null</span>
+                                <span id="progress-bombes-value">Null</span>
+                                <progress id="progress-bombes" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombes-temps">null</span>
+                                <span id="progress-bombes-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -1378,14 +1379,15 @@
                         </div>
                     </div>
                     <!--PIEGE RESSORT-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="piege_ressort_block">
                         <input type="checkbox" id="toggle-piege_ressort">
                         <label for="toggle-piege_ressort" class="checkbox-label">
-                          piege_ressort :
+                          Pièges ressort :
                             <div class="progress-container">
-                                <span id="progress-piege_ressort-value">Null</span>
-                                <progress id="progress-piege_ressort" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-piege_ressort-text">null</span>
+                                <span id="progress-piege_ressorts-value">Null</span>
+                                <progress id="progress-piege_ressorts" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-piege_ressorts-temps">null</span>
+                                <span id="progress-piege_ressorts-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -1583,14 +1585,15 @@
                         </div>
                     </div>
                     <!--BOBME GEANTE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="bombe_geante_block">
                         <input type="checkbox" id="toggle-bombe_geante">
                         <label for="toggle-bombe_geante" class="checkbox-label">
-                          Bombe géante:
+                          Bombes géante:
                             <div class="progress-container">
-                                <span id="progress-bombe_geante-value">Null</span>
-                                <progress id="progress-bombe_geante" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-bombe_geante-text">null</span>
+                                <span id="progress-bombe_geantes-value">Null</span>
+                                <progress id="progress-bombe_geantes" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombe_geantes-temps">null</span>
+                                <span id="progress-bombe_geantes-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -1815,14 +1818,15 @@
                         </div>
                     </div>
                     <!--BOMBE AERIENNE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="bombe_aerienne_block">
                         <input type="checkbox" id="toggle-bombe_aerienne">
                         <label for="toggle-bombe_aerienne" class="checkbox-label">
-                          Bombe aerienne :
+                          Bombes aérienne :
                             <div class="progress-container">
-                                <span id="progress-bombe_aerienne-value">Null</span>
-                                <progress id="progress-bombe_aerienne" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-bombe_aerienne-text">null</span>
+                                <span id="progress-bombe_aeriennes-value">Null</span>
+                                <progress id="progress-bombe_aeriennes" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-bombe_aeriennes-temps">null</span>
+                                <span id="progress-bombe_aeriennes-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -2025,14 +2029,15 @@
                         </div>
                     </div>
                     <!--MINE CHERCHEUSE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="mine_chercheuse_block">
                         <input type="checkbox" id="toggle-mine_chercheuse">
                         <label for="toggle-mine_chercheuse" class="checkbox-label">
-                          mine_chercheuse :
+                          Mines chercheuse :
                             <div class="progress-container">
-                                <span id="progress-mine_chercheuse-value">Null</span>
-                                <progress id="progress-mine_chercheuse" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-mine_chercheuse-text">null</span>
+                                <span id="progress-mine_chercheuses-value">Null</span>
+                                <progress id="progress-mine_chercheuses" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-mine_chercheuses-temps">null</span>
+                                <span id="progress-mine_chercheuses-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -2225,14 +2230,15 @@
                         </div>
                     </div>
                     <!--PIEGE SQUELETTIQUE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="piege_squelettique_block">
                         <input type="checkbox" id="toggle-piege_squelettique">
                         <label for="toggle-piege_squelettique" class="checkbox-label">
-                          piege_squelettique :
+                          Pièges squelettique :
                             <div class="progress-container">
-                                <span id="progress-piege_squelettique-value">Null</span>
-                                <progress id="progress-piege_squelettique" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-piege_squelettique-text">null</span>
+                                <span id="progress-piege_squelettiques-value">Null</span>
+                                <progress id="progress-piege_squelettiques" value="0" max="100" class="barredeprogression"></progress>
+                                <span id="progress-piege_squelettiques-temps">null</span>
+                                <span id="progress-piege_squelettiques-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -2321,14 +2327,15 @@
                         </div>
                     </div>
                     <!--PIEGE TORNADE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="piege_tornade_block">
                         <input type="checkbox" id="toggle-piege_tornade">
                         <label for="toggle-piege_tornade" class="checkbox-label">
-                          piege_tornade :
+                          Piège tornade :
                             <div class="progress-container">
                                 <span id="progress-piege_tornade-value">Null</span>
                                 <progress id="progress-piege_tornade" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-piege_tornade-text">null</span>
+                                <span id="progress-piege_tornade-temps">null</span>
+                                <span id="progress-piege_tornade-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">
@@ -2356,14 +2363,15 @@
                         </div>
                     </div>
                     <!--GIGA BOMBE-->
-                    <div class="toggle-container">
+                    <div class="toggle-container" id="giga_bombe_block">
                         <input type="checkbox" id="toggle-giga_bombe">
                         <label for="toggle-giga_bombe" class="checkbox-label">
-                          giga_bombe :
+                          Giga bombe :
                             <div class="progress-container">
                                 <span id="progress-giga_bombe-value">Null</span>
                                 <progress id="progress-giga_bombe" value="0" max="100" class="barredeprogression"></progress>
-                                <span id="progress-giga_bombe-text">null</span>
+                                <span id="progress-giga_bombe-temps">null</span>
+                                <span id="progress-giga_bombe-prix-or">null</span>
                             </div>
                         </label>
                         <div class="toggle-content">

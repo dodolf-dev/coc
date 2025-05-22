@@ -30,7 +30,7 @@ function updatepiege_squelettiqueOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `piege_squelettique 1 Niveau ${level}`;
+        option.textContent = `Piège squelettique 1 Niveau ${level}`;
         selectpiege_squelettique1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatepiege_squelettiqueOptions() {
         selectpiege_squelettique1.style.display = "none";
         imagepiege_squelettique1.style.display = "none";
         infoContainer.style.display = "none";
+        piege_squelettique_block.style.display = "none";
     } else {
         piege_squelettique1_box.style.display = "block";
         selectpiege_squelettique1.style.display = "block";
         imagepiege_squelettique1.style.display = "block";
         infoContainer.style.display = "block";
+        piege_squelettique_block.style.display = "block";
         selectpiege_squelettique1.value = selectedLevel;
         updatepiege_squelettique1Info();
     }

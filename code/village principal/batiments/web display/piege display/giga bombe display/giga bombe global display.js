@@ -1,10 +1,10 @@
-import { calculerPourcentageNiveauxpiege_ressorts } from "/coc/code/village principal/batiments/calculator/piege calc/piege ressorts/piege ressort global.calc.js";
+import { calculerPourcentageNiveauxgiga_bombe } from "/coc/code/village principal/batiments/calculator/piege calc/giga bombe/giga bombe global.calc.js";
 
 // Fonction pour mettre à jour le pourcentage de progression
 function updateProgressPercentage() {
-    const progression = calculerPourcentageNiveauxpiege_ressorts();
-    const progressBar = document.getElementById('progress-piege_ressorts');
-    const progressText = document.getElementById('progress-piege_ressorts-value');
+    const progression = calculerPourcentageNiveauxgiga_bombe();
+    const progressBar = document.getElementById('progress-giga_bombes');
+    const progressText = document.getElementById('progress-giga_bombes-value');
 
     if (progressBar && progressText) {
         progressBar.value = progression;
@@ -27,10 +27,10 @@ function updateHighlight(selectElement) {
   
 // Quand la page est chargée
 window.addEventListener('DOMContentLoaded', () => {
-    // Applique le surlignage à tous les selects de piege_ressort
-    const piege_ressortSelects = document.querySelectorAll('select[id^="piege_ressort"]');
+    // Applique le surlignage à tous les selects de giga_bombe
+    const giga_bombeSelects = document.querySelectorAll('select[id^="giga_bombe"]');
   
-    piege_ressortSelects.forEach(select => {
+    giga_bombeSelects.forEach(select => {
         updateHighlight(select);
 
         select.addEventListener('change', () => {
@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (selectHdv) {
         selectHdv.addEventListener('change', () => {
             setTimeout(() => {
-                piege_ressortSelects.forEach(select => {
+                giga_bombeSelects.forEach(select => {
                     updateHighlight(select);
                 });
                 

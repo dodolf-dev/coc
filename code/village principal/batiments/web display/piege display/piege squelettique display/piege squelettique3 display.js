@@ -30,7 +30,7 @@ function updatepiege_squelettiqueOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `piege_squelettique 1 Niveau ${level}`;
+        option.textContent = `Piège squelettique 3 Niveau ${level}`;
         selectpiege_squelettique3.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

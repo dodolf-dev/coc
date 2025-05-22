@@ -50,11 +50,15 @@ function updatebombeOptions() {
         selectbombe1.style.display = "none";
         imagebombe1.style.display = "none";
         infoContainer.style.display = "none";
+        bombe_block.style.display = "none";
+        piege_block.style.display = "none";
     } else {
         bombe1_box.style.display = "block";
         selectbombe1.style.display = "block";
         imagebombe1.style.display = "block";
         infoContainer.style.display = "block";
+        bombe_block.style.display = "block";
+        piege_block.style.display = "block";
         selectbombe1.value = selectedLevel;
         updatebombe1Info();
     }

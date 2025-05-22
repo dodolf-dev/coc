@@ -30,7 +30,7 @@ function updatemine_chercheuseOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `mine_chercheuse 1 Niveau ${level}`;
+        option.textContent = `Mine chercheuse 1 Niveau ${level}`;
         selectmine_chercheuse1.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
@@ -50,11 +50,13 @@ function updatemine_chercheuseOptions() {
         selectmine_chercheuse1.style.display = "none";
         imagemine_chercheuse1.style.display = "none";
         infoContainer.style.display = "none";
+        mine_chercheuse_block.style.display = "none";
     } else {
         mine_chercheuse1_box.style.display = "block";
         selectmine_chercheuse1.style.display = "block";
         imagemine_chercheuse1.style.display = "block";
         infoContainer.style.display = "block";
+        mine_chercheuse_block.style.display = "block";
         selectmine_chercheuse1.value = selectedLevel;
         updatemine_chercheuse1Info();
     }

@@ -30,7 +30,7 @@ function updatepiege_ressort2ptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `piege_ressort21 Niveau ${level}`;
+        option.textContent = `Piège ressort 2 Niveau ${level}`;
         selectpiege_ressort2.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

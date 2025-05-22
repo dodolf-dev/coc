@@ -30,7 +30,7 @@ function updatebombe_geanteOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `bombe_geante 1 Niveau ${level}`;
+        option.textContent = `Bombe géante 4 Niveau ${level}`;
         selectbombe_geante4.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne

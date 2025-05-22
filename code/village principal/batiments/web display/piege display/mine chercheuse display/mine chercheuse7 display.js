@@ -30,7 +30,7 @@ function updatemine_chercheuseOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `mine_chercheuse 1 Niveau ${level}`;
+        option.textContent = `Mine chercheuse 7 Niveau ${level}`;
         selectmine_chercheuse7.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
