@@ -1,5 +1,5 @@
 import { archere } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { archere_nv_max_laboratoirpe } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
+import { archere_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
 import { calculerPrixRestantarchere } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
 import { calculerTempsRestantarchere } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
