@@ -1,5 +1,5 @@
 import { ballon } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { ballon_nv_max_laboratoirpe } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
+import { ballon_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
 import { calculerPrixRestantballon } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
 import { calculerTempsRestantballon } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
