@@ -1,4 +1,4 @@
-import { hall_des_heros } from '/coc/code/village principal/ atiments/database/data armee/data hall des heros.js';
+import { hall_heros } from '/coc/code/village principal/ atiments/database/data armee/data hall heros.js';
 
 //général
 export function hall_des_heros_nv_max_hdv(hdvNiveau) {
