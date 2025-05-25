@@ -1,4 +1,4 @@
-import { laboratoire } from '/coc/code/village principal/ atiments/database/data armee/data laboratoire.js';
+import { laboratoire } from '/coc/code/village principal/batiments/database/data armee/data laboratoire.js';
 
 //général
 export function laboratoire_nv_max_hdv(hdvNiveau) {

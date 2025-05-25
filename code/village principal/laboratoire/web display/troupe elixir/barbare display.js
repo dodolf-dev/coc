@@ -1,7 +1,7 @@
 import { barbare } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { barbare_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/barbare.calc.js";
-import { calculerPrixRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/barbare.calc.js";
-import { calculerTempsRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/barbare.calc.js";
+import { barbare_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
+import { calculerPrixRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
+import { calculerTempsRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
 import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
 import { formatPrix } from "/coc/code/outils/affichge nombre.js";
 
@@ -30,7 +30,7 @@ function updatebarbareOptions() {
         const level = parseInt(key.split("_").pop());
         const option = document.createElement("option");
         option.value = level;
-        option.textContent = `barbare 1 Niveau ${level}`;
+        option.textContent = `barbare Niveau ${level}`;
         selectbarbare.appendChild(option);
 
         // Si l'ancien niveau est toujours disponible, on le sélectionne
