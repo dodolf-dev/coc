@@ -19,6 +19,8 @@ import { globalcalculerPrixRestantcanon_ricochet, globalcalculertempsRestantcano
 import { globalcalculerPrixRestanttour_multi_equipee, globalcalculertempsRestanttour_multi_equipee } from "/coc/code/village principal/batiments/calculator/defense calc/tour multi equipee/tour multi equipee global calc.js";
 import { globalcalculerPrixRestantcracheur_feu, globalcalculertempsRestantcracheur_feus } from "/coc/code/village principal/batiments/calculator/defense calc/cracheur feus/cracheur feu global calc.js";
 
+//PIEGES
+
 //RESSOURCES
 import { globalcalculerPrixRestantreserve_or, globalcalculertempsRestantreserve_ors } from "/coc/code/village principal/batiments/calculator/ressource calc/reserve ors/reserve or global calc.js";
 import { globalcalculerPrixRestantreservoir_elixir, globalcalculertempsRestantreservoir_elixirs } from "/coc/code/village principal/batiments/calculator/ressource calc/reservoir elixirs/reservoir elixir global calc.js";
