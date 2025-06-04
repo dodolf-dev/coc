@@ -1,92 +1,174 @@
-import { barbare } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { barbare_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
-import { calculerPrixRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
-import { calculerTempsRestantbarbare } from "/coc/code/village principal/laboratoire/calculator/troupe elixir/barbare.calc.js";
-import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
-import { formatPrix } from "/coc/code/outils/affichge nombre.js";
+import { barbare } from '/coc/code/village principal/laboratoire/database/data troupe elixir.js';
 
+//général
+export function barbare_nv_max_laboratoire(laboratoireNiveau) {
+    let niveauMax = 0;
+    const niveaux = Object.keys(barbare)
+        .map(key => parseInt(key.replace("barbare_nv_", ""), 10))
+        .filter(n => !isNaN(n));
 
-const barbare_box = document.getElementById("barbare_box");
-const selectbarbare = document.getElementById("barbare");
-const imagebarbare = document.getElementById("image-barbare");
-const selectlaboratoire = document.getElementById("laboratoire");
-const infoContainer = document.createElement("div");
-document.body.appendChild(infoContainer);
-
-function updatebarbareOptions() {
-    const laboratoireLevel = parseInt(selectlaboratoire.value);
-    const currentbarbareLevel = parseInt(selectbarbare.value) || 0; // Récupérer l'ancien niveau
-
-    // Filtrer les niveaux de barbare disponibles en fonction de l'laboratoire
-    const barbareLevels = Object.entries(barbare)
-        .filter(([key, data]) => data.laboratoirerequis <= laboratoireLevel)
-        .sort((a, b) => a[1].laboratoirerequis - b[1].laboratoirerequis);
-
-    // Réinitialiser les options du select
-    selectbarbare.innerHTML = "";
-    let selectedLevel = null;
-
-    barbareLevels.forEach(([key, data]) => {
-        const level = parseInt(key.split("_").pop());
-        const option = document.createElement("option");
-        option.value = level;
-        option.textContent = `barbare Niveau ${level}`;
-        selectbarbare.appendChild(option);
-
-        // Si l'ancien niveau est toujours disponible, on le sélectionne
-        if (level === currentbarbareLevel) {
-            selectedLevel = level;
+    const niveauMaxPossible = Math.max(...niveaux);
+    for (let i = 0; i <= niveauMaxPossible; i++) {
+        const data = barbare[`barbare_nv_${i}`];
+        if (data && data.laboratoirerequis <= laboratoireNiveau) {
+            niveauMax = i;
         }
-    });
-
-    // Si l'ancien niveau n'existe plus, prendre le niveau le plus bas possible
-    if (!selectedLevel) {
-        selectedLevel = barbareLevels.length ? parseInt(barbareLevels[0][0].split("_").pop()) : 0;
     }
-
-    // Si aucun niveau n'est disponible, masquer le barbare 1
-    if (barbareLevels.length === 0) {
-        barbare_box.style.display = "none";
-        selectbarbare.style.display = "none";
-        imagebarbare.style.display = "none";
-        infoContainer.style.display = "none";
-    } else {
-        barbare_box.style.display = "block";
-        selectbarbare.style.display = "block";
-        imagebarbare.style.display = "block";
-        infoContainer.style.display = "block";
-        selectbarbare.value = selectedLevel;
-        updatebarbareInfo();
-    }
+    return niveauMax;
 }
 
-function updatebarbareInfo() {
-    const niveau = `barbare_nv_${selectbarbare.value}`;
-    const data = barbare[niveau];
-    const laboratoireNiveau = parseInt(document.getElementById("laboratoire").value, 10);
-    const prixrestant = calculerPrixRestantbarbare(parseInt(selectbarbare.value, 10),barbare_nv_max_laboratoire(laboratoireNiveau));
-    const tempsRestant = calculerTempsRestantbarbare(parseInt(selectbarbare.value, 10), barbare_nv_max_laboratoire(laboratoireNiveau));
+//calcul de temps
 
-    if (data) {
-        imagebarbare.src = data.image;
-        imagebarbare.alt = `barbare Niveau ${selectbarbare.value}`;
+//temps passer a construire le canon
+export function calculerTempsTotalbarbare(niveauMax) {
+    let tempsTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        tempsTotal += barbare[`barbare_nv_${i}`].trecherche;
     }
-
-    if (prixrestant === 0) {
-        document.getElementById("barbare_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-    else {
-        document.getElementById("barbare_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-
-    if (tempsRestant === 0) {
-        document.getElementById("barbare_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
-    else{
-        document.getElementById("barbare_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
+    return tempsTotal;
 }
-selectlaboratoire.addEventListener("change", updatebarbareOptions);
-selectbarbare.addEventListener("change", updatebarbareInfo);
 
-updatebarbareOptions();
+//calcul le temps de construction restant pour le canon
+export function calculerTempsRestantbarbare(niveauActuel, niveauMax) {
+    let tempsRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        const key = `barbare_nv_${parseInt(i, 10)}`; // Supprime les zéros inutiles
+        if (barbare.hasOwnProperty(key)) {
+            tempsRestant += barbare[key].trecherche;
+        } else {
+            console.warn(`La clé ${key} est introuvable dans l'objet barbare.`);
+        }
+    }
+    return tempsRestant;
+}
+
+//calcul le temps de construction par rapport a l'laboratoire laboratoire pour le canon
+export function calculerTempsdepuislaboratoirebarbare(laboratoireNiveau) {
+    let tempsTotal = 0;
+    const niveauMax = Math.max(...Object.keys(barbare)
+        .map(key => parseInt(key.replace("barbare_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul le temps de construction pour l'laboratoire séléctionner pour le canon
+export function calculerTempsConstructionParlaboratoirebarbare(laboratoireNiveau) {
+    let tempsTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul de prix
+
+//prix déjà payer pour le canon
+export function calculerPrixTotalbarbare(niveauMax) {
+    let prixTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        prixTotal += barbare[`barbare_nv_${i}`].prix;
+    }
+    return prixTotal;
+}
+
+//calcul le prix restant pour le canon
+export function calculerPrixRestantbarbare(niveauActuel, niveauMax) {
+    let prixRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        prixRestant += barbare[`barbare_nv_${i}`].prix;
+    }
+    return prixRestant;
+}
+
+//calcul le prix de construction par rapport a l'laboratoire pour le canon
+export function calculerPrixdepuislaboratoirebarbare(laboratoireNiveau) {
+    let prixTotal = 0;
+    const niveauMax = Math.max(...Object.keys(barbare)
+        .map(key => parseInt(key.replace("barbare_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+//calcul le prix de construction pour l'laboratoire séléctionner pour le canon
+export function calculerPrixConstructionParlaboratoirebarbare(laboratoireNiveau) {
+    let prixTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+
+//calcul d'expérience
+
+//éxpérience déjà gagner pour le canon
+export function calculerExperienceTotalbarbare(niveauMax) {
+    let experienceTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        experienceTotal += barbare[`barbare_nv_${i}`].experience;
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience restant pour le canon
+export function calculerExperienceRestantbarbare(niveauActuel, niveauMax) {
+    let experienceRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        experienceRestant += barbare[`barbare_nv_${i}`].experience;
+    }
+    return experienceRestant;
+}
+
+//calcul l'éxpérience de construction par rapport a l'laboratoire pour le canon
+export function calculerExperiencedepuislaboratoirebarbare(laboratoireNiveau) {
+    let experienceTotal = 0;
+    const niveauMax = Math.max(...Object.keys(barbare)
+        .map(key => parseInt(key.replace("barbare_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience de construction pour l'laboratoire séléctionner pour le canon
+export function calculerExperienceConstructionParlaboratoirebarbare(laboratoireNiveau) {
+    let experienceTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = barbare[`barbare_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}

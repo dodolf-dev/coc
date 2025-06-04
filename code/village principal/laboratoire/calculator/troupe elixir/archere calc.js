@@ -1,92 +1,174 @@
-import { archere } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { archere_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
-import { calculerPrixRestantarchere } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
-import { calculerTempsRestantarchere } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/archere.calc.js";
-import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
-import { formatPrix } from "/coc/code/outils/affichge nombre.js";
+import { archere } from '/coc/code/village principal/laboratoire/database/data troupe elixir.js';
 
+//général
+export function archere_nv_max_laboratoire(laboratoireNiveau) {
+    let niveauMax = 0;
+    const niveaux = Object.keys(archere)
+        .map(key => parseInt(key.replace("archere_nv_", ""), 10))
+        .filter(n => !isNaN(n));
 
-const archere_box = document.getElementById("archere_box");
-const selectarchere = document.getElementById("archere");
-const imagearchere = document.getElementById("image-archere");
-const selectlaboratoire = document.getElementById("laboratoire");
-const infoContainer = document.createElement("div");
-document.body.appendChild(infoContainer);
-
-function updatearchereOptions() {
-    const laboratoireLevel = parseInt(selectlaboratoire.value);
-    const currentarchereLevel = parseInt(selectarchere.value) || 0; // Récupérer l'ancien niveau
-
-    // Filtrer les niveaux de archere disponibles en fonction de l'laboratoire
-    const archereLevels = Object.entries(archere)
-        .filter(([key, data]) => data.laboratoirerequis <= laboratoireLevel)
-        .sort((a, b) => a[1].laboratoirerequis - b[1].laboratoirerequis);
-
-    // Réinitialiser les options du select
-    selectarchere.innerHTML = "";
-    let selectedLevel = null;
-
-    archereLevels.forEach(([key, data]) => {
-        const level = parseInt(key.split("_").pop());
-        const option = document.createElement("option");
-        option.value = level;
-        option.textContent = `archere 1 Niveau ${level}`;
-        selectarchere.appendChild(option);
-
-        // Si l'ancien niveau est toujours disponible, on le sélectionne
-        if (level === currentarchereLevel) {
-            selectedLevel = level;
+    const niveauMaxPossible = Math.max(...niveaux);
+    for (let i = 0; i <= niveauMaxPossible; i++) {
+        const data = archere[`archere_nv_${i}`];
+        if (data && data.laboratoirerequis <= laboratoireNiveau) {
+            niveauMax = i;
         }
-    });
-
-    // Si l'ancien niveau n'existe plus, prendre le niveau le plus bas possible
-    if (!selectedLevel) {
-        selectedLevel = archereLevels.length ? parseInt(archereLevels[0][0].split("_").pop()) : 0;
     }
-
-    // Si aucun niveau n'est disponible, masquer le archere 1
-    if (archereLevels.length === 0) {
-        archere_box.style.display = "none";
-        selectarchere.style.display = "none";
-        imagearchere.style.display = "none";
-        infoContainer.style.display = "none";
-    } else {
-        archere_box.style.display = "block";
-        selectarchere.style.display = "block";
-        imagearchere.style.display = "block";
-        infoContainer.style.display = "block";
-        selectarchere.value = selectedLevel;
-        updatearchereInfo();
-    }
+    return niveauMax;
 }
 
-function updatearchereInfo() {
-    const niveau = `archere_nv_${selectarchere.value}`;
-    const data = archere[niveau];
-    const laboratoireNiveau = parseInt(document.getElementById("laboratoire").value, 10);
-    const prixrestant = calculerPrixRestantarchere(parseInt(selectarchere.value, 10),archere_nv_max_laboratoire(laboratoireNiveau));
-    const tempsRestant = calculerTempsRestantarchere(parseInt(selectarchere.value, 10), archere_nv_max_laboratoire(laboratoireNiveau));
+//calcul de temps
 
-    if (data) {
-        imagearchere.src = data.image;
-        imagearchere.alt = `archere Niveau ${selectarchere.value}`;
+//temps passer a construire le canon
+export function calculerTempsTotalarchere(niveauMax) {
+    let tempsTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        tempsTotal += archere[`archere_nv_${i}`].trecherche;
     }
-
-    if (prixrestant === 0) {
-        document.getElementById("archere_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-    else {
-        document.getElementById("archere_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-
-    if (tempsRestant === 0) {
-        document.getElementById("archere_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
-    else{
-        document.getElementById("archere_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
+    return tempsTotal;
 }
-selectlaboratoire.addEventListener("change", updatearchereOptions);
-selectarchere.addEventListener("change", updatearchereInfo);
 
-updatearchereOptions();
+//calcul le temps de construction restant pour le canon
+export function calculerTempsRestantarchere(niveauActuel, niveauMax) {
+    let tempsRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        const key = `archere_nv_${parseInt(i, 10)}`; // Supprime les zéros inutiles
+        if (archere.hasOwnProperty(key)) {
+            tempsRestant += archere[key].trecherche;
+        } else {
+            console.warn(`La clé ${key} est introuvable dans l'objet archere.`);
+        }
+    }
+    return tempsRestant;
+}
+
+//calcul le temps de construction par rapport a l'laboratoire laboratoire pour le canon
+export function calculerTempsdepuislaboratoirearchere(laboratoireNiveau) {
+    let tempsTotal = 0;
+    const niveauMax = Math.max(...Object.keys(archere)
+        .map(key => parseInt(key.replace("archere_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul le temps de construction pour l'laboratoire séléctionner pour le canon
+export function calculerTempsConstructionParlaboratoirearchere(laboratoireNiveau) {
+    let tempsTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul de prix
+
+//prix déjà payer pour le canon
+export function calculerPrixTotalarchere(niveauMax) {
+    let prixTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        prixTotal += archere[`archere_nv_${i}`].prix;
+    }
+    return prixTotal;
+}
+
+//calcul le prix restant pour le canon
+export function calculerPrixRestantarchere(niveauActuel, niveauMax) {
+    let prixRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        prixRestant += archere[`archere_nv_${i}`].prix;
+    }
+    return prixRestant;
+}
+
+//calcul le prix de construction par rapport a l'laboratoire pour le canon
+export function calculerPrixdepuislaboratoirearchere(laboratoireNiveau) {
+    let prixTotal = 0;
+    const niveauMax = Math.max(...Object.keys(archere)
+        .map(key => parseInt(key.replace("archere_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+//calcul le prix de construction pour l'laboratoire séléctionner pour le canon
+export function calculerPrixConstructionParlaboratoirearchere(laboratoireNiveau) {
+    let prixTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+
+//calcul d'expérience
+
+//éxpérience déjà gagner pour le canon
+export function calculerExperienceTotalarchere(niveauMax) {
+    let experienceTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        experienceTotal += archere[`archere_nv_${i}`].experience;
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience restant pour le canon
+export function calculerExperienceRestantarchere(niveauActuel, niveauMax) {
+    let experienceRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        experienceRestant += archere[`archere_nv_${i}`].experience;
+    }
+    return experienceRestant;
+}
+
+//calcul l'éxpérience de construction par rapport a l'laboratoire pour le canon
+export function calculerExperiencedepuislaboratoirearchere(laboratoireNiveau) {
+    let experienceTotal = 0;
+    const niveauMax = Math.max(...Object.keys(archere)
+        .map(key => parseInt(key.replace("archere_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience de construction pour l'laboratoire séléctionner pour le canon
+export function calculerExperienceConstructionParlaboratoirearchere(laboratoireNiveau) {
+    let experienceTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = archere[`archere_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}

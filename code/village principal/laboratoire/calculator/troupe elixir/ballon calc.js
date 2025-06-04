@@ -1,92 +1,174 @@
-import { ballon } from "/coc/code/village principal/laboratoire/database/data troupe elixir.js";
-import { ballon_nv_max_laboratoire } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
-import { calculerPrixRestantballon } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
-import { calculerTempsRestantballon } from "/coc/code/village principal/laboratoire/calculator/troupe elixir calc/ballon.calc.js";
-import { convertirSecondescompact } from "/coc/code/outils/convertisseurtemps.js";
-import { formatPrix } from "/coc/code/outils/affichge nombre.js";
+import { ballon } from '/coc/code/village principal/laboratoire/database/data troupe elixir.js';
 
+//général
+export function ballon_nv_max_laboratoire(laboratoireNiveau) {
+    let niveauMax = 0;
+    const niveaux = Object.keys(ballon)
+        .map(key => parseInt(key.replace("ballon_nv_", ""), 10))
+        .filter(n => !isNaN(n));
 
-const ballon_box = document.getElementById("ballon_box");
-const selectballon = document.getElementById("ballon");
-const imageballon = document.getElementById("image-ballon");
-const selectlaboratoire = document.getElementById("laboratoire");
-const infoContainer = document.createElement("div");
-document.body.appendChild(infoContainer);
-
-function updateballonOptions() {
-    const laboratoireLevel = parseInt(selectlaboratoire.value);
-    const currentballonLevel = parseInt(selectballon.value) || 0; // Récupérer l'ancien niveau
-
-    // Filtrer les niveaux de ballon disponibles en fonction de l'laboratoire
-    const ballonLevels = Object.entries(ballon)
-        .filter(([key, data]) => data.laboratoirerequis <= laboratoireLevel)
-        .sort((a, b) => a[1].laboratoirerequis - b[1].laboratoirerequis);
-
-    // Réinitialiser les options du select
-    selectballon.innerHTML = "";
-    let selectedLevel = null;
-
-    ballonLevels.forEach(([key, data]) => {
-        const level = parseInt(key.split("_").pop());
-        const option = document.createElement("option");
-        option.value = level;
-        option.textContent = `ballon 1 Niveau ${level}`;
-        selectballon.appendChild(option);
-
-        // Si l'ancien niveau est toujours disponible, on le sélectionne
-        if (level === currentballonLevel) {
-            selectedLevel = level;
+    const niveauMaxPossible = Math.max(...niveaux);
+    for (let i = 0; i <= niveauMaxPossible; i++) {
+        const data = ballon[`ballon_nv_${i}`];
+        if (data && data.laboratoirerequis <= laboratoireNiveau) {
+            niveauMax = i;
         }
-    });
-
-    // Si l'ancien niveau n'existe plus, prendre le niveau le plus bas possible
-    if (!selectedLevel) {
-        selectedLevel = ballonLevels.length ? parseInt(ballonLevels[0][0].split("_").pop()) : 0;
     }
-
-    // Si aucun niveau n'est disponible, masquer le ballon 1
-    if (ballonLevels.length === 0) {
-        ballon_box.style.display = "none";
-        selectballon.style.display = "none";
-        imageballon.style.display = "none";
-        infoContainer.style.display = "none";
-    } else {
-        ballon_box.style.display = "block";
-        selectballon.style.display = "block";
-        imageballon.style.display = "block";
-        infoContainer.style.display = "block";
-        selectballon.value = selectedLevel;
-        updateballonInfo();
-    }
+    return niveauMax;
 }
 
-function updateballonInfo() {
-    const niveau = `ballon_nv_${selectballon.value}`;
-    const data = ballon[niveau];
-    const laboratoireNiveau = parseInt(document.getElementById("laboratoire").value, 10);
-    const prixrestant = calculerPrixRestantballon(parseInt(selectballon.value, 10),ballon_nv_max_laboratoire(laboratoireNiveau));
-    const tempsRestant = calculerTempsRestantballon(parseInt(selectballon.value, 10), ballon_nv_max_laboratoire(laboratoireNiveau));
+//calcul de temps
 
-    if (data) {
-        imageballon.src = data.image;
-        imageballon.alt = `ballon Niveau ${selectballon.value}`;
+//temps passer a construire le canon
+export function calculerTempsTotalballon(niveauMax) {
+    let tempsTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        tempsTotal += ballon[`ballon_nv_${i}`].trecherche;
     }
-
-    if (prixrestant === 0) {
-        document.getElementById("ballon_prix_niveau").innerHTML = `Prix restant : max <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-    else {
-        document.getElementById("ballon_prix_niveau").innerHTML = `Prix restant : ${formatPrix(prixrestant)} <img src="/coc/image/village principal/ressource/or village-p.jpg" alt="or" class="icone-ressource">`;
-    }
-
-    if (tempsRestant === 0) {
-        document.getElementById("ballon_temps_niveau").innerHTML = `Temps restant: max <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
-    else{
-        document.getElementById("ballon_temps_niveau").innerHTML = `Temps restant: ${convertirSecondescompact(tempsRestant)} <img src="/coc/image/général/ressource/temps icone.png" alt="temps" class="icone-ressource">`;
-    }
+    return tempsTotal;
 }
-selectlaboratoire.addEventListener("change", updateballonOptions);
-selectballon.addEventListener("change", updateballonInfo);
 
-updateballonOptions();
+//calcul le temps de construction restant pour le canon
+export function calculerTempsRestantballon(niveauActuel, niveauMax) {
+    let tempsRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        const key = `ballon_nv_${parseInt(i, 10)}`; // Supprime les zéros inutiles
+        if (ballon.hasOwnProperty(key)) {
+            tempsRestant += ballon[key].trecherche;
+        } else {
+            console.warn(`La clé ${key} est introuvable dans l'objet ballon.`);
+        }
+    }
+    return tempsRestant;
+}
+
+//calcul le temps de construction par rapport a l'laboratoire laboratoire pour le canon
+export function calculerTempsdepuislaboratoireballon(laboratoireNiveau) {
+    let tempsTotal = 0;
+    const niveauMax = Math.max(...Object.keys(ballon)
+        .map(key => parseInt(key.replace("ballon_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul le temps de construction pour l'laboratoire séléctionner pour le canon
+export function calculerTempsConstructionParlaboratoireballon(laboratoireNiveau) {
+    let tempsTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            tempsTotal += canon.trecherche;
+        }
+    }
+    return tempsTotal;
+}
+
+//calcul de prix
+
+//prix déjà payer pour le canon
+export function calculerPrixTotalballon(niveauMax) {
+    let prixTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        prixTotal += ballon[`ballon_nv_${i}`].prix;
+    }
+    return prixTotal;
+}
+
+//calcul le prix restant pour le canon
+export function calculerPrixRestantballon(niveauActuel, niveauMax) {
+    let prixRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        prixRestant += ballon[`ballon_nv_${i}`].prix;
+    }
+    return prixRestant;
+}
+
+//calcul le prix de construction par rapport a l'laboratoire pour le canon
+export function calculerPrixdepuislaboratoireballon(laboratoireNiveau) {
+    let prixTotal = 0;
+    const niveauMax = Math.max(...Object.keys(ballon)
+        .map(key => parseInt(key.replace("ballon_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+//calcul le prix de construction pour l'laboratoire séléctionner pour le canon
+export function calculerPrixConstructionParlaboratoireballon(laboratoireNiveau) {
+    let prixTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            prixTotal += canon.prix;
+        }
+    }
+    return prixTotal;
+}
+
+
+//calcul d'expérience
+
+//éxpérience déjà gagner pour le canon
+export function calculerExperienceTotalballon(niveauMax) {
+    let experienceTotal = 0;
+    for (let i = 1; i <= niveauMax; i++) {
+        experienceTotal += ballon[`ballon_nv_${i}`].experience;
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience restant pour le canon
+export function calculerExperienceRestantballon(niveauActuel, niveauMax) {
+    let experienceRestant = 0;
+    for (let i = niveauActuel + 1; i <= niveauMax; i++) {
+        experienceRestant += ballon[`ballon_nv_${i}`].experience;
+    }
+    return experienceRestant;
+}
+
+//calcul l'éxpérience de construction par rapport a l'laboratoire pour le canon
+export function calculerExperiencedepuislaboratoireballon(laboratoireNiveau) {
+    let experienceTotal = 0;
+    const niveauMax = Math.max(...Object.keys(ballon)
+        .map(key => parseInt(key.replace("ballon_nv_", ""), 10))
+        .filter(n => !isNaN(n))
+    );
+    for (let i = 0; i <= niveauMax; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        if (canon.laboratoirerequis <= laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}
+
+//calcul l'éxpérience de construction pour l'laboratoire séléctionner pour le canon
+export function calculerExperienceConstructionParlaboratoireballon(laboratoireNiveau) {
+    let experienceTotal = 0;
+
+    for (let i = 1; i <= 21; i++) {
+        const canon = ballon[`ballon_nv_${i}`];
+        
+        if (canon.laboratoirerequis === laboratoireNiveau) {
+            experienceTotal += canon.experience;
+        }
+    }
+    return experienceTotal;
+}
