@@ -20,6 +20,7 @@ import { globalcalculerPrixRestanttour_multi_equipee, globalcalculertempsRestant
 import { globalcalculerPrixRestantcracheur_feu, globalcalculertempsRestantcracheur_feus } from "/coc/code/village principal/batiments/calculator/defense calc/cracheur feus/cracheur feu global calc.js";
 
 //PIEGES
+import { globalcalculerPrixRestantbombe_aerienne, globalcalculertempsRestantbombe_aerienne } from "/coc/code/village principal/batiments/calculator/piege calc/bombe aeriennes/bombe aerienne global.calc.js";
 
 //RESSOURCES
 import { globalcalculerPrixRestantreserve_or, globalcalculertempsRestantreserve_ors } from "/coc/code/village principal/batiments/calculator/ressource calc/reserve ors/reserve or global calc.js";
